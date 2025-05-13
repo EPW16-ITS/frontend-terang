@@ -1,0 +1,122 @@
+/* CSS untuk Navbar */
+.Navbar {
+    @apply w-full h-full max-h-[87px] flex justify-between items-center fixed z-[9999] transition-all ease-in-out duration-500 px-4 py-2 bg-gradient-to-b from-primary-200 to-primary-100 rounded-br-[18px] rounded-bl-2xl border-b border-solid;
+}
+.no-scroll {
+    overflow: hidden;
+}
+.Content-Hidden {
+    @apply hidden;
+}
+
+/* CSS untuk Logo di Navbar */
+.Navbar-logo {
+    @apply m-2 flex justify-center items-center gap-5;
+}
+
+/* CSS untuk Hamburger Menu */
+.hamburger {
+    @apply relative inline-block w-8 h-5 cursor-pointer right-0 -translate-x-10 -translate-y-3 lg:hidden;
+}
+
+.hamburger-line {
+    @apply block w-full h-1 bg-white my-1.5 rounded-[1px];
+}
+
+.Menu {
+    @apply hidden md:hidden lg:flex lg:items-center lg:justify-evenly lg:gap-[90px];
+}
+
+.link {
+    @apply flex space-x-6 gap-20;
+}
+.link-1 {
+    @apply text-white;
+}
+.link-1:hover {
+    @apply text-primary-400 transition-all duration-300;
+}
+
+.link-2 {
+    @apply text-white;
+}
+
+.link-2:hover {
+    @apply text-primary-400 transition-all duration-300;
+}
+
+.event {
+    @apply text-white;
+}
+
+.event:hover {
+    @apply text-primary-400 transition-all duration-300;
+}
+.menu-label {
+    @apply text-white flex gap-2 items-center;
+}
+
+.menu-label:hover {
+    @apply text-primary-400 transition-all duration-300;
+}
+
+.button {
+    @apply hidden  md:hidden lg:flex lg:gap-2;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .Navbar {
+        @apply flex ;
+    }
+
+    .hidden-nav {
+        @apply hidden;
+    }
+
+    .Content-Hidden {
+        @apply fixed z-[99999] flex flex-col w-full h-screen  justify-center items-center gap-5 bg-gradient-to-b from-primary-200 to-primary-100;
+    }
+    .Image-Hidden {
+        @apply flex justify-center items-center gap-5;
+    }
+
+    .link-hidden {
+        @apply flex flex-col items-center gap-5;
+    }
+    .Button-Hidden {
+        @apply flex w-full px-40 gap-5 flex-col;
+    }
+
+    .Event-Close {
+        @apply flex justify-center text-white;
+    }
+}
+
+@media (max-width: 768px) {
+    .Navbar {
+        @apply flex fixed;
+    }
+
+    .hidden-nav {
+        @apply hidden;
+    }
+
+    .Content-Hidden {
+        @apply fixed z-[9999] flex flex-col w-full h-screen justify-center items-center gap-5 bg-gradient-to-b from-primary-200 to-primary-100;
+    }
+    .Image-Hidden {
+        @apply flex justify-center gap-5;
+    }
+
+    .link-hidden {
+        @apply flex flex-col items-center gap-5;
+    }
+    .Button-Hidden {
+        @apply flex w-full px-10 gap-5 flex-col;
+    }
+
+    .Event-Close {
+        @apply flex justify-center text-white;
+    }
+}

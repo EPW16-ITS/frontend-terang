@@ -1,0 +1,17 @@
+.typography-poppins {
+  @apply font-text;
+}
+
+.typography-sirukota {
+  @apply font-text2 font-normal;
+}
+
+.typography-righteous {
+  @apply font-text3 font-bold;
+}
+
+.typography-steelfish {
+  @apply font-text4 font-normal;
+}
+
+

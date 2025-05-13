@@ -1,0 +1,53 @@
+/* Advanced Toast Styles */
+.Toastify__toast {
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.Toastify__toast--success {
+  background-color: #201F53 !important;
+  color: #FFFFFF !important;
+}
+
+.Toastify__toast--error {
+  background-color: #201F53!important;
+  color: #FFFFFF !important;
+}
+
+.Toastify__toast--info {
+  background-color: #201F53!important;
+  color: #FFFFFF !important;
+}
+
+.Toastify__toast--warning {
+  background-color: #201F53 !important;
+  color: #FFFFFF !important;
+}
+
+/* Add animation */
+.Toastify__bounce-enter {
+  animation: slideInRight 0.3s ease;
+}
+
+.Toastify__bounce-exit {
+  animation: slideOutRight 0.3s ease;
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOutRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}

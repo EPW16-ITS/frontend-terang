@@ -1,0 +1,26 @@
+"use client";
+import Typography from "@/components/Typography";
+import Injection from "@/components/Event/injection";
+import EPC from "@/components/Event/epc";
+import Micon from "@/components/Event/micon";
+import Ephyfest from "@/components/Event/ephyfest";
+import ParticlesBackground from "@/utilities/particlebg/particlebackground";
+
+const Event = () => {
+
+   
+    return (
+        <div className="" >
+            
+          <div className="absolute z-10">
+           <ParticlesBackground />
+          </div>
+            <Injection />
+            <Micon />
+            <EPC />
+            <Ephyfest />
+        </div>
+    );
+}
+
+export default Event;

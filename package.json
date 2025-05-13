@@ -1,0 +1,57 @@
+{
+  "name": "epw-15",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "storybook": "storybook dev -p 6006",
+    "storybook-docs": "storybook dev -p 6006 --docs",
+    "build-storybook": "storybook build",
+    "build-storybook-docs": "storybook build --docs",
+    "prepare": "husky install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "axios": "^1.6.8",
+    "buffer": "^6.0.3",
+    "formik": "^2.4.5",
+    "framer-motion": "^11.9.0",
+    "jotai": "^2.7.2",
+    "jotai-zustand": "^0.3.0",
+    "js-cookie": "^3.0.5",
+    "next": "^15.0.0",
+    "next-client-cookie": "^1.0.1",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-icons": "^5.0.1",
+    "react-particles": "^2.12.2",
+    "react-toastify": "^10.0.5",
+    "swiper": "^11.1.11",
+    "tough-cookie": "^5.0.0",
+    "tsparticles-slim": "^2.12.0",
+    "yup": "^1.4.0",
+    "zustand": "^4.5.2"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.24.8",
+    "@babel/preset-react": "^7.24.7",
+    "@chromatic-com/storybook": "^1.2.25",
+    "@types/js-cookie": "^3.0.6",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.4",
+    "husky": "^8.0.3",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
+  },
+  "resolutions": {
+    "jackspeak": "2.1.1"
+  }
+}

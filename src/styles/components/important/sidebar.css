@@ -1,0 +1,67 @@
+.Sidebar {
+    @apply flex flex-col justify-between py-10 px-10 gap-10 h-full min-h-screen w-[338px] max-w-[338px] bg-gradient-to-b from-primary-200 to-primary-100
+}
+
+.Sidebar-Content-Top{
+    @apply flex flex-col gap-10
+}
+
+.img-content-sidebar {
+    @apply flex flex-row gap-7 items-center justify-center
+}
+
+.link-content{
+    @apply flex flex-col
+}
+
+.Sidebar-content-bottom {
+    @apply flex flex-row justify-between  text-white
+}
+
+.sidebarMobile {
+    @apply hidden
+}
+
+
+@media(max-width: 800px){
+    .Sidebar {
+        @apply w-screen h-full max-w-none justify-center hidden absolute z-[999999]
+    }
+
+    .Sidebar-Content-Top {
+        @apply flex flex-col gap-20
+    }
+    .link-content {
+        @apply  flex flex-col gap-x-10 pb-32
+    }
+
+    .Sidebar-content-bottom{
+        @apply hidden
+    }
+
+    .sidebarMobile {
+        @apply w-full absolute px-10 z-50 py-6 flex flex-row justify-between bg-gradient-to-b from-primary-200 to-primary-100 
+    }
+}
+
+
+@media(max-width: 500px){
+    .Sidebar {
+        @apply w-full h-full max-w-none justify-center absolute hidden z-[99999]
+    }
+
+    .Sidebar-Content-Top {
+        @apply flex flex-col gap-20
+    }
+    .link-content {
+        @apply  flex flex-col gap-x-10 pb-32 
+    }
+
+    .Sidebar-content-bottom{
+        @apply hidden
+    }
+
+    .sidebarMobile {
+        @apply w-full absolute px-10 py-6 flex flex-row justify-between bg-gradient-to-b from-primary-200 to-primary-100 
+    }
+}

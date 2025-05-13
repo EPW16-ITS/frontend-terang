@@ -1,0 +1,17 @@
+
+.Card {
+    @apply w-[237px] h-[309px] rounded-2xl   
+}
+
+.Card.Card-LightOpenCard{
+    @apply bg-white shadow-md rounded-2xl shadow-neutral-600 relative
+}
+.Card.Card-LightCloseCard{
+    @apply bg-white shadow-md rounded-2xl shadow-neutral-600 relative
+}
+.Card.Card-DarkOpenCard{
+    @apply bg-accent-neutral-800 rounded-2xl relative shadow-md shadow-accent-neutral-800 
+}
+.Card.Card-DarkCloseCard{
+    @apply bg-accent-neutral-800 rounded-2xl relative shadow-md shadow-accent-neutral-800 
+}

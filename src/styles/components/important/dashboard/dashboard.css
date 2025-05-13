@@ -1,0 +1,33 @@
+/* Apply Tailwind styles using @apply */
+.dashboard {
+  @apply flex flex-row w-full h-full  md:min-w-max  min-h-max ;
+  background: linear-gradient(to bottom, #302E7D 40%, #504EBA 60%);
+}
+
+.dashboard-content {
+  @apply border-solid lg:mx-6 my-10 min-h-screen w-full h-full z-[10] lg:pt-10 overflow-x-auto pt-20;
+}
+
+/* Custom scrollbar styles */
+.custom-scrollbar {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: rgba(255, 255, 255, 0.3) transparent; /* Firefox */
+}
+
+/* Webkit browsers (Chrome, Safari, Edge) */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.7);
+}

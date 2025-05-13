@@ -1,0 +1,121 @@
+/* Footer Container */
+.footer {
+    @apply w-full flex relative flex-col lg:flex-row justify-center z-50 bg-primary-300 p-10;
+}
+
+/* Footer Content Wrapper */
+.footer-content {
+    @apply w-full flex flex-col gap-10;
+}
+
+.content-hidden{
+    @apply hidden
+}
+/* Footer Logo */
+.footer-logo {
+    @apply flex items-center gap-10;
+}
+
+/* Footer Logo Name */
+.footer-logo-name {
+    @apply text-white flex flex-col gap-2;
+}
+
+/* Footer Social Links */
+.footer-social {
+    @apply flex gap-5 mt-4 text-white;
+}
+
+/* Footer Right Content */
+.footer-right-content {
+    @apply w-full flex flex-col lg:flex-row items-center  justify-center  gap-[100px] mb-6;
+}
+
+/* Footer Menu */
+.footer-menu {
+    @apply flex flex-col gap-2 text-white;
+}
+
+/* Footer Menu List */
+.footer-menu-list {
+    @apply flex flex-col gap-5 mt-2 text-white;
+}
+
+/* Footer Event */
+.footer-event {
+    @apply flex flex-col gap-2 text-white;
+}
+
+/* Footer Event List */
+.footer-event-list {
+    @apply flex flex-col gap-5 mt-2 text-white;
+}
+
+/* Copyright Text */
+.copyright {
+    @apply flex mt-5 text-white;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .footer {
+        @apply p-10;
+    }
+    
+    .footer-right-content {
+        @apply gap-[50px];
+    }
+    .content-hidden{
+        @apply flex flex-col text-center text-white gap-5
+    }
+    .copyright{
+        @apply justify-center 
+    }
+    .footer-logo {
+        @apply flex justify-center items-center scale-90;
+    }
+
+    .footer-social {
+        @apply justify-center;
+    }
+
+    .footer-event{
+        @apply hidden
+    }
+
+    .footer-menu {
+        @apply hidden;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        @apply p-4;
+    }
+
+    .content-hidden{
+        @apply flex flex-col text-center text-white gap-5
+    }
+
+    .footer-right-content {
+        @apply gap-[30px];
+    }
+
+    .footer-logo {
+        @apply gap-3 scale-75;
+    }
+    .copyright{
+        @apply justify-center 
+    }
+
+    .footer-event{
+        @apply hidden
+    }
+    .footer-menu {
+        @apply text-center gap-4;
+    }
+    
+    .footer-social {
+        @apply flex-wrap justify-center scale-90;
+    }
+}
