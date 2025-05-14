@@ -77,6 +77,10 @@ const config: Config = {
         },
 
         accent: {
+          disabled: {
+            1: "#E0E0E0", // contoh warna background disabled
+            2: "#BDBDBD", // contoh warna border/text disabled
+          },
           neutral: {
             0: "#FFFFFF",
             25: "#FCFDFD",
@@ -94,8 +98,8 @@ const config: Config = {
         },
       },
       screens: {
-        'between-lg-xl': { min: '1024px', max: '1224px' },
-        'mn': { min: '1px', max: '639px' },
+        "between-lg-xl": { min: "1024px", max: "1224px" },
+        mn: { min: "1px", max: "639px" },
       },
     },
   },
