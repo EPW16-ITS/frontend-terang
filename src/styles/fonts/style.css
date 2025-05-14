@@ -1,24 +1,59 @@
+/* Crystal Universe Regular */
+@font-face {
+  font-family: "Crystal Universe Regular";
+  src: url("./CrystalUniverse/CrystalUniverse-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* Crystal Universe Oblique */
+@font-face {
+  font-family: "Crystal Universe Oblique";
+  src: url("./CrystalUniverse/CrystalUniverse-Oblique.ttf") format("truetype");
+  font-style: oblique;
+  font-weight: 400;
+}
+
+/* Homica */
+@font-face {
+  font-family: "Homica";
+  src: url("./Homica/Homica.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* Super Comic */
+@font-face {
+  font-family: "Super Comic";
+  src: url("./SuperComic/SuperComic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
 /* Sirukota Font Face */
 @font-face {
   font-family: "Sirukota";
-  src: url('./Sirukota/Sirukota.ttf') format("truetype");
+  src: url("./Sirukota/Sirukota.ttf") format("truetype");
   font-style: normal;
-  font-weight:400;
+  font-weight: 400;
 }
+
 /* Steelfish Font Face */
 @font-face {
   font-family: "Steelfish";
-  src: url('./Steelfish/steelfish rg.otf') format("truetype");
+  src: url("./Steelfish/steelfish rg.otf") format("truetype");
   font-style: normal;
-  font-weight:400;
+  font-weight: 400;
 }
+
 /* Righteous Font Face */
 @font-face {
   font-family: "Righteous";
-  src: url('./Righteous/Righteous-Regular.ttf') format("truetype");
+  src: url("./Righteous/Righteous-Regular.ttf") format("truetype");
   font-style: normal;
-  font-weight:400;
+  font-weight: 400;
 }
+
 /* Poppins Font Face */
 @font-face {
   font-family: "Poppins";
