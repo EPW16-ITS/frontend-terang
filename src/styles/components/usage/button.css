@@ -69,7 +69,7 @@
 }
 
 .button-outline.button-secondary {
-  @apply  border border-white  bg-transparent enabled:hover:bg-transparent enabled:hover:border-primary-400  enabled:active:border-primary-400 enabled:active:text-primary-400 disabled:border-accent-disabled-2;
+  @apply border border-white bg-transparent enabled:hover:bg-primary-25 enabled:hover:border-white enabled:active:border-white enabled:active:text-white disabled:border-accent-disabled-2;
 }
 
 .button-text.button-secondary {
@@ -81,7 +81,7 @@
   @apply text-white
 }
 .button-outline.button-secondary:hover span {
-  @apply text-primary-400 transition-all duration-300;
+  @apply text-white transition-all duration-300;
 }
 
 .button-outline.button-secondary span{
