@@ -32,7 +32,7 @@ export default function FooterItem() {
 
       <div className="footer-right-content">
         <div className="footer-event">
-          <Typography.Righteous level={5}>OUR EVENT</Typography.Righteous>
+          <Typography.Poppins level={5}>OUR EVENT</Typography.Poppins>
           <div className="footer-event-list">
             <Link href={`/injection`}>
               <Typography.Poppins level={7} size="sm">
@@ -57,7 +57,7 @@ export default function FooterItem() {
           </div>
         </div>
         <div className="footer-menu">
-          <Typography.Righteous level={5}>LINKS</Typography.Righteous>
+          <Typography.Poppins level={5}>LINKS</Typography.Poppins>
           <div className="footer-menu-list">
             <Link className="list-1" href="/">
               <Typography.Poppins level={7} size="base">

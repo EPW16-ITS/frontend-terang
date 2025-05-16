@@ -9,11 +9,11 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        textCURegular: ["Crystal Universe Regular", "sans-serif"],
-        textCUOblique: ["Crystal Universe Oblique", "sans-serif"],
-        textHomica: ["Homica", "cursive"],
-        textComic: ["Super Comic", "cursive"],
         text: ["Poppins", "sans-serif"],
+        text2: ["Crystal Universe Regular", "sans-serif"],
+        text3: ["Crystal Universe Oblique", "sans-serif"],
+        text4: ["Homica", "cursive"],
+        text5: ["Super Comic", "cursive"],
       },
       fontSize: {
         "10xl": ["152px", "144px"],

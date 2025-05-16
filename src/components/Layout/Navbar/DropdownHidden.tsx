@@ -25,7 +25,6 @@ export default function DropdownHidden({onClose}:DropdownHiddenProps):React.Reac
                 <div className="items-3-hidden" >
                     <FaHeadSideVirus size={25} />
                     <Typography.Poppins className="" size="sm" level={8}>EPC</Typography.Poppins>
-
                 </div>
             </Link>
             <Link href="/ephyfest" onClick={onClose}>

@@ -11,10 +11,6 @@ const Event = () => {
    
     return (
         <div className="" >
-            
-          <div className="absolute z-10">
-           <ParticlesBackground />
-          </div>
             <Injection />
             <Micon />
             <EPC />

@@ -1,7 +1,8 @@
 import Poppins from "./Poppins";
-import Sirukota from "./Sirukota";
-import Righteous from "./Righteous";
-import Steelfish from "./Steelfish";
+import CrystalUniverseOblique from "./CrystalUniverseOblique";
+import CrystalUniverseRegular from "./CrystalUniverseRegular";
+import Homica from "./Homica";
+import SuperComic from "./SuperComic";
 
 const Typography = {
   /**
@@ -19,6 +20,34 @@ const Typography = {
  */
   Poppins,
 
+/**
+ * Props for the Heading component.
+ * @param {React.ReactNode} children
+ * - The content of the component for the Heading component. - Required
+ * @param {1|2|3|4|5|6} [level='1']
+ * - The level of the Display component. Can be 1, 2, 3, 4, 5, or 6. Default is 1. - Optional
+ * @param {keyof JSX.IntrinsicElements} [as='h1']
+ * - The HTML tag to use for the component. Can be h1, h2, h3, h4, h5, or h6. Default is h1. - Optional
+ * @param {string} [className='']
+ * - The className of the component for adding custom styles from TailwindCSS. - Optional
+ * @returns {React.ReactElement} The Heading component with the appropriate HTML tag, styling, and content.
+ */
+  CrystalUniverseOblique,
+
+/**
+ * Props for the Heading component.
+ * @param {React.ReactNode} children
+ * - The content of the component for the Heading component. - Required
+ * @param {1|2|3|4|5|6} [level='1']
+ * - The level of the Display component. Can be 1, 2, 3, 4, 5, or 6. Default is 1. - Optional
+ * @param {keyof JSX.IntrinsicElements} [as='h1']
+ * - The HTML tag to use for the component. Can be h1, h2, h3, h4, h5, or h6. Default is h1. - Optional
+ * @param {string} [className='']
+ * - The className of the component for adding custom styles from TailwindCSS. - Optional
+ * @returns {React.ReactElement} The Heading component with the appropriate HTML tag, styling, and content.
+ */
+  CrystalUniverseRegular,
+
   /**
  * Props for the Heading component.
  * @param {React.ReactNode} children
@@ -31,27 +60,13 @@ const Typography = {
  * - The className of the component for adding custom styles from TailwindCSS. - Optional
  * @returns {React.ReactElement} The Heading component with the appropriate HTML tag, styling, and content.
  */
-  Sirukota,
+  Homica,
 
   /**
- * Props for the Paragraph component.
- * @param {React.ReactNode} children
- * - The content of the component for the Paragraph component. - Required
- * @param {1|2|3|4|5|6|7|8|9} [level = '1']
- 
- * @param {keyof JSX.IntrinsicElements} [as='p']
- * - The HTML tag to use for the component. Can be p, span, or small. Default is p. - Optional
- * @param {string} [className='']
- * - The className of the component for adding custom styles from TailwindCSS. - Optional
- * @returns {React.ReactElement} The Paragraph component with the appropriate HTML tag, styling, and content.
- */
-  Righteous,
-
- /**
  * Props for the Heading component.
  * @param {React.ReactNode} children
  * - The content of the component for the Heading component. - Required
- * @param {1|2|3|4|5|6|7|8|9} [level='1']
+ * @param {1|2|3|4|5|6} [level='1']
  * - The level of the Display component. Can be 1, 2, 3, 4, 5, or 6. Default is 1. - Optional
  * @param {keyof JSX.IntrinsicElements} [as='h1']
  * - The HTML tag to use for the component. Can be h1, h2, h3, h4, h5, or h6. Default is h1. - Optional
@@ -59,7 +74,7 @@ const Typography = {
  * - The className of the component for adding custom styles from TailwindCSS. - Optional
  * @returns {React.ReactElement} The Heading component with the appropriate HTML tag, styling, and content.
  */
-  Steelfish,
+  SuperComic,
 };
 
 export default Typography;

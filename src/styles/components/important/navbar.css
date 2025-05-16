@@ -1,10 +1,17 @@
 /* CSS untuk Navbar */
 .Navbar {
-    @apply w-full h-full max-h-[87px] flex justify-between items-center fixed z-[9999] transition-all ease-in-out duration-500 px-4 py-2 bg-gradient-to-b from-primary-200 to-primary-100 rounded-br-[18px] rounded-bl-2xl border-b border-solid;
+    @apply fixed top-4 left-1/2 -translate-x-1/2 z-[9999] 
+    flex justify-between items-center 
+    w-[75%] max-w-6xl px-4 py-[1px]
+    bg-gradient-to-r from-primary-200 to-primary-100 
+    rounded-full shadow-lg border-2 border-white 
+    transition-all ease-in-out duration-500;
 }
+
 .no-scroll {
     overflow: hidden;
 }
+
 .Content-Hidden {
     @apply hidden;
 }
@@ -61,13 +68,13 @@
 }
 
 .button {
-    @apply hidden  md:hidden lg:flex lg:gap-2;
+    @apply hidden md:hidden lg:flex lg:gap-2;
 }
 
 /* Responsive Design */
 @media (max-width: 1024px) {
     .Navbar {
-        @apply flex ;
+        @apply flex w-full left-0 top-0 translate-x-0 rounded-none px-3 py-1 border-none;
     }
 
     .hidden-nav {
@@ -75,7 +82,7 @@
     }
 
     .Content-Hidden {
-        @apply fixed z-[99999] flex flex-col w-full h-screen  justify-center items-center gap-5 bg-gradient-to-b from-primary-200 to-primary-100;
+        @apply fixed z-[99999] flex flex-col w-full h-screen justify-center items-center gap-5 bg-gradient-to-b from-primary-200 to-primary-100;
     }
     .Image-Hidden {
         @apply flex justify-center items-center gap-5;
@@ -95,7 +102,7 @@
 
 @media (max-width: 768px) {
     .Navbar {
-        @apply flex fixed;
+        @apply flex fixed w-full left-0 top-0 translate-x-0 rounded-none px-4 py-2 border-none;
     }
 
     .hidden-nav {

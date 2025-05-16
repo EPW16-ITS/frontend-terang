@@ -10,10 +10,34 @@ export default function Home() {
           <Typography.Poppins
             level={3}
             size="lg"
-            className="z-40 text-white text-center"
+            className="z-40 text-primary-25 text-center"
           >
             Ini adalah Home
           </Typography.Poppins>
+          <Typography.CrystalUniverseOblique
+            level={9}
+            className="z-40 text-secondary-100 text-center"
+          >
+            Ini adalah Crystal Universe Oblique
+          </Typography.CrystalUniverseOblique>
+          <Typography.CrystalUniverseRegular
+            level={9}
+            className="z-40 text-third-100 text-center"
+          >
+            Ini adalah Crystal Universe Regular
+          </Typography.CrystalUniverseRegular>
+          <Typography.SuperComic
+            level={9}
+            className="z-40 text-fourth-300 text-center"
+          >
+            Ini adalah Super Comic
+          </Typography.SuperComic>
+          <Typography.Homica
+            level={9}
+            className="z-40 text-fifth-100 text-center"
+          >
+            Ini adalah Homica
+          </Typography.Homica>
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import type { RighteousProps } from "@/types/components/Typography";
+import type { CrystalUniverseObliqueProps } from "@/types/components/Typography";
 
 /**
  * Props for the Paragraph component.
@@ -15,25 +15,24 @@ import type { RighteousProps } from "@/types/components/Typography";
  * - The className of the component for adding custom styles from TailwindCSS. - Optional
  * @returns {React.ReactElement} The Paragraph component with the appropriate HTML tag, styling, and content.
  */
-export default function Righteous({
+export default function CrystalUniverseOblique({
   children,
   level = 1,
   as = "h1",
   className = "",
  
   ...props
-}: RighteousProps): React.ReactElement {
+}: CrystalUniverseObliqueProps): React.ReactElement {
   const textSizeLevel = {
-    1: "text-6xl",
-    2: "text-5xl",
-    3: "text-4xl",
-    4: "text-3xl",
-    5: "text-2xl",
-    6: "text-xl",
-    7: "text-lg",
-    8: "text-base",
-    9: "text-sm",
-    10: "text-xs"
+    1: "text-10xl",
+    2: "text-9xl",
+    3: "text-8xl",
+    4: "text-7xl",
+    5: "text-6xl",
+    6: "text-5xl",
+    7: "text-4xl",
+    8: "text-3xl",
+    9: "text-2xl",
   };
   const textSizeClass = textSizeLevel[level];
   const Component = as 
@@ -41,7 +40,7 @@ export default function Righteous({
   return (
     <Component
       {...props}
-      className={`typography-righteous ${textSizeClass} ${className} `}
+      className={`typography-crystal-universe-oblique ${textSizeClass} ${className} `}
     >
       {children}
     </Component>

@@ -1,0 +1,19 @@
+.typography-poppins {
+  @apply font-text;
+}
+
+.typography-crystal-universe-regular {
+  @apply font-text2 font-bold;
+}
+
+.typography-crystal-universe-oblique {
+  @apply font-text3 font-bold;
+}
+
+.typography-homica {
+  @apply font-text4 font-bold;
+}
+
+.typography-super-comic {
+  @apply font-text5 font-bold;
+}
