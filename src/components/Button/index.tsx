@@ -1,13 +1,13 @@
 import Primary from "./Primary";
 import Secondary from "./Secondary";
+import Tertiary from "./Tertiary";
 import Upload from "../Input/InputUpload";
-
 
 const Button = {
   /**
    * Props for the Button Primary component.
    * @param {React.ReactNode} children
-   *@param {full|lg|base|sm} [Rounded='full']
+   * @param {full|lg|base|sm} [Rounded='full']
    * - The content of the component for the Button component. - Required
    * @param {base|sm} [size='base']
    * - The size of the Button component. Can be lg, base or sm. Default is base. - Optional
@@ -46,7 +46,6 @@ const Button = {
   /**
    * Props for the Button Secondary component.
    * @param {React.ReactNode} children
-   *  @param {"full"|"lg"|"md"|"sm"} [Rounded='full']
    * @param {full|lg|base|sm} [Rounded='full']
    * - The content of the component for the Button component. - Required
    * @param {base|sm} [size='base']
@@ -82,6 +81,45 @@ const Button = {
    * @returns {React.ReactElement} The Button component with the appropriate HTML tag, styling, and content.
    */
   Secondary,
+
+  /**
+   * Props for the Button Tertiary component.
+   * @param {React.ReactNode} children
+   * @param {full|lg|base|sm} [Rounded='full']
+   * - The content of the component for the Button component. - Required
+   * @param {base|sm} [size='base']
+   * - The size of the Button component. Can be base or sm. Default is base. - Optional
+   * @param {"default"|"outline"|"text"} [type='default']
+   * - The visual style of the Tertiary Button. Can be default, outline, or text. Default is default. - Optional
+   * @param {"submit"|"reset"|"button"} [buttonType]
+   * - The native button behavior. Default is button. - Optional
+   * @param {number} [tabIndex=0]
+   * - Controls keyboard focus order. Default is 0. - Optional
+   * @param {boolean} [iconOnly=false]
+   * - Renders button as icon-only. Default is false. - Optional
+   * @param {boolean} [disabled=false]
+   * - Disables interaction and styles. Default is false. - Optional
+   * @param {boolean} [fullWidth=false]
+   * - Expands button to full container width. Default is false. - Optional
+   * @param {keyof JSX.IntrinsicElements} [as='button']
+   * - Sets the HTML element type. Default is button. - Optional
+   * @param {React.ReactNode} [prefix]
+   * - Adds an icon or element before the label. - Optional
+   * @param {React.ReactNode} [suffix]
+   * - Adds an icon or element after the label. - Optional
+   * @param {center|between} [placement='center']
+   * - Aligns label and icons. Default is center. - Optional
+   * @param {string} [className='']
+   * - Additional Tailwind CSS classes. - Optional
+   * @param {React.CSSProperties} [style={}]
+   * - Inline style customization. - Optional
+   * @param {() => void} [onClick]
+   * - Callback when button is clicked. - Optional
+   * @param {() => void} [onMouseOut]
+   * @param {() => void} [onMouseOver]
+   * @returns {React.ReactElement} The Tertiary button component.
+   */
+  Tertiary,
 };
 
 export default Button;

@@ -1,7 +1,6 @@
 /* Default Variant */
 .button {
-  @apply flex gap-2  font-text font-semibold justify-center items-center transition-all duration-300 disabled:cursor-not-allowed;
- 
+  @apply flex gap-2 font-text font-semibold justify-center items-center transition-all duration-300 disabled:cursor-not-allowed;
 }
 
 .button-icon {
@@ -23,7 +22,7 @@
 
 /* Button Icon Sizes */
 .button.button-lg.button-icon {
-  @apply p-2.5 ;
+  @apply p-2.5;
 }
 
 .button.button-base.button-icon {
@@ -36,7 +35,7 @@
 
 /* Primary Color Style */
 .button.button-primary {
-  @apply  bg-secondary-50 enabled:hover:bg-secondary-200 enabled:active:border-secondary-300;
+  @apply bg-secondary-50 enabled:hover:bg-secondary-200 enabled:active:border-secondary-300;
 }
 
 .button-outline.button-primary {
@@ -47,10 +46,11 @@
   @apply bg-transparent border-none enabled:hover:bg-transparent enabled:active:bg-transparent;
 }
 
-/* Text Color */
-.button.button-primary span{
-  @apply text-white
+/* Text Color - Primary */
+.button.button-primary span {
+  @apply text-white;
 }
+
 .button-outline.button-primary:hover span {
   @apply text-white;
 }
@@ -65,30 +65,42 @@
 
 /* Secondary Color Style */
 .button.button-secondary {
-  @apply  bg-primary-300 enabled:hover:bg-primary-100 enabled:active:bg-primary-50;
+  @apply bg-primary-300 enabled:hover:bg-primary-100 enabled:active:bg-primary-50;
 }
 
 .button-outline.button-secondary {
-  @apply border border-white bg-transparent enabled:hover:bg-primary-25 enabled:hover:border-white enabled:active:border-white enabled:active:text-white disabled:border-accent-disabled-2;
+  @apply border border-white bg-transparent enabled:hover:bg-secondary-200 enabled:hover:border-white enabled:active:border-white enabled:active:text-white disabled:border-accent-disabled-2;
 }
 
-.button-text.button-secondary {
-  @apply text-white border-transparent bg-transparent enabled:hover:border-transparent enabled:hover:bg-transparent enabled:active:border-transparent enabled:active:bg-transparent;
+/* Selected Mode */
+.button-outline.button-secondary.selected {
+  @apply bg-primary-25 border-white;
 }
 
-/* Text Color */
-.button.button-secondary span{
-  @apply text-white
+/* Selected + Hover */
+.button-outline.button-secondary.selected:hover {
+  @apply bg-secondary-400 border-white;
 }
+
+/* Text Color - Secondary */
+.button.button-secondary span {
+  @apply text-white;
+}
+
+.button-outline.button-secondary span {
+  @apply text-white;
+}
+
 .button-outline.button-secondary:hover span {
   @apply text-white transition-all duration-300;
 }
 
-.button-outline.button-secondary span{
-  @apply text-white
-}
 .button-outline.button-secondary:active span {
   @apply text-primary-400;
+}
+
+.button-text.button-secondary {
+  @apply text-white border-transparent bg-transparent enabled:hover:border-transparent enabled:hover:bg-transparent enabled:active:border-transparent enabled:active:bg-transparent;
 }
 
 .button-text.button-secondary:hover span {
@@ -96,12 +108,29 @@
 }
 
 .button-text.button-secondary:active span {
-  @apply text-primary-400 ;
+  @apply text-primary-400;
 }
 
-/* Tertiary */
+/* --- Tertiary Button --- */
+
+/* 1. Normal */
 .button.button-tertiary {
-  @apply border-none text-white bg-transparent enabled:hover:text-secondary-50 enabled:active:text-white;
+  @apply border-none bg-transparent text-white;
+}
+
+/* 2. Hover */
+.button.button-tertiary:hover {
+  @apply bg-transparent text-secondary-50;
+}
+
+/* 3. Selected */
+.button.button-tertiary.selected {
+  @apply bg-primary-25 text-white;
+}
+
+/* 4. Selected + Hover */
+.button.button-tertiary.selected:hover {
+  @apply bg-secondary-400 text-white;
 }
 
 /* Disabled State */
