@@ -1,4 +1,5 @@
 "use client";
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -37,7 +38,10 @@ export default function NavbarItem({ className, href }: NavbarProps): React.Reac
 
   return (
     <>
-      <nav className={`Navbar ${isMenuOpen ? "hidden-nav" : "open"} bg-[#1F0C49CC]`}>
+      <nav
+        className={`Navbar ${isMenuOpen ? "hidden-nav" : "open"} bg-[#1F0C49CC]
+          border border-white xs:border-white sm:border-white md:border-white rounded-full fixed-center item-center xs:w-full sm:w-1/2 md:w-1/2 lg:w-3/4 top-4 left-1/2 -translate-x-1/2 z-50`}
+      >
         {/* Logo */}
         <div className="Navbar-logo">
           <Image src="/components/Logo.svg" alt="logo" width={60} height={60} />
@@ -57,7 +61,7 @@ export default function NavbarItem({ className, href }: NavbarProps): React.Reac
             isMenuOpen ? "link-hidden" : ""
           }`}
         >
-          <div className="link flex gap-6 ">
+          <div className="link flex gap-6">
             <NavLink href="/" label="Home" isActive={pathname === "/"} />
             <NavLink href="/about" label="About" isActive={pathname === "/about"} />
             <NavLink href="/event" label="Event" isActive={pathname === "/event"} />
@@ -90,7 +94,7 @@ export default function NavbarItem({ className, href }: NavbarProps): React.Reac
   );
 }
 
-// ✅ NavLink with Tertiary Button
+// ✅ NavLink with hover-bold and text hover color
 function NavLink({
   href,
   label,
