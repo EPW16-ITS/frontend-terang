@@ -45,7 +45,7 @@ export default function Homica({
   return (
     <Component
       {...props}
-      className={`typography-crystal-universe-regular ${textSizeClass} ${className} `}
+      className={`typography-homica ${textSizeClass} ${className} `}
     >
       {children}
     </Component>

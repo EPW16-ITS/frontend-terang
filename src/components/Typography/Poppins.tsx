@@ -38,7 +38,7 @@ export default function Poppins({
     7: "text-lg",
     8: "text-base",
     9: "text-sm",
-    10: "text-xs"
+    10: "text-xs",
   };
   const textSizeClass = textSizeLevel[level];
   const Component = as;

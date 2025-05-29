@@ -12,7 +12,7 @@ export default function Home() {
             size="lg"
             className="z-40 text-primary-25 text-center"
           >
-            Ini adalah Home
+            Ini adalah Homepage
           </Typography.Poppins>
         </div>
       </div>
