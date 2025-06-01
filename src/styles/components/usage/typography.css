@@ -3,17 +3,17 @@
 }
 
 .typography-crystal-universe-regular {
-  @apply font-text2 font-bold;
+  @apply font-text2;
 }
 
 .typography-crystal-universe-oblique {
-  @apply font-text3 font-bold;
+  @apply font-text3;
 }
 
 .typography-homica {
-  @apply font-text4 font-bold;
+  @apply font-text4;
 }
 
 .typography-super-comic {
-  @apply font-text5 font-bold;
+  @apply font-text5;
 }
