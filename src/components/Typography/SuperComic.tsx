@@ -41,7 +41,7 @@ export default function SuperComic({
   return (
     <Component
       {...props}
-      className={`typography-homica ${textSizeClass} ${className} `}
+      className={`typography-super-comic ${textSizeClass} ${className} `}
     >
       {children}
     </Component>

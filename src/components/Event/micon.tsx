@@ -9,8 +9,17 @@ import "swiper/css/navigation";
 
 const Micon = () => {
   return (
-    <section className="relative w-full min-h-screen overflow-hidden bg-gradient-to-b from-[#39488E] to-[#101428] px-6 md:px-16 py-12">
-
+    <section className="relative w-full h-[1024px] overflow-hidden bg-gradient-to-b from-[#39488E] to-[#101428] px-6 md:px-16 py-12">
+       {/* Pattern Background */}
+                      <div className="absolute inset-0 w-full h-full">
+                        <Image
+                          src="https://raw.githubusercontent.com/EPW16-ITS/assets/main/Pattern.webp"
+                          alt="Pattern Background"
+                          fill
+                          className="object-cover opacity-100"
+                          priority
+                        />
+                      </div>
       {/* Judul */}
       <Typography.CrystalUniverseRegular
         level={7}

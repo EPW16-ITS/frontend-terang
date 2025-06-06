@@ -5,7 +5,7 @@ import type { HomicaProps } from "@/types/components/Typography";
  * Props for the Paragraph component.
  * @param {React.ReactNode} children
  * - The content of the component for the Paragraph component. - Required
- * @param {base|sm} [size='base']
+ * @param {lg|base|sm} [size='base']
  * - The level of the Paragraph component. Can be base or sm. Default is base. - Optional
  * @param {1|2|3|4|5|6|7|8|9} [level = '1']
  * 
