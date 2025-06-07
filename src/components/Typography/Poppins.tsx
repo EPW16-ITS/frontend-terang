@@ -5,7 +5,7 @@ import type { PoppinsProps } from "@/types/components/Typography";
  * Props for the Display component.
  * @param {React.ReactNode} children
  * - The content of the component for the Display component. - Required
- * @param {lg|base|sm} [size='base']
+ * @param {lg|base|sm|xs} [size='base']
  * - The level of the Display component. Can be lg, base, or sm. Default is base. - Optional
  * @param {keyof JSX.IntrinsicElements} [as='h1']
  * - The HTML tag to use for the component. Can be h1, h2, h3, h4, h5, or h6. Default is h1. - Optional
@@ -26,6 +26,7 @@ export default function Poppins({
     lg: "font-bold",
     base: "font-semibold",
     sm: "font-normal",
+    xs: "font-light",
   };
   const textWeightClass = textWeightLevel[size];
   const textSizeLevel = {
@@ -38,7 +39,7 @@ export default function Poppins({
     7: "text-lg",
     8: "text-base",
     9: "text-sm",
-    10: "text-xs"
+    10: "text-xs",
   };
   const textSizeClass = textSizeLevel[level];
   const Component = as;

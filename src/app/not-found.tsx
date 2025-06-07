@@ -1,5 +1,4 @@
 
-import ParticlesBackground from '@/utilities/particlebg/particlebackground'
 import Button from '@/components/Button'
 import Image from 'next/image'
 import Typography from '@/components/Typography'
@@ -11,8 +10,6 @@ export default function NotFound() {
 
     return (
         <div className='h-screen  w-full bg-gradient-to-r from-secondary-200 to-secondary-400'>
-      
-            <ParticlesBackground />
             <section className=' w-full flex flex-col justify-center items-center  relative z-50 top-[20%] lg:top-[10%] '>
                 <Image
                     src={`/components/Frame 481672.svg`}

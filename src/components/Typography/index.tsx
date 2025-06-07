@@ -9,8 +9,8 @@ const Typography = {
  * Props for the Display component.
  * @param {React.ReactNode} children
  * - The content of the component for the Display component. - Required
- * @param {lg|base|sm} [size='base']
- * - The level of the Display component. Can be lg, base, or sm. Default is base. - Optional
+ * @param {lg|base|sm|xs} [size='xs']
+ * - The level of the Display component. Can be lg, base, or sm. Default is sm. - Optional
  * @param {keyof JSX.IntrinsicElements} [as='h1']
  * - The HTML tag to use for the component. Can be h1, h2, h3, h4, h5, or h6. Default is h1. - Optional
  * @param {string} [className='']

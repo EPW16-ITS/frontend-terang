@@ -12,11 +12,11 @@ export default function Footerhidden() {
                 <Link className="list-2" href="/about">
                     <Typography.Poppins level={6} size="sm">About</Typography.Poppins>
                 </Link>
-                <Link className="list-3" href="/login">
-                    <Typography.Poppins level={6} size="sm">Login</Typography.Poppins>
+                <Link className="list-3" href="/event">
+                    <Typography.Poppins level={6} size="sm">Event</Typography.Poppins>
                 </Link>
-                <Link className="list-4" href="/login">
-                    <Typography.Poppins level={6} size="sm">Register</Typography.Poppins>
+                <Link className="list-4" href="/register">
+                    <Typography.Poppins level={6} size="sm">Announcement</Typography.Poppins>
                 </Link>
             </div>
             <div className="footer-social">

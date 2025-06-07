@@ -37,11 +37,14 @@ export default function NavbarItem({ className, href }: NavbarProps): React.Reac
 
   return (
     <>
-      <nav className={`Navbar ${isMenuOpen ? "hidden-nav" : "open"} bg-[#1F0C49CC]`}>
+      <nav
+        className={`Navbar ${isMenuOpen ? "hidden-nav" : "open"} bg-[#1F0C49CC]
+          border border-white xs:border-white sm:border-white md:border-white rounded-full fixed-center item-center xs:w-[90%] sm:w-[60%] md:w-[50%] lg:w-[55%] top-2 left-1/2 -translate-x-1/2 z-50 py-2 px-4`}
+      >
         {/* Logo */}
         <div className="Navbar-logo">
-          <Image src="/components/Logo.svg" alt="logo" width={60} height={60} />
-          <Image src="/components/LOGO NEEW.svg" alt="logo-caption" width={50} height={50} />
+          <Image src="/components/Logo.svg" alt="logo" width={40} height={40} />
+          <Image src="/components/LOGO NEEW.svg" alt="logo-caption" width={35} height={35} />
         </div>
 
         {/* Hamburger Menu */}
@@ -57,7 +60,7 @@ export default function NavbarItem({ className, href }: NavbarProps): React.Reac
             isMenuOpen ? "link-hidden" : ""
           }`}
         >
-          <div className="link flex gap-6 ">
+          <div className="link flex gap-4">
             <NavLink href="/" label="Home" isActive={pathname === "/"} />
             <NavLink href="/about" label="About" isActive={pathname === "/about"} />
             <NavLink href="/event" label="Event" isActive={pathname === "/event"} />
@@ -65,16 +68,16 @@ export default function NavbarItem({ className, href }: NavbarProps): React.Reac
         </div>
 
         {/* Announcement Button */}
-        <div className="button group min-w-[140px] hover:fill-third-200">
+        <div className="button group min-w-[120px] hover:fill-third-200">
           <Button.Secondary
             type="outline"
-            size="base"
+            size="sm"
             onClick={() => handleExternalLinkClick("/register")}
             className={isAnnouncementSelected ? "selected" : ""}
           >
             <Typography.Poppins
-              size="sm"
-              level={6}
+              size="xs"
+              level={8}
               className="transition-all duration-300 font-normal text-center w-full"
               style={{ whiteSpace: "nowrap" }}
             >
@@ -90,7 +93,7 @@ export default function NavbarItem({ className, href }: NavbarProps): React.Reac
   );
 }
 
-// ✅ NavLink with Tertiary Button
+// ✅ NavLink with hover-bold and text hover color
 function NavLink({
   href,
   label,
@@ -101,15 +104,15 @@ function NavLink({
   isActive: boolean;
 }) {
   return (
-    <Link href={href} className="group min-w-[100px]">
+    <Link href={href} className="group min-w-[80px]">
       <Button.Tertiary
         type="text"
-        size="base"
+        size="sm"
         className={isActive ? "selected" : ""}
       >
         <Typography.Poppins
-          level={6}
-          size="sm"
+          level={8}
+          size="xs"
           className="transition-all duration-300 font-normal text-center w-full group-hover:text-third-100"
           style={{ whiteSpace: "nowrap" }}
         >
