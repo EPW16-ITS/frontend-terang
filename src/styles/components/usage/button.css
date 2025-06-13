@@ -1,6 +1,7 @@
 /* Default Variant */
 .button {
-  @apply flex gap-2 font-text font-semibold justify-center items-center transition-all duration-300 disabled:cursor-not-allowed;
+  @apply flex gap-2  font-text font-semibold justify-center items-center transition-all duration-300 disabled:cursor-not-allowed;
+ 
 }
 
 .button-icon {
@@ -22,7 +23,7 @@
 
 /* Button Icon Sizes */
 .button.button-lg.button-icon {
-  @apply p-2.5;
+  @apply p-2.5 ;
 }
 
 .button.button-base.button-icon {
@@ -35,7 +36,7 @@
 
 /* Primary Color Style */
 .button.button-primary {
-  @apply bg-secondary-50 enabled:hover:bg-secondary-200 enabled:active:border-secondary-300;
+  @apply bg-secondary-400 border border-white enabled:hover:bg-secondary-200 enabled:active:border-secondary-300;
 }
 
 .button-outline.button-primary {
@@ -46,11 +47,10 @@
   @apply bg-transparent border-none enabled:hover:bg-transparent enabled:active:bg-transparent;
 }
 
-/* Text Color - Primary */
-.button.button-primary span {
-  @apply text-white;
+/* Text Color */
+.button.button-primary span{
+  @apply text-white
 }
-
 .button-outline.button-primary:hover span {
   @apply text-white;
 }
@@ -62,7 +62,6 @@
 .button-text.button-primary:active span {
   @apply text-white;
 }
-
 /* Secondary Color Style */
 .button.button-secondary {
   @apply bg-primary-300 enabled:hover:bg-primary-100 enabled:active:bg-primary-50;
@@ -84,11 +83,11 @@
 
 /* Text Color - Secondary */
 .button.button-secondary span {
-  @apply text-white;
+  @apply text-white whitespace-nowrap;
 }
 
 .button-outline.button-secondary span {
-  @apply text-white;
+  @apply text-white whitespace-nowrap;
 }
 
 .button-outline.button-secondary:hover span {
