@@ -249,7 +249,7 @@ const Micon = () => {
   };
 
   return (
-    <section className="relative w-full min-h-[1024px] overflow-hidden bg-gradient-to-b from-[#101428] to-[#39488E] px-6 md:px-16 py-12">
+    <section className="relative w-full sm:h-[900px] xs:h-[800px] md:h-[900px] lg:h-[1024px] overflow-hidden bg-gradient-to-b from-[#101428] to-[#39488E] px-6 md:px-16 py-12">
        {/* Pattern Background */}
       <div className="absolute inset-0 w-full h-full">
         <Image
@@ -276,7 +276,7 @@ const Micon = () => {
       </Typography.Homica>
       <Typography.Poppins
         level={4}
-        className="z-40 text-fifth-50 text-center mb-10">
+        className="z-40 text-fifth-50 text-center mb-10 xs:text-xs">
           MICON (Microcontroller Contest) merupakan kompetisi tahunan yang ditujukan bagi siswa/i SMA dan SMK sederajat dengan fokus pada bidang instrumentasi. Kompetisi ini menjadi wadah bagi siswa/i SMA/SMK/sederajat untuk mengembangkan pengetahuan tentang mikrokontroler.
       </Typography.Poppins>
         
@@ -352,7 +352,7 @@ const Micon = () => {
           </div>
           
           {/* Rectangle Buttons di bawah Swiper */}
-          <div className="flex gap-4 mt-6">
+          <div className="flex gap-4 mt-6 xs:text-xs">
             <RectangleButton 
               text="TIMELINE" 
               onClick={handleTimelineClick}
@@ -365,7 +365,7 @@ const Micon = () => {
         </div>
 
         {/* Kubu Kanan - Trapezium Info Content */}
-        <div className="flex flex-col items-center justify-center space-y-8">
+        <div className="flex flex-col items-center justify-center space-y-8 xs:text-xs">
           <TrapeziumInfo 
             label="Prize Pool" 
             content="Rp 5.000.000" 

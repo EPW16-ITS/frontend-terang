@@ -76,7 +76,7 @@ const EPC = () => {
   return (
     <div>
       {/* Main Content */}
-      <section className="relative w-full lg:h-[900px] overflow-hidden bg-primary-300 px-6 md:px-16 py-12">
+      <section className="relative w-full sm:h-[900px] xs:h-[800px] md:h-[900px] lg:h-[1024px] overflow-hidden bg-primary-300 px-6 md:px-16 py-12">
         {/* Pattern Background */}
         <div className="absolute inset-0 w-full h-full">
           <Image
@@ -106,19 +106,19 @@ const EPC = () => {
             {/* Konten untuk kubu kiri */}
             <Typography.SuperComic
               level={4}
-              className="text-white text-left mb-4"
+              className="text-white text-left mb-4 xs:text-xs"
             >
               What is EPC?
             </Typography.SuperComic>
             <Typography.Poppins
               level={7}
-              className="text-white text-left mb-8"
+              className="text-white text-left mb-8 xs:text-xs"
             >
               Engineering Physics Challenge (EPC) merupakan kegiatan kompetisi tahunan tingkat nasional tentang bidang fisika, matematika terapan, dan aplikasinya dalam bidang ilmu teknik fisika yang diperuntukkan untuk siswa - siswi SMA/SMK/MA sederajatnya.
             </Typography.Poppins>
             <Typography.SuperComic
               level={4}
-              className="text-white text-left mb-4"
+              className="text-white text-left mb-4 xs:text-xs"
             >
               Benefits?
             </Typography.SuperComic>
@@ -130,7 +130,7 @@ const EPC = () => {
                 <YellowMinusIcon />
                 <Typography.Poppins
                   level={7}
-                  className="text-white text-left"
+                  className="text-white text-left xs:text-xs"
                 >
                   Free Pass Teknik Fisika ITS
                 </Typography.Poppins>
@@ -141,7 +141,7 @@ const EPC = () => {
                 <BlueXIcon />
                 <Typography.Poppins
                   level={7}
-                  className="text-white text-left"
+                  className="text-white text-left xs:text-xs"
                 >
                   Sertifikat Nasional
                 </Typography.Poppins>
@@ -152,7 +152,7 @@ const EPC = () => {
                 <YellowMinusIcon />
                 <Typography.Poppins
                   level={7}
-                  className="text-white text-left"
+                  className="text-white text-left xs:text-xs"
                 >
                   Piala Penghargaan
                 </Typography.Poppins>
@@ -164,13 +164,13 @@ const EPC = () => {
                 <div className="flex flex-col">
                   <Typography.Poppins
                     level={7}
-                    className="text-white text-left"
+                    className="text-white text-left xs:text-xs"
                   >
                     Uang Pembinaan Hingga
                   </Typography.Poppins>
                   <Typography.Poppins
                     level={7}
-                    className="text-white text-left font-bold"
+                    className="text-white text-left font-bold xs:text-xs"
                   >
                     Jutaan Rupiah!
                   </Typography.Poppins>
@@ -184,7 +184,7 @@ const EPC = () => {
               <Button.Primary
                 type="default"
                 suffix={<CircleArrowRightIcon size={20} />}
-                className="flex items-center px-6 py-3"
+                className="flex items-center px-6 py-3 xs:text-xs"
               >
                 <a href="#">REGISTRATION</a>
               </Button.Primary>
@@ -193,7 +193,7 @@ const EPC = () => {
               <Button.Primary
                 type="default"
                 suffix={<FaBook size={20} />}
-                className="flex items-center px-6 py-3"
+                className="flex items-center px-6 py-3 xs:text-xs"
               >
                 <a href="#">GUIDEBOOK</a>
               </Button.Primary>
@@ -296,7 +296,7 @@ const EPC = () => {
           <Button.Primary
             type="default"
             suffix={<CircleArrowRightIcon size={20} />}
-            className="flex items-center px-6 py-10"
+            className="flex items-center px-6 py-10 xs:text-xs"
           >
             <a href="#">TIMELINE</a>
           </Button.Primary>

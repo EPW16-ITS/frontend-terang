@@ -7,7 +7,7 @@ const Ephyfest = () => {
   return (
     <div>
       {/* Main Content */}
-      <div className="relative w-full min-h-screen overflow-hidden bg-gradient-to-b from-primary-200 from-20% bg-[#1C1C4B] to-50%">
+      <div className="relative w-full sm:h-[900px] xs:h-[800px] md:h-[900px] lg:h-[1024px] overflow-hidden bg-gradient-to-b from-primary-200 from-20% bg-[#1C1C4B] to-50%">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col gap-5 justify-center items-center m-auto">
           <Typography.Poppins
             level={3}
