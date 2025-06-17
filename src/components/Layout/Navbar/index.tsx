@@ -60,7 +60,7 @@ export default function NavbarItem({ className, href }: NavbarProps): React.Reac
             isMenuOpen ? "link-hidden" : ""
           }`}
         >
-          <div className="link flex gap-4">
+          <div className="link flex gap-0">
             <NavLink href="/" label="Home" isActive={pathname === "/"} />
             <NavLink href="/about" label="About" isActive={pathname === "/about"} />
             <NavLink href="/event" label="Event" isActive={pathname === "/event"} />

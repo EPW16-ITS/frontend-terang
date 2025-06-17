@@ -1,6 +1,6 @@
 /* Default Variant */
 .button {
-  @apply flex gap-2  font-text font-semibold justify-center items-center transition-all duration-300 disabled:cursor-not-allowed;
+  @apply flex gap-0  font-text font-semibold justify-center items-center transition-all duration-300 disabled:cursor-not-allowed;
  
 }
 

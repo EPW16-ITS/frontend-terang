@@ -31,6 +31,7 @@ const config: Config = {
         base: ["16px", "18px"],
         sm: ["14px", "16px"],
         xs: ["12px", "14px"],
+        "2xs": ["8px", "10px"],
       },
       colors: {
         white: "#FFFFFF",
