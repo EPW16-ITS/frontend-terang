@@ -175,14 +175,14 @@ const Injection = () => {
             <div className="xs:flex md:flex md:gap-4 md:relative lg:flex lg:gap-4 lg:relative">
               <Button.Primary
                 type="default"
-                suffix={<FaArrowRight size={20} className="xs:size-3 xs:ml-1 sm:ml-2 md:ml-3 lg:ml-4"/>}
+                suffix={<FaArrowRight size={20} className="xs:size-3 xs:ml-1 sm:ml-2 md:ml-3 lg:ml-0"/>}
                 className="flex xs:text-xs sm:text-xs md:text-sm lg:text-base xs:absolute sm:absolute sm:bottom-[-40%] sm:right-[0%] md:relative md:bottom-auto md:right-auto lg:relative lg:bottom-auto lg:right-auto xl:relative xl:bottom-auto xl:right-auto xs:bottom-[-100%]  xs:right-[-60%] items-center justify-center xs:w-[100px] xs:h-[28px] sm:w-[120px] sm:h-[32px] md:w-[130px] md:h-[44px] lg:w-[135px] lg:h-[46px] xl:w-[140px] xl:h-[48px] xs:px-2 xs:py-1 sm:px-3 sm:py-1.5 md:px-4 md:py-2 lg:px-5 lg:py-2.5 xl:px-6 xl:py-3 z-[30]"
               >
                 <a href="#" className="xl:text-base lg:text-base xs:text-xs sm:text-xs xs:whitespace-nowrap sm:whitespace-nowrap">TIMELINE</a>
               </Button.Primary>
               <Button.Primary
                 type="default"
-                suffix={<FaArrowRight size={20} className="xs:size-3 xs:ml-1 sm:ml-2 md:ml-3 lg:ml-4"/>}
+                suffix={<FaArrowRight size={20} className="xs:size-3 xs:ml-1 sm:ml-2 md:ml-3 lg:ml-0"/>}
                 className="flex xs:text-xs sm:text-xs md:text-sm lg:text-base xs:absolute sm:absolute sm:bottom-[-40%] sm:left-[0%] md:relative md:bottom-auto md:left-auto lg:relative lg:bottom-auto lg:left-auto xl:relative xl:bottom-auto xl:right-auto xs:bottom-[-100%]  xs:left-[-60%] items-center justify-center xs:w-[100px] xs:h-[28px] sm:w-[120px] sm:h-[32px] md:w-[130px] md:h-[44px] lg:w-[135px] lg:h-[46px] xl:w-[140px] xl:h-[48px] xs:px-2 xs:py-1 sm:px-3 sm:py-1.5 md:px-4 md:py-2 lg:px-5 lg:py-2.5 xl:px-6 xl:py-3 z-[30]"
               >
                 <a href="#" className="xl:text-base lg:text-base xs:text-xs sm:text-xs xs:whitespace-nowrap sm:whitespace-nowrap">KEBUTUHAN</a>
