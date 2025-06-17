@@ -178,9 +178,8 @@ const EPC = () => {
                 </div>
               </div>
             </div>
-            {/* Buttons - Centered horizontally */}
-            {/* Buttons - Centered horizontally */}
-                        <div className="xs:flex sm:flex sm:flex-col sm:space-y-2 sm:space-x-0 md:flex md:flex-row md:gap-4 md:justify-center md:items-center md:w-full lg:flex lg:justify-center lg:space-x-4 xl:space-x-4 2xl:space-x-5 justify-center xs:mb-2 sm:mb-3 md:mb-4 lg:mb-4 xl:mb-4 2xl:mb-5 xs:mt-[0px] sm:mt-[0px] md:mt-[60px] lg:mt-[80px] xl:mt-[80px] 2xl:mt-[100px]">
+{/* Buttons - Centered horizontally */}
+            <div className="xs:flex sm:flex sm:flex-col sm:space-y-2 sm:space-x-0 md:flex md:flex-row md:gap-4 md:justify-center md:items-center md:w-full lg:flex lg:justify-center lg:space-x-4 xl:space-x-4 2xl:space-x-5 justify-center xs:mb-2 sm:mb-3 md:mb-4 lg:mb-4 xl:mb-4 2xl:mb-5 xs:mt-[0px] sm:mt-[0px] md:mt-[60px] lg:mt-[80px] xl:mt-[80px] 2xl:mt-[100px]">
               {/* Registration Button */}
               <Button.Primary
                 type="default"
