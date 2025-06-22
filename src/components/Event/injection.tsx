@@ -204,7 +204,7 @@ const Injection = () => {
             <Typography.Homica
               className="xs:text-xs sm:text-sm md:text-xl xl:text-2xl text-neutral-800 text-center"
               level={9}>
-              Register Here
+              Register Here!!
             </Typography.Homica></a>
           </div>
 
