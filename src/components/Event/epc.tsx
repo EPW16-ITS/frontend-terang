@@ -99,7 +99,7 @@ const EPC = () => {
         </div>
 
         {/* Rectangle Rounded Kubu Kiri - Glass Effect */}
-        <div className="sm:relative absolute xs:left-1/2 xs:transform xs:-translate-x-1/2 xs:top-[15%] sm:left-1/2 sm:transform sm:-translate-x-1/2 sm:top-[15%] md:left-[25%] md:top-[20%] xs:w-[260px] xs:h-[249px] sm:w-[560px] sm:h-[280px] md:w-[350px] md:h-[434px] lg:w-[515px] lg:h-[534px] xl:w-[615px] xl:h-[634px] 2xl:w-[615px] 2xl:h-[454px] bg-white/20 backdrop-blur-sm border-2 border-third-50 z-30"
+        <div className="lg:left-[25%] sm:relative absolute xs:left-1/2 xs:transform xs:-translate-x-1/2 xs:top-[15%] sm:left-1/2 sm:transform sm:-translate-x-1/2 sm:top-[15%] md:left-[25%] md:top-[20%] xs:w-[260px] xs:h-[249px] sm:w-[560px] sm:h-[280px] md:w-[350px] md:h-[450px] lg:w-[450px] lg:h-[534px] xl:w-[515px] xl:h-[534px] 2xl:w-[615px] 2xl:h-[454px] bg-white/20 backdrop-blur-sm border-2 border-third-50 z-30"
           style={{
             borderRadius: '0 50px 0 50px' // Sudut kanan atas dan kiri bawah rounded
           }}>
@@ -113,7 +113,7 @@ const EPC = () => {
             </Typography.SuperComic>
             <Typography.Poppins
               level={7}
-              className="text-white text-left xs:mb-4 sm:mb-4 md:mb-6 xs:text-2xs sm:text-sm md:text-base lg:text-xl"
+              className="text-white text-left xs:mb-4 sm:mb-4 md:mb-6 xs:text-2xs/3 sm:text-sm md:text-base lg:text-xl"
             >
               Engineering Physics Challenge (EPC) merupakan kegiatan kompetisi tahunan tingkat nasional tentang bidang fisika, matematika terapan, dan aplikasinya dalam bidang ilmu teknik fisika yang diperuntukkan untuk siswa - siswi SMA/SMK/MA sederajatnya.
             </Typography.Poppins>
@@ -173,23 +173,23 @@ const EPC = () => {
               </div>
             </div>
 {/* Buttons - Centered horizontally */}
-            <div className="xs:flex sm:flex sm:flex-col sm:space-y-2 sm:space-x-0 md:flex md:flex-row md:gap-4 lg:gap-10 md:justify-center md:items-center md:w-full justify-center xs:mb-2 sm:mb-3 md:mb-4 xs:mt-[0px] sm:mt-[0px] md:mt-[60px] lg:mt-[50px]">
+            <div className="xs:flex sm:flex sm:flex-col sm:space-y-2 sm:space-x-0 md:flex md:flex-row md:gap-4 lg:gap-10 md:justify-center md:items-center md:w-full justify-center xs:mb-2 sm:mb-3 md:mb-4 xs:mt-8 sm:mt-[0px] md:mt-[60px] lg:mt-[10px] xl:mt-[50px]">
               {/* Registration Button */}
               <Button.Primary
                 type="default"
-                suffix={<FaArrowRight size={20} className="xs:size-3 xs:ml-1 sm:ml-2 md:ml-3" />}
-                className="xs:px-4 xs:py-6 flex xs:absolute xs:right-[5%] xs:bottom-[10%] sm:absolute sm:right-[5%] sm:bottom-[-20%] md:relative md:bottom-0 md:right-0 md:top-0 md:left-0 items-center justify-center xs:text-2xs xs:w-[100px] xs:h-[28px] sm:w-[120px] sm:h-[32px] md:w-[130px] md:h-[44px] sm:px-3 sm:py-1.5 md:px-4 md:py-2"
+                suffix={<FaArrowRight size={20} className="xs:size-3 xs:ml-1 sm:ml-2 md:ml-3 xl:ml-0" />}
+                className="xs:px-4 xs:py-6 flex xs:absolute xs:right-[5%] xs:bottom-[5%] sm:absolute sm:right-[5%] sm:bottom-[-20%] md:relative md:bottom-0 md:right-0 md:top-0 md:left-0 items-center justify-center xs:text-2xs xs:w-[100px] xs:h-[28px] sm:w-[120px] sm:h-[32px] md:w-[130px] md:h-[44px] sm:px-3 sm:py-1.5 md:px-4 md:py-2"
               >
-                <a href="#" className="xs:text-xs sm:text-xs md:text-xs">TIMELINE</a>
+                <a href="#" className="xs:text-xs sm:text-xs md:text-xs xl:text-lg">TIMELINE</a>
               </Button.Primary>
 
               {/* Guidebook Button */}
               <Button.Primary
                 type="default"
-                suffix={<FaBook size={20} className="xs:size-3 xs:ml-1 sm:ml-2 md:ml-3" />}
-                className="xs:px-4 xs:py-6 flex xs:absolute xs:left-[5%] xs:bottom-[10%] sm:absolute sm:left-[5%] sm:bottom-[-20%] md:relative md:bottom-0 md:left-0 md:top-0 md:right-0 items-center justify-center xs:text-2xs xs:w-[100px] xs:h-[28px] sm:w-[120px] sm:h-[32px] md:w-[130px] md:h-[44px] sm:px-3 sm:py-1.5 md:px-4 md:py-2"
+                suffix={<FaBook size={20} className="xs:size-3 xs:ml-1 sm:ml-2 md:ml-3 xl:ml-0" />}
+                className="xs:px-4 xs:py-6 flex xs:absolute xs:left-[5%] xs:bottom-[5%] sm:absolute sm:left-[5%] sm:bottom-[-20%] md:relative md:bottom-0 md:left-0 md:top-0 md:right-0 items-center justify-center xs:text-2xs xs:w-[100px] xs:h-[28px] sm:w-[120px] sm:h-[32px] md:w-[130px] md:h-[44px] sm:px-3 sm:py-1.5 md:px-4 md:py-2"
               >
-                <a href="#" className="xs:text-xs sm:text-xs md:text-xs">GUIDEBOOK</a>
+                <a href="#" className="xs:text-xs sm:text-xs md:text-xs xl:text-sm">GUIDEBOOK</a>
               </Button.Primary>
             </div>
 
@@ -218,7 +218,7 @@ const EPC = () => {
           </Typography.Homica>
         </div>
         {/* Swiper Container */}
-        <div className="absolute xs:bottom-[20%] xs:left-1/2 xs:transform xs:-translate-x-1/2 sm:bottom-[10%] sm:right-[25%] sm:transform sm:-translate-x-1/2 md:right-[-10%] lg:right-[-20%] xl:right-[-15%] md:top-[25%] xs:w-[280px] xs:h-[180px] sm:w-[280px] sm:h-[180px] md:w-[308px] md:h-[200px] lg:w-[508px] lg:h-[295px] xl:w-[608px] xl:h-[395px] xs:mb-3 sm:mb-3 md:mb-5 z-40">
+        <div className="absolute xs:bottom-[20%] xs:left-1/2 xs:transform xs:-translate-x-1/2 sm:bottom-[10%] sm:right-[25%] sm:transform sm:-translate-x-1/2 md:right-[-10%] lg:right-[-10%] xl:right-[-15%] 2xl:right-[-7%] md:top-[25%] xs:w-[280px] xs:h-[180px] sm:w-[280px] sm:h-[180px] md:w-[308px] md:h-[200px] lg:w-[408px] lg:h-[300px] xl:w-[508px] xl:h-[295px] xs:mb-3 sm:mb-3 md:mb-5 z-40">
           <Swiper
             effect={"coverflow"}
             direction={"vertical"}
@@ -273,7 +273,7 @@ const EPC = () => {
           </Swiper>
         </div>
         {/* Right Section Container - Swiper, Open Registration Text, and Date */}
-        <div className="absolute md:transform xs:bottom-[-15%] xs:left-1/2 xs:transform xs:-translate-x-1/2 sm:right-[-18%] sm:top-[50%] sm:transform sm:-translate-x-1/2 md:right-[-30%] lg:right-[-20%] xl:right-[-15%] 2xl:right-[-5%] md:top-[30%] 2xl:top-[55%] lg:top-[50%] xs:w-[300px] xs:h-[400px] sm:w-[300px] sm:h-[400px] md:w-[480px] md:h-[500px] z-30 flex flex-col items-center justify-center">
+        <div className="absolute md:transform xs:bottom-[-15%] xs:left-1/2 xs:transform xs:-translate-x-1/2 sm:right-[-18%] sm:top-[50%] sm:transform sm:-translate-x-1/2 md:right-[-30%] lg:right-[-15%] xl:right-[-15%] 2xl:right-[-5%] md:top-[30%] 2xl:top-[40%] lg:top-[40%] xs:w-[300px] xs:h-[400px] sm:w-[300px] sm:h-[400px] md:w-[480px] md:h-[500px] z-30 flex flex-col items-center justify-center">
           {/* Open Registration Text */}
           <div className="xs:mb-2 sm:mb-2 md:mb-3">
             <Typography.SuperComic

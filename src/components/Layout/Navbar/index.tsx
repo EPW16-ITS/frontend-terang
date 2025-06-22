@@ -16,7 +16,7 @@ export default function NavbarItem({ className, href }: NavbarProps): React.Reac
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
 
-  const isAnnouncementSelected = pathname === "/register";
+  const isAnnouncementSelected = pathname === "/announcement";
 
   const handleMenuToggle = () => setIsMenuOpen((prev) => !prev);
 
@@ -72,7 +72,7 @@ export default function NavbarItem({ className, href }: NavbarProps): React.Reac
           <Button.Secondary
             type="outline"
             size="sm"
-            onClick={() => handleExternalLinkClick("/register")}
+            onClick={() => handleExternalLinkClick("/announcement")}
             className={isAnnouncementSelected ? "selected" : ""}
           >
             <Typography.Poppins

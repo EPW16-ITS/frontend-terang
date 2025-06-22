@@ -13,16 +13,16 @@ import "swiper/css/effect-coverflow";
 const RectangleButton = ({ text, className = "", onClick }) => {
   return (
     <div 
-      className={"lg:w-[180px] lg:h-[43px] bg-primary-400 border border-third-50 rounded-lg flex items-center justify-center gap-2 cursor-pointer hover:opacity-90 transition-opacity ${className}"}
+      className={`xs:w-[100px] xs:h-[22px] sm:w-[100px] sm:h-[22px] md:w-[140px] md:h-[32px] lg:w-[180px] lg:h-[43px] bg-primary-400 border border-third-50 rounded-lg flex items-center justify-center gap-1 cursor-pointer hover:opacity-90 transition-opacity ${className}`}
       style={{
       borderRadius: '0 80px 0 80px' // Rounded kiri bawah dan kanan atas
     }}
       onClick={onClick}
     >
-      <Typography.Poppins className="text-white text-sm font-medium">
+      <Typography.Poppins className="text-white xs:text-2xs sm:text-2xs md:text-xs text-sm font-medium">
         {text}
       </Typography.Poppins>
-      <FaArrowCircleRight className="text-white text-lg" />
+      <FaArrowCircleRight size={20} className="xs:size-3 sm:size-3 md:size-4 text-white text-lg xs:text-2xl sm:text-2xl md:text-xl" />
     </div>
   );
 };
@@ -36,25 +36,25 @@ const RegistrationButton = ({ text, className = "", onClick }) => {
     >
       {/* Main Rectangle with Gradient Background */}
       <div 
-        className="border-4 border-black relative lg:w-[280px] lg:h-[100px] rounded-2xl flex items-center justify-center"
+        className="lg:border-4 md:border-3 border-black relative lg:w-[280px] lg:h-[100px] md:w-[220px] md:h-[80px] xs:w-[97px] xs:h-[48px] sm:w-[97px] sm:h-[48px] lg:rounded-2xl md:rounded-xl xs:rounded-xl sm:rounded-xl flex items-center justify-center"
         style={{
           background: 'linear-gradient(to right, #037CB8 0%, #78D1FE 50%, #037CB8 100%)'
         }}
       >
         {/* Text with Poppins Typography */}
         <span 
-          className="font-bold text-black text-wl leading-tight text-center px-4"
+          className="font-bold xs:text-xs sm:text-xs md:text-sm text-black text-wl leading-tight text-center px-4"
           style={{ fontFamily: 'Poppins, sans-serif' }}
         >
           {text}
         </span>
         
         {/* Top Circles (4) with Sparkling Effect */}
-        <div className="absolute lg:top-2 lg:left-0 w-full flex justify-between px-8">
+        <div className="absolute lg:top-2 md:top-1.5 xs:top-1 sm:top-1 lg:left-0 md:left-0 xs:left-0 sm:left-0 w-full flex justify-between lg:px-8 md:px-6 xs:px-3 sm:px-3">
           {[...Array(4)].map((_, i) => (
             <div 
               key={`top-${i}`}
-              className="lg:w-4 lg:h-4 rounded-full border-2 border-black relative overflow-hidden"
+              className="lg:w-4 lg:h-4 md:w-3 md:h-3 xs:w-1.5 xs:h-1.5 sm:w-1.5 sm:h-1.5 rounded-full xs:border sm:border md:border-2 lg:border-2 border-black relative overflow-hidden"
               style={{ 
                 background: 'linear-gradient(135deg, #A7A9AC 0%, #F1F2F2 30%, #A7A9AC 60%, #F1F2F2 100%)',
                 boxShadow: '0 0 8px rgba(241, 242, 242, 0.6), inset 0 1px 2px rgba(255, 255, 255, 0.8)'
@@ -62,7 +62,7 @@ const RegistrationButton = ({ text, className = "", onClick }) => {
             >
               {/* Sparkling highlight */}
               <div 
-                className="absolute w-2 h-2 rounded-full"
+                className="absolute lg:w-2 lg:h-2 md:w-1.5 md:h-1.5 xs:w-0.5 xs:h-0.5 sm:w-0.5 sm:h-0.5 rounded-full"
                 style={{
                   background: 'radial-gradient(circle, #F1F2F2 0%, transparent 70%)',
                   transform: 'translate(25%, 25%)'
@@ -73,11 +73,11 @@ const RegistrationButton = ({ text, className = "", onClick }) => {
         </div>
         
         {/* Bottom Circles (4) with Sparkling Effect */}
-        <div className="absolute lg:bottom-2 lg:left-0 w-full flex justify-between px-8">
+        <div className="absolute lg:bottom-2 md:bottom-1.5 xs:bottom-1 sm:bottom-1 lg:left-0 md:left-0 xs:left-0 sm:left-0 w-full flex justify-between lg:px-8 md:px-6 xs:px-3 sm:px-3">
           {[...Array(4)].map((_, i) => (
             <div 
               key={`bottom-${i}`}
-              className="lg:w-4 lg:h-4 rounded-full border-2 border-black relative overflow-hidden"
+              className="lg:w-4 lg:h-4 md:w-3 md:h-3 xs:w-1.5 xs:h-1.5 sm:w-1.5 sm:h-1.5 rounded-full xs:border sm:border md:border-2 lg:border-2 border-black relative overflow-hidden"
               style={{ 
                 background: 'linear-gradient(135deg, #A7A9AC 0%, #F1F2F2 30%, #A7A9AC 60%, #F1F2F2 100%)',
                 boxShadow: '0 0 8px rgba(241, 242, 242, 0.6), inset 0 1px 2px rgba(255, 255, 255, 0.8)'
@@ -85,7 +85,7 @@ const RegistrationButton = ({ text, className = "", onClick }) => {
             >
               {/* Sparkling highlight */}
               <div 
-                className="absolute top-0 left-0 w-2 h-2 rounded-full"
+                className="absolute top-0 left-0 lg:w-2 lg:h-2 md:w-1.5 md:h-1.5 xs:w-0.5 xs:h-0.5 sm:w-0.5 sm:h-0.5 rounded-full"
                 style={{
                   background: 'radial-gradient(circle, #F1F2F2 0%, transparent 70%)',
                   transform: 'translate(25%, 25%)'
@@ -96,11 +96,11 @@ const RegistrationButton = ({ text, className = "", onClick }) => {
         </div>
         
         {/* Left Circles (1) with Sparkling Effect */}
-        <div className="absolute lg:left-2 lg:top-0 h-full flex flex-col justify-center space-y-3">
+        <div className="absolute lg:left-2 md:left-1.5 xs:left-1 sm:left-1 lg:top-0 md:top-0 xs:top-0 sm:top-0 h-full flex flex-col justify-center space-y-3">
           {[...Array(1)].map((_, i) => (
             <div 
               key={`left-${i}`}
-              className="lg:w-4 lg:h-4 rounded-full border-2 border-black relative overflow-hidden"
+              className="lg:w-4 lg:h-4 md:w-3 md:h-3 xs:w-1.5 xs:h-1.5 sm:w-1.5 sm:h-1.5 rounded-full xs:border sm:border md:border-2 lg:border-2 border-black relative overflow-hidden"
               style={{ 
                 background: 'linear-gradient(135deg, #A7A9AC 0%, #F1F2F2 30%, #A7A9AC 60%, #F1F2F2 100%)',
                 boxShadow: '0 0 8px rgba(241, 242, 242, 0.6), inset 0 1px 2px rgba(255, 255, 255, 0.8)'
@@ -108,7 +108,7 @@ const RegistrationButton = ({ text, className = "", onClick }) => {
             >
               {/* Sparkling highlight */}
               <div 
-                className="absolute top-0 left-0 lg:w-2 lg:h-2 rounded-full"
+                className="absolute top-0 left-0 lg:w-2 lg:h-2 md:w-1.5 md:h-1.5 xs:w-0.5 xs:h-0.5 sm:w-0.5 sm:h-0.5 rounded-full"
                 style={{
                   background: 'radial-gradient(circle, #F1F2F2 0%, transparent 70%)',
                   transform: 'translate(25%, 25%)'
@@ -119,11 +119,11 @@ const RegistrationButton = ({ text, className = "", onClick }) => {
         </div>
         
         {/* Right Circles (1) with Sparkling Effect */}
-        <div className="absolute lg:right-2 lg:top-0 h-full flex flex-col justify-center space-y-3">
+        <div className="absolute lg:right-2 md:right-1.5 xs:right-1 sm:right-1 lg:top-0 md:top-0 xs:top-0 sm:top-0 h-full flex flex-col justify-center space-y-3">
           {[...Array(1)].map((_, i) => (
             <div 
               key={`right-${i}`}
-              className="lg:w-4 lg:h-4 rounded-full border-2 border-black relative overflow-hidden"
+              className="lg:w-4 lg:h-4 md:w-3 md:h-3 xs:w-1.5 xs:h-1.5 sm:w-1.5 sm:h-1.5 rounded-full xs:border sm:border md:border-2 lg:border-2 border-black relative overflow-hidden"
               style={{ 
                 background: 'linear-gradient(135deg, #A7A9AC 0%, #F1F2F2 30%, #A7A9AC 60%, #F1F2F2 100%)',
                 boxShadow: '0 0 8px rgba(241, 242, 242, 0.6), inset 0 1px 2px rgba(255, 255, 255, 0.8)'
@@ -131,7 +131,7 @@ const RegistrationButton = ({ text, className = "", onClick }) => {
             >
               {/* Sparkling highlight */}
               <div 
-                className="absolute top-0 left-0 w-2 h-2 rounded-full"
+                className="absolute top-0 left-0 lg:w-2 lg:h-2 md:w-1.5 md:h-1.5 xs:w-0.5 xs:h-0.5 sm:w-0.5 sm:h-0.5 rounded-full"
                 style={{
                   background: 'radial-gradient(circle, #F1F2F2 0%, transparent 70%)',
                   transform: 'translate(25%, 25%)'
@@ -146,12 +146,16 @@ const RegistrationButton = ({ text, className = "", onClick }) => {
 };
 
 // Trapezium Info Component with Decorative Studs
-const TrapeziumInfo = ({ label, content, className = "" }) => {
+const TrapeziumInfo = ({ label, content, className = "", isInverted = false }) => {
+  const clipPathStyle = isInverted 
+    ? 'polygon(0% 0%, 100% 0%, 75% 100%, 25% 100%)' // Trapezium terbalik
+    : 'polygon(25% 0%, 75% 0%, 100% 100%, 0% 100%)'; // Trapezium normal
+  
   return (
     <div className={`relative flex flex-col items-center ${className}`}>
       {/* Label Rectangle */}
-      <div className="relative bg-fifth-50 border-[2px] border-black rounded-md px-6 py-2 mb-[-15px] z-10">
-        <Typography.Homica className="text-primary-100"
+      <div className="xs:w-[100px] xs:h-[17px] sm:w-[100px] sm:h-[17px] md:w-[120px] md:h-[20px] relative bg-fifth-50 border-[2px] border-black rounded-md z-10 text-center">
+        <Typography.Homica className="text-primary-100 xs:text-xs sm:text-xs md:text-sm text-center whitespace-nowrap"
         level={8}>
           {label}
         </Typography.Homica>
@@ -161,26 +165,26 @@ const TrapeziumInfo = ({ label, content, className = "" }) => {
       <div className="relative">
         {/* Main Trapezium */}
         <div 
-          className="relative w-[370px] h-[119px] flex items-center justify-center"
+          className="relative xs:w-[121px] xs:h-[43px] sm:w-[121px] sm:h-[43px] md:w-[180px] md:h-[60px] w-[270px] h-[80px] flex items-center justify-center"
           style={{
             background: 'linear-gradient(to right, #3A1E77 0%, #6C37DD 50%, #3A1E77 100%)',
-            clipPath: 'polygon(25% 0%, 75% 0%, 100% 100%, 0% 100%)'
+            clipPath: clipPathStyle
           }}
         >
           {/* Content Text */}
           <div className="text-center px-4">
-            <Typography.Homica className="text-white font-bold leading-tight"
+            <Typography.Homica className="xs:text-xs sm:text-xs md:text-sm text-white font-bold leading-tight"
             level={8}>
               {content}
             </Typography.Homica>
           </div>
           
-          {/* Top Circles (3) with Sparkling Effect */}
-          <div className="absolute top-2 left-0 w-full flex justify-center space-x-12">
+          {/* Top Circles (3) with Sparkling Effect - Show on all breakpoints */}
+          <div className="absolute md:top-1.5 lg:top-2 xs:top-1 sm:top-1 left-0 w-full flex justify-center md:space-x-6 lg:space-x-8 xs:space-x-3 sm:space-x-3">
             {[...Array(3)].map((_, i) => (
               <div 
                 key={`top-${i}`}
-                className="lg:w-4 lg:h-4 rounded-full border-2 border-black relative overflow-hidden"
+                className="lg:w-3 lg:h-3 md:w-2.5 md:h-2.5 xs:w-1 xs:h-1 sm:w-1 sm:h-1 rounded-full xs:border sm:border md:border-2 lg:border-2 border-black relative overflow-hidden"
                 style={{ 
                   background: 'linear-gradient(135deg, #A7A9AC 0%, #F1F2F2 30%, #A7A9AC 60%, #F1F2F2 100%)',
                   boxShadow: '0 0 6px rgba(241, 242, 242, 0.6), inset 0 1px 2px rgba(255, 255, 255, 0.8)'
@@ -188,7 +192,7 @@ const TrapeziumInfo = ({ label, content, className = "" }) => {
               >
                 {/* Sparkling highlight */}
                 <div 
-                  className="absolute top-0 left-0 w-2 h-2 rounded-full"
+                  className="absolute top-0 left-0 lg:w-1.5 lg:h-1.5 md:w-1 md:h-1 xs:w-0.5 xs:h-0.5 sm:w-0.5 sm:h-0.5 rounded-full"
                   style={{
                     background: 'radial-gradient(circle, #F1F2F2 0%, transparent 70%)',
                     transform: 'translate(25%, 25%)'
@@ -198,12 +202,12 @@ const TrapeziumInfo = ({ label, content, className = "" }) => {
             ))}
           </div>
           
-          {/* Bottom Circles (5) with Sparkling Effect */}
-          <div className="absolute bottom-2 left-0 w-full flex justify-between px-4">
-            {[...Array(5)].map((_, i) => (
+          {/* Bottom Circles (3) with Sparkling Effect - Show on all breakpoints */}
+          <div className="absolute md:bottom-1.5 lg:bottom-2 xs:bottom-1 sm:bottom-1 left-0 w-full flex justify-center md:space-x-6 lg:space-x-8 xs:space-x-3 sm:space-x-3">
+            {[...Array(3)].map((_, i) => (
               <div 
                 key={`bottom-${i}`}
-                className="lg:w-4 lg:h-4 rounded-full border-2 border-black relative overflow-hidden"
+                className="lg:w-3 lg:h-3 md:w-2.5 md:h-2.5 xs:w-1 xs:h-1 sm:w-1 sm:h-1 rounded-full xs:border sm:border md:border-2 lg:border-2 border-black relative overflow-hidden"
                 style={{ 
                   background: 'linear-gradient(135deg, #A7A9AC 0%, #F1F2F2 30%, #A7A9AC 60%, #F1F2F2 100%)',
                   boxShadow: '0 0 6px rgba(241, 242, 242, 0.6), inset 0 1px 2px rgba(255, 255, 255, 0.8)'
@@ -211,7 +215,7 @@ const TrapeziumInfo = ({ label, content, className = "" }) => {
               >
                 {/* Sparkling highlight */}
                 <div 
-                  className="absolute top-0 left-0 w-2 h-2 rounded-full"
+                  className="absolute top-0 left-0 lg:w-1.5 lg:h-1.5 md:w-1 md:h-1 xs:w-0.5 xs:h-0.5 sm:w-0.5 sm:h-0.5 rounded-full"
                   style={{
                     background: 'radial-gradient(circle, #F1F2F2 0%, transparent 70%)',
                     transform: 'translate(25%, 25%)'
@@ -221,6 +225,36 @@ const TrapeziumInfo = ({ label, content, className = "" }) => {
             ))}
           </div>
         </div>
+      </div>
+    </div>
+  );
+};
+
+// Stacked Trapezium Info Layout Component
+const StackedTrapeziumLayout = () => {
+  return (
+    <div className="flex flex-col items-center space-y-0">
+      {/* Top Trapezium - Prize Pool */}
+      <div className="relative z-30">
+        <TrapeziumInfo 
+          label="Prize Pool" 
+          content="Rp 5.000.000" 
+          isInverted={false}
+        />
+      </div>
+      
+      {/* Bottom Row - Two inverted trapeziums side by side */}
+      <div className="flex md:space-x-3 lg:space-x-4 space-x-4 relative -mt-4 z-20">
+        <TrapeziumInfo 
+          label="Open Registration" 
+          content="7 Juli 2025" 
+          isInverted={true}
+        />
+        <TrapeziumInfo 
+          label="Contact Person" 
+          content="02847389201" 
+          isInverted={true}
+        />
       </div>
     </div>
   );
@@ -249,7 +283,7 @@ const Micon = () => {
   };
 
   return (
-    <section className="relative w-full sm:h-[900px] xs:h-[800px] md:h-[900px] lg:h-[1024px] overflow-hidden bg-gradient-to-b from-[#101428] to-[#39488E] px-6 md:px-16 py-12">
+    <section className="relative w-full sm:h-[800px] xs:h-[800px] md:h-[900px] lg:h-[1024px] overflow-hidden bg-gradient-to-b from-[#101428] to-[#39488E] py-12">
        {/* Pattern Background */}
       <div className="absolute inset-0 w-full h-full">
         <Image
@@ -264,24 +298,26 @@ const Micon = () => {
       {/* Judul */}
       <Typography.CrystalUniverseRegular
         level={7}
-        className="z-40 text-[#1DB2FD] text-center mb-10"
+        className="xs:text-xs sm:text-xs md:text-sm z-40 text-[#1DB2FD] text-center mb-10 xs:mb-4 sm:mb-4 md:mb-6"
       >
         M I C R O C O N T R O L L E R
       </Typography.CrystalUniverseRegular>
       <Typography.Homica
         level={4}
-        className="z-40 text-[#1DB2FD] text-center mb-10"
+        className="xs:text-3xl sm:text-3xl md:text-4xl z-40 text-[#1DB2FD] text-center mb-10 xs:mb-4 sm:mb-4 md:mb-6"
       >
         CONTEST
       </Typography.Homica>
       <Typography.Poppins
         level={4}
-        className="z-40 text-fifth-50 text-center mb-10 xs:text-xs">
-          MICON (Microcontroller Contest) merupakan kompetisi tahunan yang ditujukan bagi siswa/i SMA dan SMK sederajat dengan fokus pada bidang instrumentasi. Kompetisi ini menjadi wadah bagi siswa/i SMA/SMK/sederajat untuk mengembangkan pengetahuan tentang mikrokontroler.
+        className="xs:text-sm sm:text-sm md:text-base z-40 text-fifth-50 text-center mb-10 xs:mb-4 sm:mb-4 md:mb-6 px-5 xs:leading-normal sm:leading-normal md:leading-relaxed">
+          MICON (Microcontroller Contest) merupakan kompetisi tahunan yang ditujukan bagi siswa/i SMA dan SMK sederajat dengan fokus pada bidang instrumentasi. 
+          <br />
+          Kompetisi ini menjadi wadah bagi siswa/i SMA/SMK/sederajat untuk mengembangkan pengetahuan tentang mikrokontroler.
       </Typography.Poppins>
         
       {/* Registration Buttons */}
-      <div className="relative z-40 flex flex-col sm:flex-row items-center justify-center gap-6 mt-16 mb-16">
+      <div className="relative z-40 flex flex-col xs:flex-row sm:flex-row md:flex-row items-center justify-center gap-6 mt-16 xs:mt-0 sm:mt-0 md:mt-4">
         <RegistrationButton 
           text="REGISTRATION HERE!" 
           onClick={handleRegistrationClick}
@@ -292,24 +328,27 @@ const Micon = () => {
         />
       </div>
 
-      {/* Two Columns Layout - Kubu Kiri dan Kanan */}
-      <div className="relative z-40 grid grid-cols-1 lg:grid-cols-2 gap-8 mt-16">
-        {/* Kubu Kiri - Swiper */}
-        <div className="flex flex-col items-center justify-center">
-          <div className="w-full max-w-[600px] h-[400px]">
+      {/* Main Content Layout */}
+      <div className="relative z-40 lg:grid lg:grid-cols-2 md:grid md:grid-cols-2 lg:gap-8 md:gap-6 lg:px-8 md:px-6 xs:mt-4 sm:mt-4 md:mt-8">
+        
+        {/* Left Section - Swiper with Buttons */}
+        <div className="flex flex-col items-center justify-start space-y-6">
+          
+          {/* Swiper Container - Relative Position */}
+          <div className="relative flex items-center justify-center">
             <Swiper
               effect={"coverflow"}
-              direction={"vertical"}
+              direction="horizontal"
               grabCursor={true}
               centeredSlides={true}
               slidesPerView={3}
-              spaceBetween={20}
+              spaceBetween={0}
               coverflowEffect={{
                 rotate: 0,
                 stretch: 0,
                 depth: 100,
                 modifier: 15,
-                slideShadows: false, // Menghilangkan shadow di samping foto
+                slideShadows: false,
               }}
               loop={true}
               pagination={{
@@ -319,9 +358,9 @@ const Micon = () => {
               className="w-full h-full"
             >
               <SwiperSlide className="flex items-center justify-center">
-                <div className="relative w-[508px] h-[295px] rounded-2xl overflow-hidden"> {/* Lebih rounded */}
+                <div className="relative rounded-2xl overflow-hidden xs:w-[170px] xs:h-[170px] sm:w-[170px] sm:h-[170px] md:w-[200px] md:h-[200px]">
                   <Image
-                    src="https://raw.githubusercontent.com/EPW16-ITS/assets/main/epc0.webp"
+                    src="https://raw.githubusercontent.com/EPW16-ITS/assets/main/micon3.webp"
                     alt="Injection Image 1"
                     fill
                     className="object-cover"
@@ -329,9 +368,9 @@ const Micon = () => {
                 </div>
               </SwiperSlide>
               <SwiperSlide className="flex items-center justify-center">
-                <div className="relative w-[508px] h-[295px] rounded-2xl overflow-hidden"> {/* Lebih rounded */}
+                <div className="relative rounded-2xl overflow-hidden xs:w-[170px] xs:h-[170px] sm:w-[170px] sm:h-[170px] md:w-[200px] md:h-[200px]">
                   <Image
-                    src="https://raw.githubusercontent.com/EPW16-ITS/assets/main/epc1.webp"
+                    src="https://raw.githubusercontent.com/EPW16-ITS/assets/main/micon1.webp"
                     alt="Injection Image 2"
                     fill
                     className="object-cover"
@@ -339,9 +378,9 @@ const Micon = () => {
                 </div>
               </SwiperSlide>
               <SwiperSlide className="flex items-center justify-center">
-                <div className="relative w-[508px] h-[295px] rounded-2xl overflow-hidden"> {/* Lebih rounded */}
+                <div className="relative rounded-2xl overflow-hidden xs:w-[170px] xs:h-[170px] sm:w-[170px] sm:h-[170px] md:w-[200px] md:h-[200px]">
                   <Image
-                    src="https://raw.githubusercontent.com/EPW16-ITS/assets/main/epc2.webp"
+                    src="https://raw.githubusercontent.com/EPW16-ITS/assets/main/micon2.webp"
                     alt="Injection Image 3"
                     fill
                     className="object-cover"
@@ -351,8 +390,8 @@ const Micon = () => {
             </Swiper>
           </div>
           
-          {/* Rectangle Buttons di bawah Swiper */}
-          <div className="flex gap-4 mt-6 xs:text-xs">
+          {/* Rectangle Buttons - Now properly positioned below Swiper */}
+          <div className="flex gap-4 mt-8">
             <RectangleButton 
               text="TIMELINE" 
               onClick={handleTimelineClick}
@@ -364,20 +403,9 @@ const Micon = () => {
           </div>
         </div>
 
-        {/* Kubu Kanan - Trapezium Info Content */}
-        <div className="flex flex-col items-center justify-center space-y-8 xs:text-xs">
-          <TrapeziumInfo 
-            label="Prize Pool" 
-            content="Rp 5.000.000" 
-          />
-          <TrapeziumInfo 
-            label="Open Registration" 
-            content="7 Juli 2025" 
-          />
-          <TrapeziumInfo 
-            label="Contact Person" 
-            content="02847389201" 
-          />
+        {/* Right Section - Stacked Trapezium Info Content */}
+        <div className="flex items-center justify-center mt-8 lg:mt-0 md:mt-0">
+          <StackedTrapeziumLayout />
         </div>
       </div>
     </section>

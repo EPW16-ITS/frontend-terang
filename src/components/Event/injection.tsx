@@ -31,7 +31,6 @@ const Injection = () => {
             priority
           />
         </div>
-
         <Typography.CrystalUniverseRegular
           level={7}
           className="xs:text-xl sm:text-2xl md:text-2xl xl:text-4xl absolute left-1/2 transform -translate-x-1/2 xs:top-[15%] sm:top-[12%] md:top-[12%] xl:top-[10%] text-center z-40 text-[#3A1E77]"
@@ -54,7 +53,7 @@ const Injection = () => {
         </div>
 
         {/* Rectangle Kubu kiri - Solid Fill */}
-        <div className="xs:w-[280px] xs:h-[120px] sm:w-[300px] sm:h-[150px] md:w-[300px] md:h-[250px] lg:w-[517px] lg:h-[249px] xl:w-[617px] xl:h-[349px] 2xl:w-[750px] 2xl:h-[349px] absolute xs:left-1/2 xs:transform xs:-translate-x-1/2 sm:left-[5%] sm:transform sm:-translate-y-1/2 md:left-[5%] md:transform md:-translate-y-1/2 xl:left-[5%] xs:top-[20%] sm:top-[30%] md:top-[35%] xl:top-[40%] xl:transform xl:-translate-y-1/2 bg-third-50 z-30"
+        <div className="xs:w-[280px] xs:h-[140px] sm:w-[300px] sm:h-[150px] md:w-[300px] md:h-[250px] lg:w-[517px] lg:h-[249px] xl:w-[617px] xl:h-[349px] 2xl:w-[750px] 2xl:h-[349px] absolute xs:left-1/2 xs:transform xs:-translate-x-1/2 sm:left-[5%] sm:transform sm:-translate-y-1/2 md:left-[5%] md:transform md:-translate-y-1/2 xl:left-[5%] xs:top-[20%] sm:top-[30%] md:top-[35%] xl:top-[40%] xl:transform xl:-translate-y-1/2 bg-third-50 z-30"
           style={{
             borderRadius: '0 20px 0 20px',
           }}>
@@ -63,7 +62,7 @@ const Injection = () => {
             <Typography.Poppins
               level={5}
               size="lg"
-              className="text-fourth-400 text-center xs:text-xs sm:text-xs md:text-base lg:text-xl xl:text-2xl 2xl:text-3xl">
+              className="text-fourth-400 text-center xs:text-xs/4 sm:text-xs md:text-base lg:text-xl xl:text-2xl 2xl:text-3xl">
               Injection (Science Project and Innovation) merupakan salah satu sub-event dari serangkaian Engineering Physics Week (EPW) ke-16. Injection adalah kompetisi pembuatan karya tulis ilmiah inovatif. Injection akan terdiri dari 3 babak, yaitu seleksi abstrak, seleksi full paper, dan babak final.
             </Typography.Poppins>
           </div>
