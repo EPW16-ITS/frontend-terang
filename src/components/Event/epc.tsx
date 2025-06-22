@@ -12,6 +12,13 @@ import 'swiper/css/pagination';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/navigation';
 
+interface ContactPersonInfoProps {
+  phone: string;
+  name: string;
+}
+interface OpenRegInfoProps {  
+  date: string;
+}
 // import required modules
 import { Pagination, EffectCoverflow, Autoplay, Navigation } from 'swiper/modules';
 
@@ -37,7 +44,7 @@ const CircleArrowRightIcon = () => (
 );
 
 // Contact Person Info Component (tetap bentuk rectangle rounded, cursor text)
-const ContactPersonInfo = ({ phone, name }) => (
+const ContactPersonInfo = ({ phone, name }:ContactPersonInfoProps) => (
   <div
     className="xs:w-[160px] xs:h-[30px] sm:w-[160px] sm:h-[30px] md:w-[200px] md:h-[38px] bg-secondary-400 border-[2px] border-third-50 flex items-center xs:px-2 sm:px-2 md:px-3 xs:space-x-1 sm:space-x-1 md:space-x-2 cursor-text"
     style={{
@@ -55,7 +62,7 @@ const ContactPersonInfo = ({ phone, name }) => (
 );
 
 // Open Registration Info Component (tetap bentuk rectangle rounded, cursor text)
-const OpenRegInfo = ({ date }) => (
+const OpenRegInfo = ({ date }:OpenRegInfoProps) => (
   <div
     className="xs:w-[200px] xs:h-[40px] sm:w-[200px] sm:h-[40px] md:w-[250px] md:h-[50px] bg-secondary-400 border-[2px] border-third-50 flex items-center justify-center xs:px-3 sm:px-3 md:px-4 cursor-text"
     style={{

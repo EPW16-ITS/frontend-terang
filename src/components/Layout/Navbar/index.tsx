@@ -76,7 +76,7 @@ export default function NavbarItem({ className, href }: NavbarProps): React.Reac
             className={isAnnouncementSelected ? "selected" : ""}
           >
             <Typography.Poppins
-              size="xs"
+              size="sm"
               level={8}
               className="transition-all duration-300 font-normal text-center w-full"
               style={{ whiteSpace: "nowrap" }}
@@ -112,7 +112,7 @@ function NavLink({
       >
         <Typography.Poppins
           level={8}
-          size="xs"
+          size="sm"
           className="transition-all duration-300 font-normal text-center w-full group-hover:text-third-100"
           style={{ whiteSpace: "nowrap" }}
         >

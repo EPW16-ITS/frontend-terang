@@ -8,9 +8,26 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/effect-coverflow";
+import { Interface } from "readline";
 
+interface RectangleButtonProps {
+  text: string;
+  className?: string;
+  onClick?: () => void;
+}
+interface RegistrationButtonProps {
+  text: string;
+  className?: string;
+  onClick?: () => void;
+}
+interface TrapeziumInfoProps {
+  label: string;
+  content: string;
+  className?: string;
+  isInverted?: boolean; // true for inverted trapezium
+}
 // Rectangle Button Component
-const RectangleButton = ({ text, className = "", onClick }) => {
+const RectangleButton = ({ text, className = "", onClick }:RectangleButtonProps) => {
   return (
     <div 
       className={`xs:w-[100px] xs:h-[22px] sm:w-[100px] sm:h-[22px] md:w-[140px] md:h-[32px] lg:w-[180px] lg:h-[43px] bg-primary-400 border border-third-50 rounded-lg flex items-center justify-center gap-1 cursor-pointer hover:opacity-90 transition-opacity ${className}`}
@@ -19,7 +36,9 @@ const RectangleButton = ({ text, className = "", onClick }) => {
     }}
       onClick={onClick}
     >
-      <Typography.Poppins className="text-white xs:text-2xs sm:text-2xs md:text-xs text-sm font-medium">
+      <Typography.Poppins 
+      level={8}
+      className="text-white xs:text-2xs sm:text-2xs md:text-xs text-sm font-medium">
         {text}
       </Typography.Poppins>
       <FaArrowCircleRight size={20} className="xs:size-3 sm:size-3 md:size-4 text-white text-lg xs:text-2xl sm:text-2xl md:text-xl" />
@@ -28,7 +47,7 @@ const RectangleButton = ({ text, className = "", onClick }) => {
 };
 
 // Registration Button Component
-const RegistrationButton = ({ text, className = "", onClick }) => {
+const RegistrationButton = ({ text, className = "", onClick }:RegistrationButtonProps) => {
   return (
     <div 
       className={`relative inline-block cursor-pointer hover:opacity-90 transition-opacity ${className}`}
@@ -146,7 +165,7 @@ const RegistrationButton = ({ text, className = "", onClick }) => {
 };
 
 // Trapezium Info Component with Decorative Studs
-const TrapeziumInfo = ({ label, content, className = "", isInverted = false }) => {
+const TrapeziumInfo = ({ label, content, className = "", isInverted = false }:TrapeziumInfoProps) => {
   const clipPathStyle = isInverted 
     ? 'polygon(0% 0%, 100% 0%, 75% 100%, 25% 100%)' // Trapezium terbalik
     : 'polygon(25% 0%, 75% 0%, 100% 100%, 0% 100%)'; // Trapezium normal

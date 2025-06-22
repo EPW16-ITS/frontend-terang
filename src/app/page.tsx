@@ -39,7 +39,7 @@ export default function Home() {
             alt="Papan EPW"
             className="absolute left-1/2 translate-x-[-46%] z-10
               top-[35%] w-[90%] max-w-[370px]
-              lg:top-[20%]
+              lg:top-[10%]
               sm:max-w-[500px] md:max-w-[500px] lg:max-w-[1200px]"
           />
         </div>

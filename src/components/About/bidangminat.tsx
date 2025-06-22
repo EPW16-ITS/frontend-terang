@@ -58,7 +58,7 @@ const BidangMinat = () => {
     setCurrentIndex((prev) => (prev <= 0 ? maxIndex : prev - 1));
   };
 
-  const goToSlide = (index) => {
+  const goToSlide = (index:number) => {
     const adjustedIndex = Math.min(index, maxIndex);
     setCurrentIndex(adjustedIndex);
   };

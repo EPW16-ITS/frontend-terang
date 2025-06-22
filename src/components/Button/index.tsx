@@ -1,7 +1,6 @@
 import Primary from "./Primary";
 import Secondary from "./Secondary";
 import Tertiary from "./Tertiary";
-import Upload from "../Input/InputUpload";
 
 const Button = {
   /**

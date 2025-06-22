@@ -105,7 +105,7 @@ const Injection = () => {
         </Typography.CrystalUniverseRegular>
 
         {/* Rectangle Judul - Primary Fill */}
-        <div className="sm:-translate-x-1/2  sm:left-1/2 sm:transform xs:hidden sm:w-[160px] sm:h-[30px] md:w-[170px] md:h-[32px] xl:w-[257px] xl:h-[50px] 2xl:w-[257px] 2xl:h-[60px] absolute md:left-[5%] xl:left-[5%] xs:top-[17%] sm:top-[24%] sm:-translate-y-1/2 md:top-[28%] md:transform md:-translate-y-1/2 xl:top-[22%] xl:transform xl:-translate-y-1/2 bg-primary-400 z-40">
+        <div className="sm:-translate-x-1/2  sm:left-1/2 sm:transform xs:hidden sm:w-[160px] sm:h-[30px] md:w-[170px] md:h-[32px] xl:w-[257px] xl:h-[50px] 2xl:w-[257px] 2xl:h-[60px] absolute md:left-[5%] lg:left-[15%] xl:left-[15%] xs:top-[17%] sm:top-[24%] sm:-translate-y-1/2 md:top-[28%] md:transform md:-translate-y-1/2 xl:top-[22%] xl:transform xl:-translate-y-1/2 bg-primary-400 z-40">
           <div className="w-full h-full flex items-center justify-center">
             <Typography.Poppins
               level={7}
@@ -117,7 +117,7 @@ const Injection = () => {
         </div>
 
         {/* Rectangle kiri - Solid Fill */}
-        <div className="xs:w-[280px] xs:h-[120px] sm:w-[600px] sm:h-[100px] md:w-[290px] md:h-[230px] lg:w-[490px] lg:h-[249px] xl:w-[600px] xl:h-[349px] 2xl:w-[750px] 2xl:h-[310px] absolute xs:left-1/2 xs:transform xs:-translate-x-1/2 sm:-translate-x-1/2  sm:left-1/2 sm:transform sm:-translate-y-1/2 md:left-[5%] md:transform md:-translate-y-1/2 xl:left-[5%] xs:top-[20%] sm:top-[30%] md:top-[41%] xl:top-[40%] xl:transform xl:-translate-y-1/2 bg-third-50 z-30"
+        <div className="xs:w-[280px] xs:h-[120px] sm:w-[600px] sm:h-[100px] md:w-[290px] md:h-[230px] lg:w-[490px] lg:h-[249px] xl:w-[600px] xl:h-[349px] 2xl:w-[750px] 2xl:h-[310px] absolute xs:left-1/2 xs:transform xs:-translate-x-1/2 sm:-translate-x-1/2  sm:left-1/2 sm:transform sm:-translate-y-1/2 md:left-[5%] md:transform md:-translate-y-1/2 xl:left-[27%] lg:left-[20%] 2xl:left-[20%]  xs:top-[20%] sm:top-[30%] md:top-[41%] xl:top-[40%] xl:transform xl:-translate-y-1/2 bg-third-50 z-30"
           style={{
             borderRadius: '0 20px 0 20px',
           }}>
