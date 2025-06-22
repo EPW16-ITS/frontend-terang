@@ -16,7 +16,7 @@ interface ContactPersonInfoProps {
   phone: string;
   name: string;
 }
-interface OpenRegInfoProps {  
+interface OpenRegInfoProps {
   date: string;
 }
 // import required modules
@@ -44,14 +44,14 @@ const CircleArrowRightIcon = () => (
 );
 
 // Contact Person Info Component (tetap bentuk rectangle rounded, cursor text)
-const ContactPersonInfo = ({ phone, name }:ContactPersonInfoProps) => (
+const ContactPersonInfo = ({ phone, name }: ContactPersonInfoProps) => (
   <div
     className="xs:w-[160px] xs:h-[30px] sm:w-[160px] sm:h-[30px] md:w-[200px] md:h-[38px] bg-secondary-400 border-[2px] border-third-50 flex items-center xs:px-2 sm:px-2 md:px-3 xs:space-x-1 sm:space-x-1 md:space-x-2 cursor-text"
     style={{
       borderRadius: '20px 0 20px 0' // Rounded kiri bawah dan kanan atas
     }}
   >
-    <FaWhatsapp className="text-white md:text-base flex-shrink-0" />
+    <FaWhatsapp className="xs:hidden text-white md:text-base flex-shrink-0" />
     <Typography.Poppins
       level={8}
       className="text-white xs:text-2xs sm:text-sm md:text-sm text-left truncate"
@@ -62,7 +62,7 @@ const ContactPersonInfo = ({ phone, name }:ContactPersonInfoProps) => (
 );
 
 // Open Registration Info Component (tetap bentuk rectangle rounded, cursor text)
-const OpenRegInfo = ({ date }:OpenRegInfoProps) => (
+const OpenRegInfo = ({ date }: OpenRegInfoProps) => (
   <div
     className="xs:w-[200px] xs:h-[40px] sm:w-[200px] sm:h-[40px] md:w-[250px] md:h-[50px] bg-secondary-400 border-[2px] border-third-50 flex items-center justify-center xs:px-3 sm:px-3 md:px-4 cursor-text"
     style={{
@@ -179,7 +179,7 @@ const EPC = () => {
                 </div>
               </div>
             </div>
-{/* Buttons - Centered horizontally */}
+            {/* Buttons - Centered horizontally */}
             <div className="xs:flex sm:flex sm:flex-col sm:space-y-2 sm:space-x-0 md:flex md:flex-row md:gap-4 lg:gap-10 md:justify-center md:items-center md:w-full justify-center xs:mb-2 sm:mb-3 md:mb-4 xs:mt-8 sm:mt-[0px] md:mt-[60px] lg:mt-[10px] xl:mt-[50px]">
               {/* Registration Button */}
               <Button.Primary
@@ -201,10 +201,15 @@ const EPC = () => {
             </div>
 
             {/* Contact Person Info - Centered */}
-            <div className="flex justify-center xs:absolute xs:bottom-[-20%] xs:left-1/2 xs:transform xs:-translate-x-1/2 sm:absolute sm:bottom-[-20%] sm:left-1/2 sm:transform sm:-translate-x-1/2 md:static md:transform-none z-55">
+            {/* Contact Person Info - Two contacts side by side on larger screens, stacked on mobile */}
+            <div className="flex xs:flex-col xs:space-y-1 sm:flex-col sm:space-y-2 md:flex-row md:space-x-3 md:space-y-0 justify-center xs:absolute xs:bottom-[-30%] xs:left-1/2 xs:transform xs:-translate-x-1/2 sm:absolute sm:bottom-[-25%] sm:left-1/2 sm:transform sm:-translate-x-1/2 md:static md:transform-none z-55">
               <ContactPersonInfo
-                phone="0821213123124"
-                name="Nama"
+                phone="082264070927"
+                name="Nafisha"
+              />
+              <ContactPersonInfo
+                phone="089652659402"
+                name="Yasinda"
               />
             </div>
           </div>
@@ -225,7 +230,7 @@ const EPC = () => {
           </Typography.Homica>
         </div>
         {/* Swiper Container */}
-        <div className="absolute xs:bottom-[20%] xs:left-1/2 xs:transform xs:-translate-x-1/2 sm:bottom-[10%] sm:right-[25%] sm:transform sm:-translate-x-1/2 md:right-[-10%] lg:right-[-10%] xl:right-[-15%] 2xl:right-[-7%] md:top-[25%] xs:w-[280px] xs:h-[180px] sm:w-[280px] sm:h-[180px] md:w-[308px] md:h-[200px] lg:w-[408px] lg:h-[300px] xl:w-[508px] xl:h-[295px] xs:mb-3 sm:mb-3 md:mb-5 z-40">
+        <div className="absolute xs:bottom-[17%] xs:left-1/2 xs:transform xs:-translate-x-1/2 sm:bottom-[10%] sm:right-[25%] sm:transform sm:-translate-x-1/2 md:right-[-10%] lg:right-[-10%] xl:right-[-15%] 2xl:right-[-7%] md:top-[25%] xs:w-[280px] xs:h-[180px] sm:w-[280px] sm:h-[180px] md:w-[308px] md:h-[200px] lg:w-[408px] lg:h-[300px] xl:w-[508px] xl:h-[295px] xs:mb-3 sm:mb-3 md:mb-5 z-40">
           <Swiper
             effect={"coverflow"}
             direction={"vertical"}

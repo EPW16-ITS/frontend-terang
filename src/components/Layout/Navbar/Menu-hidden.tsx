@@ -55,7 +55,7 @@ export default function MenuHidden({
               Event
             </Typography.Poppins>
           </Link>
-          <Link href="/register" onClick={onClose}>
+          <Link href="/announcement" onClick={onClose}>
             <Typography.Poppins level={7} size="sm">
               Announcement
             </Typography.Poppins>
