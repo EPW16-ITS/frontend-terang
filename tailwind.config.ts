@@ -98,12 +98,12 @@ const config: Config = {
         },
       },
       screens: {
-        "between-lg-xl": { min: "1024px", max: "1224px" },
-        mn: { min: "1px", max: "639px" },
+        "xs": { min: "1px", max: "639px" },
       },
     },
   },
   plugins: [],
 };
+
 
 export default config;

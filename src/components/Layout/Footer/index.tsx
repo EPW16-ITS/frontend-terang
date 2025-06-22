@@ -22,7 +22,7 @@ export default function FooterItem() {
               width={100}
               height={100}
             />
-            <Typography.Poppins level={6} size="lg">
+            <Typography.Poppins level={6} size="lg" className="hidden lg:block">
               Engineering Physics Week
             </Typography.Poppins>
           </div>
@@ -60,17 +60,17 @@ export default function FooterItem() {
           <Typography.Poppins level={5}>LINKS</Typography.Poppins>
           <div className="footer-menu-list">
             <Link className="list-1" href="/">
-              <Typography.Poppins level={7} size="base">
+              <Typography.Poppins level={7} size="sm">
                 Home
               </Typography.Poppins>
             </Link>
             <Link className="list-2" href="/about">
-              <Typography.Poppins level={7} size="base">
+              <Typography.Poppins level={7} size="sm">
                 About
               </Typography.Poppins>
             </Link>
             <Link className="list-4" href="/register">
-              <Typography.Poppins level={7} size="base">
+              <Typography.Poppins level={7} size="sm">
                 Announcement
               </Typography.Poppins>
             </Link>

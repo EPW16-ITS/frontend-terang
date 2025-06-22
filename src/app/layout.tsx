@@ -22,7 +22,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <WithNavbar />
         <main>{children}</main>
-        <ToastContainer />
         <WithFooter />
       </body>
     </html>

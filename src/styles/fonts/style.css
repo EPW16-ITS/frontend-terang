@@ -27,6 +27,7 @@
   font-weight:400;
 }
 /* Poppins */
+/* Poppins Font Face */
 @font-face {
   font-family: "Poppins";
   src: url("/fonts/Poppins/Poppins-Thin.ttf") format("truetype");
