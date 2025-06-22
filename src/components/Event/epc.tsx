@@ -88,13 +88,13 @@ const EPC = () => {
           />
         </div>
 
-        <div className="absolute xs:left-[-5%] sm:left-[-5%] md:left-[-2%] lg:left-[0%] xl:left-[1%] 2xl:left-[2%]">
+        <div className="absolute xs:left-[-5%] sm:left-[-5%] md:left-[-2%] lg:left-[0%] xl:left-[1%] 2xl:left-0 2xl:top-4">
           <Image
             src="https://raw.githubusercontent.com/EPW16-ITS/assets/main/GerigiKuning.webp"
             alt="Gerigi Kuning"
             width={200}
             height={200}
-            className="xs:w-[120px] xs:h-[120px] sm:w-[120px] sm:h-[120px] md:w-[160px] md:h-[160px] lg:w-[200px] lg:h-[200px] xl:w-[220px] xl:h-[220px] 2xl:w-[250px] 2xl:h-[250px]"
+            className="xs:w-[120px] xs:h-[120px] sm:w-[120px] sm:h-[120px] md:w-[160px] md:h-[160px] lg:w-[200px] lg:h-[200px] xl:w-[220px] xl:h-[220px] 2xl:w-[400px] 2xl:h-[610px]"
           />
         </div>
 
@@ -215,14 +215,24 @@ const EPC = () => {
             level={4}
             className="text-transparent bg-clip-text bg-gradient-to-r from-[#FBD921] to-[#FEF9DE] text-center xs:text-4xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl 2xl:text-7xl xs:leading-tight sm:leading-tight md:leading-tight lg:leading-tight xl:leading-tight 2xl:leading-tight"
             style={{
-              WebkitTextStroke: "2px rgb(var(--color-primary-100))"
+              position: "absolute",
+              zIndex: 2,
             }}
           >
-            ENGINEERING PHYSICS
-            <br />
-            CHALLENGE
+            ENGINEERING PHYSIC CHALLENGE
+          </Typography.Homica>
+                    <Typography.Homica
+            level={4}
+            className="text-transparent bg-clip-text bg-gradient-to-r from-[#FBD921] to-[#FEF9DE] text-center xs:text-4xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl 2xl:text-7xl xs:leading-tight sm:leading-tight md:leading-tight lg:leading-tight xl:leading-tight 2xl:leading-tight"
+            style={{
+              WebkitTextStroke: "5px #2F126D",
+              zIndex: 1,
+            }}
+          >
+            ENGINEERING PHYSIC CHALLENGE
           </Typography.Homica>
         </div>
+        
         {/* Swiper Container */}
         <div className="absolute xs:bottom-[20%] xs:left-1/2 xs:transform xs:-translate-x-1/2 sm:bottom-[10%] sm:right-[25%] sm:transform sm:-translate-x-1/2 md:right-[-12%] md:top-[25%] lg:absolute lg:right-[50%] xl:absolute xl:right-[50%] 2xl:absolute 2xl:right-[50%] xs:w-[280px] xs:h-[180px] sm:w-[280px] sm:h-[180px] md:w-[308px] md:h-[200px] lg:w-[508px] lg:h-[295px] xl:w-[540px] xl:h-[320px] 2xl:w-[580px] 2xl:h-[350px] xs:mb-3 sm:mb-3 md:mb-5 lg:mb-6 xl:mb-6 2xl:mb-8 z-40">
           <Swiper
