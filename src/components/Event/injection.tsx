@@ -54,7 +54,7 @@ const Injection = () => {
       {/* Main Content */}
       <section className="relative w-full xs:h-[800px] sm:h-[850px] md:h-[900px] xl:h-[1024px] overflow-hidden bg-gradient-to-b from-[#D65263] from-0% via-[#702B34] to-[#702B34] to-68%">
         {/* Pattern Background */}
-        <div className="absolute inset-0 w-full h-full">
+        <div className="absolute inset-0 w-full h-full z-50">
           <Image
             src="https://raw.githubusercontent.com/EPW16-ITS/assets/main/Pattern.webp"
             alt="Pattern Background"
@@ -86,13 +86,6 @@ const Injection = () => {
           height={0}
           className="hidden md:block xs:h-[100px] xs:w-[100px] sm:w-[100px] sm:h-[100px] sm:top-0 md:w-[250px] md:h-[250px] md:top-[40%] md:right-[20%] xl:w-[400px] xl:h-[400px] xl:top-[45%] xl:right-[20%] 2xl:w-[450px] 2xl:h-[450px] 2xl:top-0 2xl:right-0"
         />
-        <Image
-          src="https://raw.githubusercontent.com/EPW16-ITS/assets/refs/heads/main/RackKuning.svg"
-          alt="rack_kuning"
-          width={0}
-          height={0}
-          className="hidden md:block absolute xs:h-[100px] xs:w-[100px] sm:w-[100px] sm:h-[100px] sm:top-0 md:w-[250px] md:h-[250px] md:top-[75%] md:left-0 xl:w-[400px] xl:h-[400px] xl:top-[65%] xl:left-0 2xl:w-[500px] 2xl:h-[500px] 2xl:top-[55%] 2xl:left-0"
-        />
 
         <Typography.CrystalUniverseRegular
           level={7}
@@ -117,7 +110,7 @@ const Injection = () => {
         </div>
 
         {/* Rectangle kiri - Solid Fill */}
-        <div className="md:left-[25%] xs:w-[280px] xs:h-[120px] sm:w-[600px] sm:h-[100px] md:w-[290px] md:h-[230px] lg:w-[490px] lg:h-[249px] xl:w-[600px] xl:h-[349px] 2xl:w-[750px] 2xl:h-[310px] absolute xs:left-1/2 xs:transform xs:-translate-x-1/2 sm:-translate-x-1/2  sm:left-1/2 sm:transform sm:-translate-y-1/2 md:transform md:-translate-y-1/2 xl:left-[27%] lg:left-[30%] 2xl:left-[20%]  xs:top-[20%] sm:top-[30%] md:top-[41%] xl:top-[40%] xl:transform xl:-translate-y-1/2 bg-third-50 z-30"
+        <div className="md:left-[25%] xs:w-[280px] xs:h-[120px] sm:w-[600px] sm:h-[100px] md:w-[290px] md:h-[230px] lg:w-[490px] lg:h-[249px] xl:w-[600px] xl:h-[349px] 2xl:w-[750px] 2xl:h-[310px] absolute xs:left-1/2 xs:transform xs:-translate-x-1/2 sm:-translate-x-1/2  sm:left-1/2 sm:transform sm:-translate-y-1/2 md:transform md:-translate-y-1/2 xl:left-[27%] lg:left-[30%] 2xl:left-[30%]  xs:top-[20%] sm:top-[30%] md:top-[41%] xl:top-[40%] xl:transform xl:-translate-y-1/2 bg-third-50 z-30"
           style={{
             borderRadius: '0 20px 0 20px',
           }}>
@@ -207,12 +200,12 @@ const Injection = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center w-full h-full"
-            ></a>
+            >
             <Typography.Homica
               className="xs:text-xs sm:text-sm md:text-xl xl:text-2xl text-neutral-800 text-center"
               level={9}>
               Register Here
-            </Typography.Homica>
+            </Typography.Homica></a>
           </div>
 
           {/* Guidebook Capsule - Bottom right of swiper, overlapping */}
@@ -270,17 +263,6 @@ const Injection = () => {
                 PRIZEPOOL
               </Typography.Homica>
             </div>
-            <div className="xs:absolute xs:left-1/2 xs:transform xs:-translate-x-1/2 xs:top-[-20%] sm:absolute sm:left-1/2 sm:transform sm:-translate-x-1/2 sm:top-[-20%] md:left-[70%] md:top-[-15%] absolute xl:left-[80%] xl:top-[-20%] 2xl:left-[75%] 2xl:top-[-20%] z-50">
-              <Typography.Homica
-                level={4}
-                className="text-fourth-25 md:text-center xs:text-sm sm:text-4xl md:text-4xl xl:text-6xl 2xl:text-6xl"
-                style={{
-                  textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
-                }}
-              >
-                ?!
-              </Typography.Homica>
-            </div>
 
             {/* Buttons Container for md and lg */}
             <div className="xs:flex md:flex md:gap-4 md:relative lg:flex lg:gap-4 lg:relative">
@@ -311,7 +293,7 @@ const Injection = () => {
               alt="platemerah"
               width={40}
               height={40}
-              className="2xl:w-[35px] 2xl:h-[35px] xl:w-[35px] xl:h-[35px] md:w-[38px] md:h-[38px] sm:w-[38px] sm:h-[38px] xs:w-[28px] xs:h-[28px] xs:ml-2 sm:ml-4 xs:pr-2 md:pr-2" />
+              className="2xl:w-[50px] 2xl:h-[50px] xl:w-[55px] xl:h-[55px] md:w-[38px] md:h-[38px] sm:w-[38px] sm:h-[38px] xs:w-[28px] xs:h-[28px] xs:ml-2 sm:ml-4 xs:pr-2 md:pr-2" />
             <Typography.Poppins
               level={5}
               size="lg"
@@ -327,7 +309,7 @@ const Injection = () => {
               alt="platemerah"
               width={40}
               height={40}
-              className="2xl:w-[35px] 2xl:h-[35px] xl:w-[35px] xl:h-[35px] md:w-[38px] md:h-[38px] sm:w-[38px] sm:h-[38px] xs:w-[28px] xs:h-[28px] xs:ml-2 sm:ml-4 xs:pr-2 md:pr-2" />
+              className="2xl:w-[50px] 2xl:h-[50px] xl:w-[55px] xl:h-[55px] md:w-[38px] md:h-[38px] sm:w-[38px] sm:h-[38px] xs:w-[28px] xs:h-[28px] xs:ml-2 sm:ml-4 xs:pr-2 md:pr-2" />
             <Typography.Poppins
               level={5}
               size="lg"

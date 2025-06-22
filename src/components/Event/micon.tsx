@@ -365,7 +365,7 @@ const Micon = () => {
   ];
 
   return (
-    <section className="relative w-full sm:h-[800px] xs:h-[800px] md:h-[900px] lg:h-[1024px] overflow-hidden bg-gradient-to-b from-[#101428] to-[#39488E] py-12">
+    <section className="relative w-full sm:h-[800px] xs:h-[800px] md:h-[900px] lg:h-[1024px] overflow-hidden bg-gradient-to-b from-primary-300 to-[#39488E] py-12">
       <AnimatePresence>
         {isTimelineModalOpen && (
           <motion.div
