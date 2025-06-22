@@ -11,7 +11,6 @@ const About = () => {
         <div className="" >
             <Tekfis />
             <Akreditasi />
-            <BidangMinat />
         </div>
     );
 }
