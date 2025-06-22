@@ -105,7 +105,7 @@ const Injection = () => {
         </Typography.CrystalUniverseRegular>
 
         {/* Rectangle Judul - Primary Fill */}
-        <div className="sm:-translate-x-1/2  sm:left-1/2 sm:transform xs:hidden sm:w-[160px] sm:h-[30px] md:w-[170px] md:h-[32px] xl:w-[257px] xl:h-[50px] 2xl:w-[257px] 2xl:h-[60px] absolute md:left-[5%] lg:left-[15%] xl:left-[15%] xs:top-[17%] sm:top-[24%] sm:-translate-y-1/2 md:top-[28%] md:transform md:-translate-y-1/2 xl:top-[22%] xl:transform xl:-translate-y-1/2 bg-primary-400 z-40">
+        <div className="sm:-translate-x-1/2  sm:left-1/2 sm:transform xs:hidden sm:w-[160px] sm:h-[30px] md:w-[170px] md:h-[32px] xl:w-[257px] xl:h-[50px] 2xl:w-[257px] 2xl:h-[60px] absolute md:left-[25%] lg:left-[15%] xl:left-[15%] xs:top-[17%] sm:top-[24%] sm:-translate-y-1/2 md:top-[28%] md:transform md:-translate-y-1/2 xl:top-[22%] xl:transform xl:-translate-y-1/2 bg-primary-400 z-40">
           <div className="w-full h-full flex items-center justify-center">
             <Typography.Poppins
               level={7}
@@ -117,7 +117,7 @@ const Injection = () => {
         </div>
 
         {/* Rectangle kiri - Solid Fill */}
-        <div className="xs:w-[280px] xs:h-[120px] sm:w-[600px] sm:h-[100px] md:w-[290px] md:h-[230px] lg:w-[490px] lg:h-[249px] xl:w-[600px] xl:h-[349px] 2xl:w-[750px] 2xl:h-[310px] absolute xs:left-1/2 xs:transform xs:-translate-x-1/2 sm:-translate-x-1/2  sm:left-1/2 sm:transform sm:-translate-y-1/2 md:left-[5%] md:transform md:-translate-y-1/2 xl:left-[27%] lg:left-[20%] 2xl:left-[20%]  xs:top-[20%] sm:top-[30%] md:top-[41%] xl:top-[40%] xl:transform xl:-translate-y-1/2 bg-third-50 z-30"
+        <div className="md:left-[25%] xs:w-[280px] xs:h-[120px] sm:w-[600px] sm:h-[100px] md:w-[290px] md:h-[230px] lg:w-[490px] lg:h-[249px] xl:w-[600px] xl:h-[349px] 2xl:w-[750px] 2xl:h-[310px] absolute xs:left-1/2 xs:transform xs:-translate-x-1/2 sm:-translate-x-1/2  sm:left-1/2 sm:transform sm:-translate-y-1/2 md:transform md:-translate-y-1/2 xl:left-[27%] lg:left-[30%] 2xl:left-[20%]  xs:top-[20%] sm:top-[30%] md:top-[41%] xl:top-[40%] xl:transform xl:-translate-y-1/2 bg-third-50 z-30"
           style={{
             borderRadius: '0 20px 0 20px',
           }}>
@@ -133,7 +133,7 @@ const Injection = () => {
         </div>
 
         {/* Swiper*/}
-        <div className="absolute z-40 xs:w-[200px] xs:h-[120px] xs:left-1/2 xs:transform xs:-translate-x-1/2 xs:top-[40%] sm:w-[150px] sm:h-[120px] sm:right-[10%] sm:top-[45%] md:w-[320px] md:h-[260px] md:right-[10%] md:transform md:-translate-y-1/2 md:top-[40%] xl:h-[450px] xl:right-[8%] xl:top-[45%] xl:w-[500px] 2xl:w-[500px] 2xl:h-[450px] 2xl:right-[10%] 2xl:top-[45%] 2xl:transform 2xl:-translate-y-1/2">
+        <div className="absolute z-40 xs:w-[200px] xs:h-[120px] xs:left-1/2 xs:transform xs:-translate-x-1/2 xs:top-[40%] sm:w-[250px] sm:h-[150px] sm:right-[10%] sm:top-[45%] md:w-[320px] md:h-[260px] md:right-[10%] md:transform md:-translate-y-1/2 md:top-[40%] xl:h-[450px] xl:right-[8%] xl:top-[45%] xl:w-[500px] 2xl:w-[500px] 2xl:h-[450px] 2xl:right-[10%] 2xl:top-[45%] 2xl:transform 2xl:-translate-y-1/2">
           <Swiper
             ref={swiperRef}
             effect={"coverflow"}
@@ -163,7 +163,7 @@ const Injection = () => {
                 key={index}
                 className="flex items-center justify-center relative"
               >
-                <div className="w-[200px] h-[120px] sm:w-[220px] sm:h-[120px] md:w-[320px] md:h-[203px] xl:w-[465px] xl:h-[297px] relative">
+                <div className="w-[200px] h-[120px] sm:w-[250px] sm:h-[150px] md:w-[320px] md:h-[260px] xl:w-[465px] xl:h-[297px] relative">
                   <Image
                     src={slide}
                     alt={`Slide ${index + 1}`}
@@ -305,7 +305,7 @@ const Injection = () => {
               alt="platemerah"
               width={40}
               height={40}
-              className="2xl:w-[35px] 2xl:h-[35px] xl:w-[35px] xl:h-[35px] md:w-[28px] md:h-[28px] sm:w-[38px] sm:h-[38px] xs:w-[28px] xs:h-[28px] xs:ml-2 pr-2" />
+              className="2xl:w-[35px] 2xl:h-[35px] xl:w-[35px] xl:h-[35px] md:w-[38px] md:h-[38px] sm:w-[38px] sm:h-[38px] xs:w-[28px] xs:h-[28px] xs:ml-2 sm:ml-4 xs:pr-2 md:pr-2" />
             <Typography.Poppins
               level={5}
               size="lg"
@@ -321,7 +321,7 @@ const Injection = () => {
               alt="platemerah"
               width={40}
               height={40}
-              className="2xl:w-[35px] 2xl:h-[35px] xl:w-[35px] xl:h-[35px] md:w-[28px] md:h-[28px] sm:w-[38px] sm:h-[38px] xs:w-[28px] xs:h-[28px] xs:ml-2 sm:ml-4 pr-2" />
+              className="2xl:w-[35px] 2xl:h-[35px] xl:w-[35px] xl:h-[35px] md:w-[38px] md:h-[38px] sm:w-[38px] sm:h-[38px] xs:w-[28px] xs:h-[28px] xs:ml-2 sm:ml-4 xs:pr-2 md:pr-2" />
             <Typography.Poppins
               level={5}
               size="lg"
@@ -356,7 +356,7 @@ const Injection = () => {
               <Typography.Poppins
                 level={5}
                 size="lg"
-                className="text-fourth-900 text-center xs:text-xs sm:text-xl md:text-2xl xl:text-3xl">
+                className="text-fourth-900 text-center xs:text-xl sm:text-xl md:text-2xl xl:text-3xl">
                 23 Juni - 22 Juli 2025
               </Typography.Poppins>
             </div>
