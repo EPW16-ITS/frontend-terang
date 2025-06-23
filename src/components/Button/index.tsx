@@ -1,13 +1,12 @@
 import Primary from "./Primary";
 import Secondary from "./Secondary";
 import Tertiary from "./Tertiary";
-import Upload from "../Input/InputUpload";
 
 const Button = {
   /**
    * Props for the Button Primary component.
    * @param {React.ReactNode} children
-   * @param {full|lg|base|sm} [Rounded='full']
+   *@param {full|lg|base|sm} [Rounded='full']
    * - The content of the component for the Button component. - Required
    * @param {base|sm} [size='base']
    * - The size of the Button component. Can be lg, base or sm. Default is base. - Optional

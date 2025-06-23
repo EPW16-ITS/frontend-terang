@@ -25,11 +25,13 @@ const config: Config = {
         "4xl": ["36px", "44px"],
         "3xl": ["32px", "38px"],
         "2xl": ["24px", "30px"],
+        wl: ["24px", "26px"],
         xl: ["20px", "24px"],
         lg: ["18px", "22px"],
         base: ["16px", "18px"],
         sm: ["14px", "16px"],
         xs: ["12px", "14px"],
+        "2xs": ["10px", "8px"],
       },
       colors: {
         white: "#FFFFFF",

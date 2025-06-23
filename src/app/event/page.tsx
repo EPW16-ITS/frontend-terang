@@ -7,13 +7,12 @@ import Ephyfest from "@/components/Event/ephyfest";
 
 const Event = () => {
 
-   
+
     return (
         <div className="" >
             <Injection />
-            <Micon />
             <EPC />
-            <Ephyfest />
+            <Micon />
         </div>
     );
 }
