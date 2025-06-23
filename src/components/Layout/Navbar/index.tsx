@@ -16,7 +16,7 @@ export default function NavbarItem({ className, href }: NavbarProps): React.Reac
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
 
-  const isAnnouncementSelected = pathname === "/register";
+  const isAnnouncementSelected = pathname === "/announcement";
 
   const handleMenuToggle = () => setIsMenuOpen((prev) => !prev);
 
@@ -60,7 +60,7 @@ export default function NavbarItem({ className, href }: NavbarProps): React.Reac
             isMenuOpen ? "link-hidden" : ""
           }`}
         >
-          <div className="link flex gap-4">
+          <div className="link flex gap-0">
             <NavLink href="/" label="Home" isActive={pathname === "/"} />
             <NavLink href="/about" label="About" isActive={pathname === "/about"} />
             <NavLink href="/event" label="Event" isActive={pathname === "/event"} />
@@ -72,11 +72,11 @@ export default function NavbarItem({ className, href }: NavbarProps): React.Reac
           <Button.Secondary
             type="outline"
             size="sm"
-            onClick={() => handleExternalLinkClick("/register")}
+            onClick={() => handleExternalLinkClick("/announcement")}
             className={isAnnouncementSelected ? "selected" : ""}
           >
             <Typography.Poppins
-              size="xs"
+              size="sm"
               level={8}
               className="transition-all duration-300 font-normal text-center w-full"
               style={{ whiteSpace: "nowrap" }}
@@ -112,7 +112,7 @@ function NavLink({
       >
         <Typography.Poppins
           level={8}
-          size="xs"
+          size="sm"
           className="transition-all duration-300 font-normal text-center w-full group-hover:text-third-100"
           style={{ whiteSpace: "nowrap" }}
         >

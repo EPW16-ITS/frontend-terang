@@ -18,7 +18,7 @@ export default function NotFound() {
                     height={350}
                     className='md:w-[60%] md:h-[60%] '
                 />
-                <Typography.Righteous level={7} className='text-white text-center '>Oops, you’ve lost in space.</Typography.Righteous>
+                <Typography.Homica level={7} className='text-white text-center '>Oops, you’ve lost in space.</Typography.Homica>
                 <Typography.Poppins level={7} className='text-white text-center' size='sm'>We Can’t find the page that you’re looking for</Typography.Poppins>
                 <Link href={'/'}>
                     <Button.Primary prefix={<FaHome size={30} />} className='w-40 flex justify-center items-center mt-10 z-50'>Home</Button.Primary>
