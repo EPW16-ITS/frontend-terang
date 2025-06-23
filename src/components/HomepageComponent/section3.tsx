@@ -1,9 +1,11 @@
 "use client";
 
 import Typography from "@/components/Typography";
+import Event from "@/components/HomepageComponent/HomepageEvent";
+
 export default function Home3() {
   return (
-    <div className="hidden md:block">
+    <div>
         {/* Section 3 */}
       <section className="relative overflow-hidden w-full min-h-screen bg-[#1F0C49]">
           {/* Background Pattern */}
@@ -41,9 +43,20 @@ export default function Home3() {
                     className="absolute bottom-0 right-0 w-[200%] md:max-w-80 lg:max-w-[400px] xl:max-w-[600px] h-auto z-0 translate-x-[20%] xl:translate-x-[10%] -translate-y-[60%] lg:-translate-y-[85%] rotate-[210deg] opacity-100"
                 />
             </div>
+                {/* Event Section Mobile */}
+            <div className="flex md:hidden relative w-full h-[100vh] mx-0 flex-col justify-center items-center z-10">
+                <Typography.CrystalUniverseRegular
+                    level={9}
+                    size="xl"
+                    className="block md:hidden absolute text-2xl mb-12 text-secondary-50 top-0 translate-y-[220%] "
+                >
+                    E V E N T ! !
+                </Typography.CrystalUniverseRegular>
+                <Event />
+            </div>
 
-                {/* Event Section */}
-            <div className="relative w-[90%] h-[100vh] mx-[5%] flex flex-col justify-center items-center z-10">
+                {/* Event Section Tablet+ */}
+            <div className="hidden md:flex relative w-[90%] h-[100vh] mx-[5%] flex-col justify-center items-center z-10">
                 <Typography.Homica
                     level={9}
                     size="xl"
