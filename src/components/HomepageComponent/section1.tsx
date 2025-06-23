@@ -14,34 +14,30 @@ export default function Home1() {
         <img
           src="https://raw.githubusercontent.com/EPW16-ITS/assets/refs/heads/main/homepage-benang-biru.svg"
           alt="Benang Biru"
-          className="hidden md:block absolute lg:top-[80px] md:top-[-15px] lg:left-[-10px] md:left-[-10px] z-0 w-auto h-auto max-w-none"
+          className="hidden md:block absolute top-0 left-0 translate-y-[15%] -translate-x-[10%] z-0 w-[60%] xl:w-[50%]"
         />
         <img
           src="https://raw.githubusercontent.com/EPW16-ITS/assets/refs/heads/main/homepage-benang-pink.svg"
-          alt="Benang Pink"
+          alt="Benang Pink Kiri"
           className="hidden md:block absolute z-0
-            md:max-w-[400px] xl:max-w-[600px] w-[600px] h-auto
-            lg:bottom-[-50px] lg:left-[-20px] md:bottom-[-15px] md:left-[-10px]"
+            w-[40%] h-auto lg:w-[35%]
+            bottom-0 left-0 -translate-x-[5%] translate-y-[5%] lg:translate-y-[15%]"
         />
         <img
           src="https://raw.githubusercontent.com/EPW16-ITS/assets/refs/heads/main/homepage-benang-pink.svg"
-          alt="Benang Pink"
+          alt="Benang Pink Kanan"
           className="hidden md:block absolute z-0 -rotate-[140deg]
-            md:max-w-[400px] xl:max-w-[600px] w-[600px] h-auto
-            lg:bottom-[-50px] lg:right-[-0px] md:bottom-[-15px] md:right-[-10px]"
+            w-[40%] h-auto lg:w-[35%]
+            bottom-0 right-0 -translate-x-[5%] translate-y-[10%] md:translate-y-[20%] lg:translate-y-[30%] xl:translate-y-[20%]"
         />
-        
-        <div className="relative w-full h-screen">
-          {/* Papan EPW */}
-          <img
+        <img
             src="https://raw.githubusercontent.com/EPW16-ITS/assets/refs/heads/main/homepage-PapanEPWreal.svg"
             alt="Papan EPW"
-            className="absolute left-1/2 translate-x-[-46%] z-10
-              top-[35%] w-[90%] max-w-[370px]
-              lg:top-[20%]
-              sm:max-w-[500px] md:max-w-[500px] lg:max-w-[1200px]"
-          />
-        </div>
+            className="absolute left-1/2 translate-x-[-46%] translate-y-[110%] md:translate-y-[45%] z-10
+              top-0 w-[95%] md:w-[70%] xl:w-[60%]
+              lg:translate-y-[30%]
+              "
+        />
         <img
             src="https://raw.githubusercontent.com/EPW16-ITS/assets/refs/heads/main/homepage-GerigiKuning.svg"
             alt="Gerigi Kuning"

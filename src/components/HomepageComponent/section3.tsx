@@ -3,7 +3,7 @@
 import Typography from "@/components/Typography";
 export default function Home3() {
   return (
-    <div>
+    <div className="hidden md:block">
         {/* Section 3 */}
       <section className="relative overflow-hidden w-full min-h-screen bg-[#1F0C49]">
           {/* Background Pattern */}
