@@ -20,23 +20,23 @@ const Ephyfest = () => {
   const mainEventData = [
     {
       id: 1,
-      title: "Seminar Nasional",
-      description: "Seminar teknologi terdepan dengan pembicara expert"
+      title: "Exhibition",
+      description: "Exhibition Lab, Injection, Microcontroller Contest (Micon), dan Pameran 60 tahun Teknik Fisika"
     },
     {
       id: 2,
-      title: "Workshop AI",
-      description: "Pelatihan praktis tentang artificial intelligence"
+      title: "Talkshow",
+      description: "Diskusi tentang suatu topik Soft Skill antara Moderator dan Narasumber."
     },
     {
       id: 3,
-      title: "Kompetisi Robotik",
-      description: "Lomba robot tingkat nasional untuk mahasiswa"
+      title: "Closing Ceremony",
+      description: "Penutupan resmi dari Engineering Physics Week ke-16."
     },
     {
       id: 4,
-      title: "Tech Exhibition",
-      description: "Pameran teknologi inovatif dari berbagai institusi"
+      title: "Awarding",
+      description: "Memberikan apresiasi kepada peserta kompetisi atas pencapaian mereka."
     }
   ];
 
@@ -94,7 +94,7 @@ const Ephyfest = () => {
               {/* Mobile Slider */}
               <div className="w-full">
                 <Swiper
-                  slidesPerView={2.2}
+                  slidesPerView={2}
                   spaceBetween={10}
                   grabCursor={true}
                   modules={[]}
@@ -110,33 +110,97 @@ const Ephyfest = () => {
                       >
                         <div className="flex-1">
                           <Typography.Poppins
-                            level={8}
-                            className="text-primary-100 text-xs font-semibold leading-tight mb-1"
+                            level={1}
+                            className="text-fourth-300 text-xs text-center mb-1 whitespace-nowrap"
                           >
                             {item.title}
                           </Typography.Poppins>
                           <Typography.Poppins
-                            level={9}
-                            className="text-primary-100 text-2xs leading-tight"
+                            level={11}
+                            className="text-fourth-400 text-3xs text-justify leading-snug"
                           >
                             {item.description}
                           </Typography.Poppins>
                         </div>
-                        <Button.Primary
-                          type="default"
-                          className="flex items-center xs:text-2xs xs:px-4 xs:py-6 sm:px-4 sm:py-6 md:px-6 md:py-8"
+                        {/* Updated Button - Now plain rectangle */}
+                        <div
+                          className="w-[48.97px] h-[13px] bg-fourth-300 flex items-center justify-center cursor-pointer"
+                          onClick={() => {
+                            // Add your click handler here
+                            console.log('View more clicked for:', item.title);
+                          }}
                         >
-                          <a href="#" className="xs:text-xs sm:text-xs md:text-xs">Vier more</a>
-                        </Button.Primary>
+                          <Typography.Poppins
+                            level={11}
+                            className="text-white text-2xs"
+                          >
+                            View more
+                          </Typography.Poppins>
+                        </div>
                       </div>
                     </SwiperSlide>
                   ))}
                 </Swiper>
               </div>
+
+              {/* Timeline Section for Mobile */}
+              <div className="w-full mt-6">
+                {/* Timeline Title */}
+                <Typography.Homica
+                  level={4}
+                  className="text-transparent bg-clip-text bg-gradient-to-r from-[#037CB8] to-[#F85F73] text-center xs:text-xl xs:leading-tight mb-4"
+                  style={{
+                    WebkitTextStroke: "1px rgb(var(--color-primary-100))"
+                  }}
+                >
+                  Timeline
+                </Typography.Homica>
+
+                {/* Timeline Controls */}
+                <div className="flex items-center justify-center gap-3 mb-4">
+                  {/* Registration Button */}
+                  <Button.Primary
+                    type="default"
+                    className="flex items-center gap-2 px-3 py-2"
+                  >
+                    <Typography.Poppins level={11} className="text-xs">
+                      Registration
+                    </Typography.Poppins>
+                    <FaArrowRight className="text-xs" />
+                  </Button.Primary>
+
+                  {/* Date Component */}
+                  <div
+                    className="w-[120px] h-[30px] bg-gradient-to-r from-[#C64C5C] to-[#BA93E5] border-[2px] border-third-50 flex items-center justify-center px-2 cursor-text"
+                    style={{
+                      borderRadius: '0 15px 0 15px'
+                    }}
+                  >
+                    <FaCalendar className="text-white text-xs flex-shrink-0 mr-2" />
+                    <Typography.Poppins
+                      level={5}
+                      className="text-white text-2xs text-center"
+                    >
+                      25 Oktober 2025
+                    </Typography.Poppins>
+                  </div>
+
+                  {/* Guidebook Button */}
+                  <Button.Primary
+                    type="default"
+                    className="flex items-center gap-2 px-3 py-2"
+                  >
+                    <FaBook className="text-xs" />
+                    <Typography.Poppins level={11} className="text-xs">
+                      Guidebook
+                    </Typography.Poppins>
+                  </Button.Primary>
+                </div>
+
+              </div>
             </div>
           </div>
 
-          {/* Desktop Swiper - Hidden on xs screens */}
           <div className="absolute xs:hidden sm:block xs:top-[100%] xs:left-1/2 xs:transform xs:-translate-x-1/2 sm:top-[10%] sm:right-[25%] sm:transform sm:-translate-x-1/2 md:right-[-10%] lg:right-[-10%] xl:right-[-15%] 2xl:right-[-7%] md:top-[25%] xs:w-[280px] xs:h-[180px] sm:w-[280px] sm:h-[180px] md:w-[308px] md:h-[200px] lg:w-[408px] lg:h-[300px] xl:w-[508px] xl:h-[295px] xs:mb-3 sm:mb-3 md:mb-5 z-40">
             <div className="absolute top-0 left-0 w-full flex items-center justify-center xs:pt-4 sm:pt-6 md:pt-8 z-40">
               <Typography.Homica
@@ -148,37 +212,6 @@ const Ephyfest = () => {
               >
                 Main Event
               </Typography.Homica>
-              {/* Swiper Container - Relative Position */}
-              <div className="relative flex items-center justify-center">
-                <Swiper
-                  effect={"coverflow"}
-                  direction="horizontal"
-                  grabCursor={true}
-                  centeredSlides={true}
-                  slidesPerView={3}
-                  spaceBetween={0}
-                  coverflowEffect={{
-                    rotate: 0,
-                    stretch: 0,
-                    depth: 100,
-                    modifier: 15,
-                    slideShadows: false,
-                  }}
-                  loop={true}
-                  pagination={{
-                    clickable: true,
-                  }}
-                  modules={[EffectCoverflow, Pagination, Navigation]}
-                  className="w-full h-full"
-                >
-                  <SwiperSlide className="flex items-center justify-center">
-                  </SwiperSlide>
-                  <SwiperSlide className="flex items-center justify-center">
-                  </SwiperSlide>
-                  <SwiperSlide className="flex items-center justify-center">
-                  </SwiperSlide>
-                </Swiper>
-              </div>
             </div>
           </div>
         </div>

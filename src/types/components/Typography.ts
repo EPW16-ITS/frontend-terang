@@ -27,7 +27,7 @@ export interface PoppinsProps {
   /**
    * The level of the Heading component. Can be 1 to 10. Default is 1 - Optional
    */
-  level: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10;
+  level: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 ;
 }
 export interface CrystalUniverseObliqueProps {
   /**
