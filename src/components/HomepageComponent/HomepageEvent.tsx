@@ -40,7 +40,9 @@ export default function Event() {
                 fill
                 className="object-cover z-0"
               />
-              <Typography.CrystalUniverseOblique className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[15%] text-fifth-50 text-[15px] font-normal z-10 drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">
+              <Typography.CrystalUniverseOblique 
+              level={4}
+              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[15%] text-fifth-50 text-[15px] font-normal z-10 drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">
                 INJECTION
               </Typography.CrystalUniverseOblique>
             </div>
@@ -54,7 +56,7 @@ export default function Event() {
                 fill
                 className="object-cover z-0"
               />
-              <Typography.CrystalUniverseOblique className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[15%] text-fifth-50 text-[15px] font-normal z-10 drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">
+              <Typography.CrystalUniverseOblique level={4} className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[15%] text-fifth-50 text-[15px] font-normal z-10 drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">
                 MICON
               </Typography.CrystalUniverseOblique>
             </div>
@@ -68,7 +70,7 @@ export default function Event() {
                 fill
                 className="object-cover z-0"
               />
-              <Typography.CrystalUniverseOblique className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[15%] text-fifth-50 text-[15px] font-normal z-10 drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">
+              <Typography.CrystalUniverseOblique level={4} className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[15%] text-fifth-50 text-[15px] font-normal z-10 drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">
                 EPC
               </Typography.CrystalUniverseOblique>
             </div>
@@ -82,7 +84,7 @@ export default function Event() {
                 fill
                 className="object-cover z-0"
               />
-              <Typography.CrystalUniverseOblique className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[15%] text-fifth-50 text-[15px] font-normal z-10 drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">
+              <Typography.CrystalUniverseOblique level={4} className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[15%] text-fifth-50 text-[15px] font-normal z-10 drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">
                 EPHYFEST
               </Typography.CrystalUniverseOblique>
             </div>

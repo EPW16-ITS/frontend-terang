@@ -47,7 +47,6 @@ export default function Home3() {
             <div className="flex md:hidden relative w-full h-[100vh] mx-0 flex-col justify-center items-center z-10">
                 <Typography.CrystalUniverseRegular
                     level={9}
-                    size="xl"
                     className="block md:hidden absolute text-2xl mb-12 text-secondary-50 top-0 translate-y-[220%] "
                 >
                     E V E N T ! !
@@ -59,7 +58,6 @@ export default function Home3() {
             <div className="hidden md:flex relative w-[90%] h-[100vh] mx-[5%] flex-col justify-center items-center z-10">
                 <Typography.Homica
                     level={9}
-                    size="xl"
                     className="hidden md:block md:text-6xl text-8xl mb-12 text-secondary-50"
                 >
                     E V E N T !!
@@ -79,7 +77,7 @@ export default function Home3() {
                             />
                                 {/* Text */}
                             <div className="flex-grow flex items-center justify-center">
-                                <Typography.Poppins className="text-xs xl:text-lg font-bold text-center text-primary-50 md:mx-6 xl:mx-12">
+                                <Typography.Poppins level={7} className="text-xs xl:text-lg font-bold text-center text-primary-50 md:mx-6 xl:mx-12">
                                 Kompetisi pembuatan karya tulis ilmiah inovatif
                                 </Typography.Poppins>
                             </div>
@@ -87,12 +85,11 @@ export default function Home3() {
 
                         {/* Title and Button */}
                         <div className="w-full flex flex-col items-center">
-                            <Typography.SuperComic className="text-[20px] xl:text-[40px] xl:my-[8%] text-fourth-25 my-[0%] text-center">INJECTION</Typography.SuperComic>
+                            <Typography.SuperComic level={5} className="text-[20px] xl:text-[40px] xl:my-[8%] text-fourth-25 my-[0%] text-center">INJECTION</Typography.SuperComic>
                             <a href="/event"
                                 className="h-[16px] px-2 bg-fifth-200 rounded-full hover:bg-fifth-300 flex items-center justify-center border-[1px] border-white">
                                 <Typography.SuperComic
                                     level={9}
-                                    size="xs"
                                     className="text-white text-[10px] leading-[1] tracking-tight">
                                     VIEW MORE
                                 </Typography.SuperComic>
@@ -112,7 +109,7 @@ export default function Home3() {
                             />
                                 {/* Text */}
                             <div className="flex-grow flex items-center justify-center">
-                                <Typography.Poppins className="text-xs xl:text-lg font-bold text-center text-fourth-400 md:mx-6 mx-12">
+                                <Typography.Poppins level={7} className="text-xs xl:text-lg font-bold text-center text-fourth-400 md:mx-6 mx-12">
                                 Microcontroller Contest yang berfokus pada bidang instrumentasi.
                                 </Typography.Poppins>
                             </div>
@@ -120,12 +117,11 @@ export default function Home3() {
 
                             {/* Title and Button */}
                         <div className="w-full flex flex-col items-center">
-                            <Typography.SuperComic className="text-[20px] xl:text-[40px] xl:my-[8%] text-neutral-300 text-center">MICON</Typography.SuperComic>
+                            <Typography.SuperComic level={5} className="text-[20px] xl:text-[40px] xl:my-[8%] text-neutral-300 text-center">MICON</Typography.SuperComic>
                             <a href="/event"
                                 className="h-[16px] px-2 bg-third-300 rounded-full hover:bg-third-400 flex items-center justify-center border-[1px] border-white">
                                 <Typography.SuperComic
                                     level={9}
-                                    size="xs"
                                     className="text-white text-[10px] leading-[1] tracking-tight">
                                     VIEW MORE
                                 </Typography.SuperComic>
@@ -144,20 +140,19 @@ export default function Home3() {
                             />
                                 {/* Text */}
                             <div className="flex-grow flex items-center justify-center">
-                                <Typography.Poppins className="text-xs xl:text-lg font-bold text-center text-fourth-400 md:mx-6 mx-12">
-                                Kompetisi bidang fisika, matematika terapan, dan aplikasinya dalam bidang ilmu teknik fisika.
+                                <Typography.Poppins level={7} className="text-xs xl:text-lg font-bold text-center text-fourth-400 md:mx-6 mx-12">
+                                Kompetisi bidang fisika, matematika terapan, dan aplikasinya
                                 </Typography.Poppins>
                             </div>
                         </div>
 
                         {/* Title and Button */}
                         <div className="w-full flex flex-col items-center">
-                            <Typography.SuperComic className="text-[20px] xl:text-[40px] xl:my-[8%] text-third-50 my-[0%] text-center">EPC</Typography.SuperComic>
+                            <Typography.SuperComic level={5} className="text-[20px] xl:text-[40px] xl:my-[8%] text-third-50 my-[0%] text-center">EPC</Typography.SuperComic>
                             <a href="/event" 
                                 className="h-[16px] px-2 bg-secondary-200 rounded-full hover:bg-secondary-300 flex items-center justify-center border-[1px] border-white">
                                 <Typography.SuperComic
                                     level={9}
-                                    size="xs"
                                     className="text-white text-[10px] leading-[1] tracking-tight">
                                     VIEW MORE
                                 </Typography.SuperComic>
@@ -176,7 +171,7 @@ export default function Home3() {
                             />
                                 {/* Text */}
                             <div className="flex-grow flex items-center justify-center">
-                                <Typography.Poppins className="text-xs xl:text-lg font-bold text-center md:mx-6 mx-12">
+                                <Typography.Poppins level={7} className="text-xs xl:text-lg font-bold text-center md:mx-6 mx-12">
                                 Exhibition, Talkshow, Awarding dan Closing Ceremony.
                                 </Typography.Poppins>
                             </div>
@@ -184,12 +179,11 @@ export default function Home3() {
 
                         {/* Title and Button */}
                         <div className="w-full flex flex-col items-center">
-                            <Typography.SuperComic className="text-[20px] xl:text-[40px] xl:my-[8%] text-secondary-50 my-[0%] text-center">EPHYFEST</Typography.SuperComic>
+                            <Typography.SuperComic level={5} className="text-[20px] xl:text-[40px] xl:my-[8%] text-secondary-50 my-[0%] text-center">EPHYFEST</Typography.SuperComic>
                             <a href="/event"
                                 className="h-[16px] px-2 bg-fourth-400 rounded-full hover:bg-fourth-500 flex items-center justify-center border-[1px] border-white">
                                 <Typography.SuperComic
                                     level={9}
-                                    size="xs"
                                     className="text-white text-[10px] leading-[1] tracking-tight">
                                     VIEW MORE
                                 </Typography.SuperComic>
