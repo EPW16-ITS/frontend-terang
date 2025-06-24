@@ -46,7 +46,265 @@ const Ephyfest = () => {
   ];
 
   return (
-    <div>
+  <div>
+    {/* Tablet+ */}
+    <div className="hidden md:block">
+      {/* Main Content */}
+      <section className="relative w-full md:h-[900px] overflow-hidden bg-gradient-to-b from-[#1F0C49] from-10% bg-[#116B98] to-90%">
+        {/* Pattern Background */}
+        <div className="absolute inset-0 w-full h-full">
+          <Image
+            src="https://raw.githubusercontent.com/EPW16-ITS/assets/main/Pattern.webp"
+            alt="Pattern Background"
+            fill
+            className="object-cover opacity-100"
+            priority
+          />
+        </div>
+        <div className="absolute top-0 left-0 w-full flex items-center justify-center pt-8 z-40 translate-y-[60%]">
+          <Typography.Homica
+            level={4}
+            className="text-transparent bg-clip-text bg-gradient-to-r from-[#F85F73] to-[#037CB8] text-center text-6xl leading-tight"
+            style={{
+              WebkitTextStroke: "2px rgb(var(--color-primary-100))"
+            }}
+          >
+            EPHYFEST
+          </Typography.Homica>
+        </div>
+        <div className="relative left-0 top-0 w-[50%] h-[21%] translate-x-[10%] translate-y-[130%] bg-fifth-50 border-2 border-primary-25 z-30"
+          style={{
+            borderRadius: '0 50px 0 50px' // Sudut kanan atas dan kiri bawah rounded
+          }}
+        >
+          <div className="w-full h-full p-8 flex flex-col">
+            <Typography.Poppins
+              level={10}
+              className="text-primary-100 text-left mb-6 text-base"
+            >
+              EPHYFEST atau Engineering Physics Festival merupakan sebuah acara tahunan yang bertujuan untuk memperkenalkan Departemen Teknik Fisika kepada masyarakat luas, khususnya kepada pelajar, mahasiswa, dan khalayak umum yang tertarik dengan dunia rekayasa dan teknologi. Pada tahun ini, EPHYFEST 16 hadir dengan dua sub-event utama, yaitu Main Event dan Closing Event.
+            </Typography.Poppins>
+          </div>
+        </div>
+        <div className="absolute top-0 left-0 w-full flex z-40 md:translate-x-[21%] translate-x-[25%] translate-y-[1700%]">
+            <Typography.Poppins
+            level={5}                
+            className="text-transparent bg-clip-text bg-gradient-to-r from-[#F85F73] to-[#037CB8] text-center leading-tight"
+            style={{
+            WebkitTextStroke: "2px rgb(var(--color-primary-100))"
+            }}
+          >
+            Main Event
+          </Typography.Poppins>
+        </div>
+        {/* Tablet Slider with Navigation Arrows */}
+        <div className="w-[50%] relative flex items-center translate-x-[10%] translate-y-[340%]">
+          {/* Left Arrow */}
+          <button
+            onClick={() => mainEventSwiperRef.current?.slidePrev()}
+            className="absolute left-[-15px] z-10 w-6 h-6 bg-fourth-300 rounded-full flex items-center justify-center text-white hover:bg-fourth-400 transition-colors"
+          >
+            <FaChevronLeft className="text-xs" />
+          </button>
+
+          {/* Tablet+ Slider */}
+          <div className="w-full">
+            <Swiper
+              onSwiper={(swiper) => {
+                mainEventSwiperRef.current = swiper;
+              }}
+              slidesPerView={2}
+              spaceBetween={10}
+              grabCursor={true}
+              modules={[]}
+              className="w-full"
+            >
+              {mainEventData.map((item) => (
+                <SwiperSlide key={item.id}>
+                  <div
+                    className="w-[100%] h-[103px] bg-fourth-25 border-4 border-fifth-25 p-2 flex flex-col relative"
+                    style={{
+                      borderRadius: '10px'
+                    }}
+                  >
+                    <div className="flex-1">
+                      <Typography.Poppins
+                        level={1}
+                        className="text-third-50 text-xs text-center mb-1 whitespace-nowrap border-b border-fourth-300 pb-1"
+                      >
+                        {item.title}
+                      </Typography.Poppins>
+                      <Typography.Poppins
+                        level={11}
+                        className="text-fourth-400 text-3xs text-justify leading-snug"
+                      >
+                        {item.description}
+                      </Typography.Poppins>
+                    </div>
+                    {/* View More Button - Positioned at bottom center */}
+                    <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2">
+                      <div
+                        className="w-[60px] h-[13px] bg-fourth-300 flex items-center justify-center cursor-pointer rounded-full"
+                        onClick={() => {
+                          console.log('View more clicked for:', item.title);
+                        }}
+                      >
+                        <Typography.Poppins
+                          level={11}
+                          className="text-white text-2xs whitespace-nowrap"
+                        >
+                          View more
+                        </Typography.Poppins>
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+
+          {/* Right Arrow */}
+          <button
+            onClick={() => mainEventSwiperRef.current?.slideNext()}
+            className="absolute right-[-15px] z-10 w-6 h-6 bg-fourth-300 rounded-full flex items-center justify-center text-white hover:bg-fourth-400 transition-colors"
+          >
+            <FaChevronRight className="text-xs" />
+          </button>
+        </div>
+
+        {/* Date Component */}
+        <div
+          className="w-[20%] h-[30px] bg-[#C64C5C] border-[2px] border-fourth-25 flex items-center justify-center px-2 cursor-text left-0 top-0 translate-x-[100%] translate-y-[1400%]"
+          style={{
+            borderRadius: '15px 0 15px 0'
+          }}
+        >
+          <FaWhatsapp className="text-white text-xs flex-shrink-0 mr-2" />
+          <Typography.Poppins
+            level={5}
+            className="text-white text-2xs text-center mt-0.5"
+          >
+            0821213123124 (Nama)
+          </Typography.Poppins>
+        </div>
+
+        {/* Swiper Container */}
+        <div className="absolute right-0 top-0 w-[40%] h-[22%] mb-5 z-40 translate-x-[-5%] translate-y-[125%] border border-green-800">
+          <Swiper
+            effect={"coverflow"}
+            direction={"vertical"}
+            grabCursor={true}
+            centeredSlides={true}
+            slidesPerView={3}
+            spaceBetween={20}
+            coverflowEffect={{
+              rotate: 0,
+              stretch: 0,
+              depth: 100,
+              modifier: 15,
+              slideShadows: false, // Menghilangkan shadow di samping foto
+            }}
+            loop={true}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[EffectCoverflow, Pagination, Navigation]}
+            className="w-full h-full"
+          >
+            <SwiperSlide className="flex items-center justify-center">
+              <div className="xl:w-[608px] xl:h-[395px] relative lg:w-[508px] lg:h-[295px] xs:w-[280px] xs:h-[180px] sm:w-[280px] sm:h-[180px] md:w-[308px] md:h-[200px] rounded-2xl overflow-hidden"> {/* Lebih rounded */}
+                <Image
+                  src="https://raw.githubusercontent.com/EPW16-ITS/assets/main/epc0.webp"
+                  alt="Injection Image 1"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className="flex items-center justify-center">
+              <div className="xl:w-[608px] xl:h-[395px] relative lg:w-[508px] lg:h-[295px] xs:w-[280px] xs:h-[180px] sm:w-[280px] sm:h-[180px] md:w-[308px] md:h-[200px] rounded-2xl overflow-hidden"> {/* Lebih rounded */}
+                <Image
+                  src="https://raw.githubusercontent.com/EPW16-ITS/assets/main/epc1.webp"
+                  alt="Injection Image 2"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className="flex items-center justify-center">
+              <div className="xl:w-[608px] xl:h-[395px] relative lg:w-[508px] lg:h-[295px] xs:w-[280px] xs:h-[180px] sm:w-[280px] sm:h-[180px] md:w-[308px] md:h-[200px] rounded-2xl overflow-hidden"> {/* Lebih rounded */}
+                <Image
+                  src="https://raw.githubusercontent.com/EPW16-ITS/assets/main/epc2.webp"
+                  alt="Injection Image 3"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </SwiperSlide>
+          </Swiper>
+        </div>
+        {/* Timeline Title */}
+        <div className="absolute w-[20%] h-[3%] translate-x-[340%] translate-y-[1000%]">
+          <Typography.Poppins
+            level={4}
+            className="text-transparent bg-clip-text bg-gradient-to-r from-[#F85F73] to-[#037CB8] text-center text-xl leading-tight top-0 right-0"
+            style={{
+              WebkitTextStroke: "4px rgb(var(--color-primary-100))"
+            }}
+          >
+            TIMELINE
+          </Typography.Poppins>
+        </div>
+        {/* Date Component */}
+        <div
+          className="w-[25%] h-[5%] bg-gradient-to-r from-[#C64C5C] to-[#BA93E5] border-[2px] border-fifth-25 flex items-center justify-center px-2 cursor-text translate-x-[265%] translate-y-[700%]"
+          style={{
+            borderRadius: '0 15px 0 15px'
+          }}
+        >
+          <FaCalendar className="text-white text-base flex-shrink-0 mr-3" />
+          <Typography.Poppins
+            level={9}
+            className="text-white text-2xs text-center"
+          >
+            25 Oktober 2025
+          </Typography.Poppins>
+        </div>
+        <div className="w-[40%] flex gap-4 border-4 border-green-950 translate-x-[145%] translate-y-[950%]">
+          {/* Registration Button - Smaller */}
+          <Button.Primary
+            type="default"
+            className="w-1/2 h-full flex items-center justify-center gap-2"
+          >
+            <div className="flex items-center gap-2">
+              <Typography.Poppins level={11} className="text-2xs">
+                REGISTRATION
+              </Typography.Poppins>
+              <FaArrowRight className="text-2xs" />
+            </div>
+          </Button.Primary>
+
+          {/* Guidebook Button - Smaller */}
+          <Button.Primary
+            type="default"
+            className="w-1/2 h-full flex items-center justify-center gap-2"
+          >
+            <div className="flex items-center gap-2">
+              <Typography.Poppins level={11} className="text-2xs">
+                GUIDEBOOK
+              </Typography.Poppins>
+              <FaBook className="text-2xs" />
+            </div>
+          </Button.Primary>
+        </div>
+
+
+      </section>
+    </div>
+
+
+    {/* Mobile */}
+    <div className="block md:hidden">
       {/* Main Content */}
       <section className="relative w-full sm:h-[800px] xs:h-[800px] md:h-[900px] overflow-hidden bg-gradient-to-b from-[#1F0C49] from-20% bg-[#116B98] to-50%">
         {/* Pattern Background */}
@@ -70,6 +328,7 @@ const Ephyfest = () => {
             EPHYFEST
           </Typography.Homica>
         </div>
+        
         {/* Rectangle Rounded Kubu Kiri*/}
         <div className="lg:left-[25%] sm:relative absolute xs:left-1/2 xs:transform xs:-translate-x-1/2 xs:top-[10%] sm:left-1/2 sm:transform sm:-translate-x-1/2 sm:top-[15%] md:left-[25%] md:top-[20%] xs:w-[317px] xs:h-[129px] sm:w-[560px] sm:h-[280px] md:w-[350px] md:h-[450px] lg:w-[450px] lg:h-[534px] xl:w-[515px] xl:h-[534px] 2xl:w-[615px] 2xl:h-[454px] bg-fifth-50 border-2 border-primary-25 z-30"
           style={{
@@ -300,6 +559,7 @@ const Ephyfest = () => {
                 </div>
       </section>
     </div>
+  </div>
   );
 };
 
