@@ -13,7 +13,7 @@ const Event = () => {
             <Injection />
             <EPC />
             <Micon />
-            {/* <Ephyfest /> */}
+            <Ephyfest />
         </div>
     );
 }
