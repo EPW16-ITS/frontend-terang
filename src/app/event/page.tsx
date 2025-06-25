@@ -9,7 +9,7 @@ const Event = () => {
 
 
     return (
-        <div className="" >
+        <div className="">
             <Injection />
             <EPC />
             <Micon />
