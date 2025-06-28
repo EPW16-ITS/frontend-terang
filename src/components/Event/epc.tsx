@@ -305,7 +305,7 @@ const EPC = () => {
             suffix={<FaArrowRight size={20} className="xs:ml-1" />}
             className="flex items-center xs:text-2xs xs:px-4 xs:py-6 sm:px-4 sm:py-6 md:px-6 md:py-8"
           >
-            <a href="its.id/m/RegistEPC16" className="xs:text-xs sm:text-xs md:text-xs">REGISTRATION</a>
+            <a href="https://its.id/m/RegistEPC16" className="xs:text-xs sm:text-xs md:text-xs">REGISTRATION</a>
           </Button.Primary>
         </div>
       </section>
