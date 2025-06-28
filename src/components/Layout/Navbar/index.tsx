@@ -72,7 +72,7 @@ export default function NavbarItem({ className, href }: NavbarProps): React.Reac
           <Button.Secondary
             type="outline"
             size="sm"
-            onClick={() => handleExternalLinkClick("/announcement")}
+            onClick={() => handleExternalLinkClick("https://epwits.up.railway.app/findyourteam")}
             className={isAnnouncementSelected ? "selected" : ""}
           >
             <Typography.Poppins
