@@ -95,7 +95,7 @@ const TimelineItem = ({ title, date, highlight = false }: TimelineItemProps) => 
 // Contact Person Info Component (tetap bentuk rectangle rounded, cursor text)
 const ContactPersonInfo = ({ phone, name }: ContactPersonInfoProps) => (
   <div
-    className="xs:w-[160px] xs:h-[30px] sm:w-[160px] sm:h-[30px] md:w-[200px] md:h-[38px] bg-secondary-400 border-[2px] border-third-50 flex items-center xs:px-2 sm:px-2 md:px-3 xs:space-x-1 sm:space-x-1 md:space-x-2 cursor-text"
+    className="xs:w-[160px] xs:h-[30px] sm:w-[200px] sm:h-[30px] md:w-[250px] md:h-[38px] bg-secondary-400 border-[2px] border-third-50 flex items-center xs:px-2 sm:px-2 sm:py-2 md:px-3 xs:space-x-1 sm:space-x-1 md:space-x-2 cursor-text"
     style={{
       borderRadius: '20px 0 20px 0' // Rounded kiri bawah dan kanan atas
     }}
@@ -103,7 +103,7 @@ const ContactPersonInfo = ({ phone, name }: ContactPersonInfoProps) => (
     <FaWhatsapp className="xs:hidden text-white md:text-base flex-shrink-0" />
     <Typography.Poppins
       level={8}
-      className="text-white xs:text-2xs sm:text-sm md:text-sm text-left truncate"
+      className="text-white xs:text-2xs sm:text-xs md:text-xs text-left truncate"
     >
       {phone} ({name})
     </Typography.Poppins>
@@ -369,7 +369,7 @@ const EPC = () => {
 
             {/* Contact Person Info - Centered */}
             {/* Contact Person Info - Two contacts side by side on larger screens, stacked on mobile */}
-            <div className="flex xs:flex-col xs:space-y-1 sm:flex-col sm:space-y-2 md:flex-row md:space-x-3 md:space-y-0 justify-center xs:absolute xs:bottom-[-30%] xs:left-1/2 xs:transform xs:-translate-x-1/2 sm:absolute sm:bottom-[-25%] sm:left-1/2 sm:transform sm:-translate-x-1/2 md:static md:transform-none z-55">
+            <div className="flex xs:flex-col xs:space-y-1 sm:flex-col sm:space-y-2 md:flex-row md:space-x-3 md:space-y-0 justify-center xs:absolute xs:bottom-[-30%] xs:left-1/2 xs:transform xs:-translate-x-1/2 sm:absolute sm:bottom-[-30%] sm:left-1/2 sm:transform sm:-translate-x-1/2 md:static md:transform-none z-55">
               <ContactPersonInfo
                 phone="082264070927"
                 name="Nafisha"
