@@ -55,7 +55,7 @@ export default function MenuHidden({
               Event
             </Typography.Poppins>
           </Link>
-          <Link href="/announcement" onClick={onClose}>
+          <Link href="https://epwits.up.railway.app/findyourteam" onClick={onClose}>
             <Typography.Poppins level={7} size="sm">
               Announcement
             </Typography.Poppins>
