@@ -69,7 +69,7 @@ export default function FooterItem() {
                 About
               </Typography.Poppins>
             </Link>
-            <Link className="list-4" href="/register">
+            <Link className="list-4" href="https://epwits.up.railway.app/findyourteam">
               <Typography.Poppins level={7} size="sm">
                 Announcement
               </Typography.Poppins>
