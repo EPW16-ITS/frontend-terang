@@ -16,7 +16,7 @@ export default function NavbarItem({ className, href }: NavbarProps): React.Reac
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
 
-  const isAnnouncementSelected = pathname === "/announcement";
+  const isAnnouncementSelected = pathname === "https://epwits.up.railway.app/findyourteam";
 
   const handleMenuToggle = () => setIsMenuOpen((prev) => !prev);
 
