@@ -3,6 +3,8 @@ import Button from "@/components/Button";
 import Image from "next/image";
 import { FaArrowDown, FaArrowRight, FaBook, FaCalendar } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -19,6 +21,13 @@ interface ContactPersonInfoProps {
 interface OpenRegInfoProps {
   date: string;
 }
+
+interface TimelineItemProps {
+  title: string;
+  date: string;
+  highlight?: boolean;
+}
+
 // import required modules
 import { Pagination, EffectCoverflow, Autoplay, Navigation } from 'swiper/modules';
 
@@ -40,6 +49,46 @@ const BlueXIcon = () => (
 const CircleArrowRightIcon = () => (
   <div className="flex items-center justify-center xs:w-2 xs:h-2 sm:w-2 sm:h-2 md:w-5 md:h-5 bg-white rounded-full xs:ml-1 sm:ml-1 md:ml-2">
     <FaArrowRight className="text-primary-300 xs:text-2xs sm:text-2xs md:text-sm" />
+  </div>
+);
+
+// Timeline Item Component (Rectangle Rounded 2 sisi)
+const TimelineItem = ({ title, date, highlight = false }: TimelineItemProps) => (
+  <div className="flex flex-col items-center mb-4">
+    <div
+      className={`
+        xs:w-[280px] xs:h-[50px] 
+        sm:w-[320px] sm:h-[55px] 
+        md:w-[380px] md:h-[60px] 
+        lg:w-[420px] lg:h-[65px] 
+        xl:w-[460px] xl:h-[70px] 
+        2xl:w-[500px] 2xl:h-[75px]
+        bg-fourth-25 border-2 border-black 
+        flex flex-col items-center justify-center 
+        px-4 py-2
+        ${highlight ? 'shadow-lg transform scale-105' : ''}
+      `}
+      style={{
+        borderRadius: '0 20px 0 20px'
+      }}
+    >
+      <Typography.Poppins
+        level={6}
+        className={`
+          text-black text-center font-semibold
+          xs:text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl
+          ${highlight ? 'font-bold' : ''}
+        `}
+      >
+        {title}
+      </Typography.Poppins>
+      <Typography.Poppins
+        level={7}
+        className="text-gray-700 text-center xs:text-2xs sm:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-lg"
+      >
+        {date}
+      </Typography.Poppins>
+    </div>
   </div>
 );
 
@@ -80,8 +129,125 @@ const OpenRegInfo = ({ date }: OpenRegInfoProps) => (
 );
 
 const EPC = () => {
+  const [isTimelineModalOpen, setIsTimelineModalOpen] = useState(false);
+
+  const timelineItems = [
+    {
+      title: "Pendaftaran dan Pengumpulan Abstrak",
+      date: "23 Juni 2025 - 22 Juli 2025",
+      highlight: true
+    },
+    {
+      title: "Pengumuman Lolos Abstrak",
+      date: "6 - 8 Agustus 2025"
+    },
+    {
+      title: "Pendaftaran Full Paper Batch I",
+      date: "9 Agustus - 13 September 2025",
+      highlight: true
+    },
+    {
+      title: "Pendaftaran Full Paper Batch II",
+      date: "14 - 23 September 2025"
+    },
+    {
+      title: "Pengumuman Finalis",
+      date: "7 - 10 Oktober 2025",
+      highlight: true
+    },
+    {
+      title: "FINAL",
+      date: "24 - 25 Oktober 2025",
+      highlight: true
+    }
+  ];
+
   return (
     <div>
+      {/* Timeline Modal */}
+      <AnimatePresence>
+        {isTimelineModalOpen && (
+          <motion.div
+            key="modal"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
+            onClick={() => setIsTimelineModalOpen(false)}
+          >
+            <motion.div
+              initial={{ y: 100, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              exit={{ y: 100, opacity: 0 }}
+              transition={{ duration: 0.3, ease: "easeOut" }}
+              className="bg-secondary-25 rounded-xl p-6 relative xs:px-4 xs:w-[90%] sm:px-6 sm:w-[85%] md:w-[80%] lg:w-[70%] xl:w-[65%] 2xl:w-[60%] pt-4 max-h-[90vh] overflow-y-auto"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <button
+                onClick={() => setIsTimelineModalOpen(false)}
+                className="absolute top-4 right-4 text-gray-600 hover:text-black text-2xl z-10"
+              >
+                ✕
+              </button>
+
+              {/* Title Box */}
+              <div className="flex items-center justify-center mb-8">
+                <h2 className="bg-gradient-to-r from-[#702B34] to-[#1F0C49] w-[250px] h-[60px] flex items-center justify-center text-2xl font-bold text-white rounded-lg shadow-lg">
+                  Timeline EPC
+                </h2>
+              </div>
+
+              {/* Timeline Container - Flowchart Style */}
+              <div className="relative w-full flex flex-col items-center space-y-6">
+                {/* Vertical Line */}
+                <motion.div
+                  initial={{ scaleY: 0 }}
+                  animate={{ scaleY: 1 }}
+                  transition={{ delay: 0.3, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+                  className="absolute top-0 bottom-0 left-1/2 transform -translate-x-1/2 w-[3px] bg-gray-400 z-0 origin-top"
+                />
+
+                {/* Timeline Items */}
+                {timelineItems.map((item, index) => (
+                  <motion.div
+                    key={`timeline-${index}`}
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ 
+                      delay: 0.5 + index * 0.15, 
+                      duration: 0.5, 
+                      ease: "easeOut" 
+                    }}
+                    className="relative z-10"
+                  >
+                    <TimelineItem
+                      title={item.title}
+                      date={item.date}
+                      highlight={item.highlight}
+                    />
+                    
+                    {/* Arrow connector (except for last item) */}
+                    {index < timelineItems.length - 1 && (
+                      <motion.div
+                        initial={{ opacity: 0, scaleY: 0 }}
+                        animate={{ opacity: 1, scaleY: 1 }}
+                        transition={{ 
+                          delay: 0.7 + index * 0.15, 
+                          duration: 0.3 
+                        }}
+                        className="flex justify-center my-2"
+                      >
+                        <FaArrowDown className="text-gray-500 text-xl" />
+                      </motion.div>
+                    )}
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
       {/* Main Content */}
       <section className="relative w-full sm:h-[800px] xs:h-[800px] md:h-[900px] overflow-hidden bg-gradient-to-b from-[#702B34] from-0% via-primary-300 to-primary-300 to-68 xs:px-3 sm:px-3 md:px-8 xs:py-6 sm:py-6 md:py-10">
         {/* Pattern Background */}
@@ -181,13 +347,14 @@ const EPC = () => {
             </div>
             {/* Buttons - Centered horizontally */}
             <div className="xs:flex sm:flex sm:flex-col sm:space-y-2 sm:space-x-0 md:flex md:flex-row md:gap-4 lg:gap-10 md:justify-center md:items-center md:w-full justify-center xs:mb-2 sm:mb-3 md:mb-4 xs:mt-8 sm:mt-[0px] md:mt-[60px] lg:mt-[10px] xl:mt-[50px]">
-              {/* Registration Button */}
+              {/* Timeline Button - Updated onClick */}
               <Button.Primary
                 type="default"
                 suffix={<FaArrowRight size={20} className="xs:size-3 xs:ml-1 sm:ml-2 md:ml-3 xl:ml-0" />}
                 className="xs:px-4 xs:py-6 flex xs:absolute xs:right-[5%] xs:bottom-[5%] sm:absolute sm:right-[5%] sm:bottom-[-20%] md:relative md:bottom-0 md:right-0 md:top-0 md:left-0 items-center justify-center xs:text-2xs xs:w-[100px] xs:h-[28px] sm:w-[120px] sm:h-[32px] md:w-[130px] md:h-[44px] sm:px-3 sm:py-1.5 md:px-4 md:py-2"
+                onClick={() => setIsTimelineModalOpen(true)}
               >
-                <a href="#" className="xs:text-xs sm:text-xs md:text-xs xl:text-lg">TIMELINE</a>
+                <span className="xs:text-xs sm:text-xs md:text-xs xl:text-lg">TIMELINE</span>
               </Button.Primary>
 
               {/* Guidebook Button */}
