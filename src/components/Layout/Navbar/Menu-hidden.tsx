@@ -66,13 +66,13 @@ export default function MenuHidden({
       {/* Footer */}
       <div className="bg-primary-400 w-full px-4 py-6 flex flex-col items-center gap-3 text-white">
         <div className="footer-social flex gap-6">
-          <Link href="https://linkedin.com" target="_blank">
+          <Link href="https://www.linkedin.com/company/engineering-physics-week" target="_blank">
             <FaLinkedin size={26} />
           </Link>
-          <Link href="https://instagram.com" target="_blank">
+          <Link href="https://www.instagram.com/epwits" target="_blank">
             <FaInstagram size={26} />
           </Link>
-          <Link href="https://tiktok.com" target="_blank">
+          <Link href="https://www.tiktok.com/@epw.its?_t=ZS-8xUhKXWlKzK&_r=1" target="_blank">
             <FaTiktok size={26} />
           </Link>
         </div>
