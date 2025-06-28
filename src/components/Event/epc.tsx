@@ -196,7 +196,7 @@ const EPC = () => {
                 suffix={<FaBook size={20} className="xs:size-3 xs:ml-1 sm:ml-2 md:ml-3 xl:ml-0" />}
                 className="xs:px-4 xs:py-6 flex xs:absolute xs:left-[5%] xs:bottom-[5%] sm:absolute sm:left-[5%] sm:bottom-[-20%] md:relative md:bottom-0 md:left-0 md:top-0 md:right-0 items-center justify-center xs:text-2xs xs:w-[100px] xs:h-[28px] sm:w-[120px] sm:h-[32px] md:w-[130px] md:h-[44px] sm:px-3 sm:py-1.5 md:px-4 md:py-2"
               >
-                <a href="#" className="xs:text-xs sm:text-xs md:text-xs xl:text-sm">GUIDEBOOK</a>
+                <a href="https://linktr.ee/EPC16" className="xs:text-xs sm:text-xs md:text-xs xl:text-sm">KEBUTUHAN</a>
               </Button.Primary>
             </div>
 
@@ -305,7 +305,7 @@ const EPC = () => {
             suffix={<FaArrowRight size={20} className="xs:ml-1" />}
             className="flex items-center xs:text-2xs xs:px-4 xs:py-6 sm:px-4 sm:py-6 md:px-6 md:py-8"
           >
-            <a href="#" className="xs:text-xs sm:text-xs md:text-xs">REGISTRATION</a>
+            <a href="its.id/m/RegistEPC16" className="xs:text-xs sm:text-xs md:text-xs">REGISTRATION</a>
           </Button.Primary>
         </div>
       </section>
