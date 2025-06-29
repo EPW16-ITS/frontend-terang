@@ -35,7 +35,7 @@ interface TrapeziumInfoProps {
 const RectangleButton = ({ text, className = "", onClick }: RectangleButtonProps) => {
   return (
     <div
-      className={`xs:w-[100px] xs:h-[22px] sm:w-[100px] sm:h-[22px] md:w-[140px] md:h-[32px] lg:w-[180px] lg:h-[43px] bg-primary-400 border border-third-50 rounded-lg flex items-center justify-center gap-1 cursor-pointer hover:opacity-90 transition-opacity ${className}`}
+      className={`xs:w-[100px] xs:h-[22px] sm:w-[120px] sm:h-[22px] md:w-[140px] md:h-[32px] lg:w-[180px] lg:h-[43px] xl:w-[200px] xl:h-[53px] 2xl:w-[220px] 2xl:h-[63px] bg-primary-400 border border-third-50 rounded-lg flex items-center justify-center gap-1 cursor-pointer hover:opacity-90 transition-opacity ${className}`}
       style={{
         borderRadius: '0 80px 0 80px',
         pointerEvents: 'auto' // Tambahan penting biar klik selalu ditangkap
@@ -44,7 +44,7 @@ const RectangleButton = ({ text, className = "", onClick }: RectangleButtonProps
     >
       <Typography.Poppins
         level={8}
-        className="text-white xs:text-2xs sm:text-2xs md:text-xs text-sm font-medium">
+        className="text-white xs:text-2xs sm:text-xs md:text-sm lg:text-base xl:text-xl 2xl:text-2xl font-medium">
         {text}
       </Typography.Poppins>
       <FaArrowCircleRight size={20} className="xs:size-3 sm:size-3 md:size-4 text-white text-lg xs:text-2xl sm:text-2xl md:text-xl" />
@@ -61,14 +61,14 @@ const RegistrationButton = ({ text, className = "", onClick }:RegistrationButton
     >
       {/* Main Rectangle with Gradient Background */}
       <div
-        className="lg:border-4 md:border-3 border-black relative lg:w-[280px] lg:h-[100px] md:w-[220px] md:h-[80px] xs:w-[97px] xs:h-[48px] sm:w-[97px] sm:h-[48px] lg:rounded-2xl md:rounded-xl xs:rounded-xl sm:rounded-xl flex items-center justify-center"
+        className="lg:border-4 md:border-3 border-black relative 2xl:w-[300px] 2xl:h-[150px] xl:w-[280px] xl:h-[120px] lg:w-[280px] lg:h-[120px] md:w-[220px] md:h-[80px] xs:w-[97px] xs:h-[48px] sm:w-[130px] sm:h-[48px] lg:rounded-2xl md:rounded-xl xs:rounded-xl sm:rounded-xl flex items-center justify-center"
         style={{
           background: 'linear-gradient(to right, #037CB8 0%, #78D1FE 50%, #037CB8 100%)'
         }}
       >
         {/* Text with Poppins Typography */}
         <span
-          className="font-bold xs:text-xs sm:text-xs md:text-sm text-black text-wl leading-tight text-center px-4"
+          className="font-bold xs:text-xs sm:text-sm md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl text-black leading-tight text-center px-4"
           style={{ fontFamily: 'Poppins, sans-serif' }}
         >
           {text}
@@ -179,8 +179,8 @@ const TrapeziumInfo = ({ label, content, className = "", isInverted = false }:Tr
   return (
     <div className={`relative flex flex-col items-center ${className}`}>
       {/* Label Rectangle */}
-      <div className="xs:w-[100px] xs:h-[17px] sm:w-[100px] sm:h-[17px] md:w-[120px] md:h-[20px] relative bg-fifth-50 border-[2px] border-black rounded-md z-10 text-center">
-        <Typography.Homica className="text-primary-100 xs:text-xs sm:text-xs md:text-sm text-center whitespace-nowrap"
+      <div className="xs:w-[100px] xs:h-[17px] sm:w-[140px] sm:h-[17px] md:w-[140px] md:h-[20px] lg:w-[180px] lg:h-[30px] xl:w-[200px] xl:h-[35px] 2xl:w-[250px] 2xl:h-[40px] relative bg-fifth-50 border-[2px] border-black rounded-md z-10 text-center">
+        <Typography.Homica className="text-center text-primary-100 xs:text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl 2xl:text-3xl justify-center items-center whitespace-nowrap"
           level={8}>
           {label}
         </Typography.Homica>
@@ -190,15 +190,15 @@ const TrapeziumInfo = ({ label, content, className = "", isInverted = false }:Tr
       <div className="relative">
         {/* Main Trapezium */}
         <div
-          className="relative xs:w-[121px] xs:h-[43px] sm:w-[121px] sm:h-[43px] md:w-[180px] md:h-[60px] w-[270px] h-[80px] flex items-center justify-center"
+          className="relative xs:w-[121px] xs:h-[43px] sm:w-[141px] sm:h-[43px] lg:w-[200px] lg:h-[90px] xl:w-[230px] xl:h-[100px] 2xl:w-[270px] 2xl:h-[120px] md:w-[180px] md:h-[70px] flex items-center justify-center"
           style={{
             background: 'linear-gradient(to right, #3A1E77 0%, #6C37DD 50%, #3A1E77 100%)',
             clipPath: clipPathStyle
           }}
         >
           {/* Content Text */}
-          <div className="text-center px-4">
-            <Typography.Homica className="xs:text-xs sm:text-xs md:text-sm text-white font-bold leading-tight"
+          <div className="text-center px-4 2xl:px-8">
+            <Typography.Homica className="xs:text-xs sm:text-sm md:text-xl lg:text-xl xl:text-2xl 2xl:text-3xl text-white font-bold leading-tight"
               level={8}>
               {content}
             </Typography.Homica>
@@ -277,7 +277,8 @@ const StackedTrapeziumLayout = () => {
         />
         <TrapeziumInfo
           label="Contact Person"
-          content="02847389201"
+          content="02847389201
+          (Nama)"
           isInverted={true}
         />
       </div>
@@ -499,26 +500,26 @@ const Micon = () => {
       {/* Judul */}
       <Typography.CrystalUniverseRegular
         level={7}
-        className="xs:text-xs sm:text-xs md:text-sm z-40 text-[#1DB2FD] text-center mb-10 xs:mb-4 sm:mb-4 md:mb-6"
+        className="xs:text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-wl z-40 text-[#1DB2FD] text-center mb-10 xs:mb-4 sm:mb-4 md:mb-6"
       >
         M I C R O C O N T R O L L E R
       </Typography.CrystalUniverseRegular>
       <Typography.Homica
         level={4}
-        className="xs:text-3xl sm:text-3xl md:text-4xl z-40 text-[#1DB2FD] text-center mb-10 xs:mb-4 sm:mb-4 md:mb-6"
+        className="xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl z-40 text-[#1DB2FD] text-center mb-10 xs:mb-4 sm:mb-4 md:mb-6"
       >
         CONTEST
       </Typography.Homica>
       <Typography.Poppins
         level={4}
-        className="xs:text-sm sm:text-sm md:text-base z-40 text-fifth-50 text-center mb-10 xs:mb-4 sm:mb-4 md:mb-6 px-5 xs:leading-normal sm:leading-normal md:leading-relaxed">
+        className="xs:text-sm sm:text-base md:text-lg lg:text-xl xl:text-wl 2xl:text-2xl z-40 text-fifth-50 text-center mb-10 xs:mb-4 sm:mb-4 md:mb-6 px-5 xs:leading-normal sm:leading-normal md:leading-relaxed">
         MICON (Microcontroller Contest) merupakan kompetisi tahunan yang ditujukan bagi siswa/i SMA dan SMK sederajat dengan fokus pada bidang instrumentasi.
         <br />
         Kompetisi ini menjadi wadah bagi siswa/i SMA/SMK/sederajat untuk mengembangkan pengetahuan tentang mikrokontroler.
       </Typography.Poppins>
 
       {/* Registration Buttons */}
-      <div className="relative z-40 flex flex-col xs:flex-row sm:flex-row md:flex-row items-center justify-center gap-6 mt-16 xs:mt-0 sm:mt-0 md:mt-4">
+      <div className="relative z-40 flex flex-col xs:flex-row sm:flex-row md:flex-row items-center justify-center gap-6 mt-16 xs:mt-0 sm:mt-2 sm:mb-4 md:mt-4">
         <RegistrationButton
           text="REGISTRATION HERE!"
           onClick={handleRegistrationClick}
@@ -559,7 +560,7 @@ const Micon = () => {
               className="w-full h-full"
             >
               <SwiperSlide className="flex items-center justify-center">
-                <div className="relative rounded-2xl overflow-hidden xs:w-[170px] xs:h-[170px] sm:w-[170px] sm:h-[170px] md:w-[200px] md:h-[200px]">
+                <div className="relative rounded-2xl overflow-hidden xs:w-[170px] xs:h-[170px] sm:w-[200px] sm:h-[200px] md:w-[230px] md:h-[230px] lg:w-[260px] lg:h-[260px] xl:w-[290px] xl:h-[290px] 2xl:w-[300px] 2xl:h-[300px]">
                   <Image
                     src="https://raw.githubusercontent.com/EPW16-ITS/assets/main/micon3.webp"
                     alt="Injection Image 1"
@@ -569,7 +570,7 @@ const Micon = () => {
                 </div>
               </SwiperSlide>
               <SwiperSlide className="flex items-center justify-center">
-                <div className="relative rounded-2xl overflow-hidden xs:w-[170px] xs:h-[170px] sm:w-[170px] sm:h-[170px] md:w-[200px] md:h-[200px]">
+                <div className="relative rounded-2xl overflow-hidden xs:w-[170px] xs:h-[170px] sm:w-[170px] sm:h-[170px] md:w-[200px] md:h-[200px] lg:w-[260px] lg:h-[260px] xl:w-[290px] xl:h-[290px] 2xl:w-[300px] 2xl:h-[300px]">
                   <Image
                     src="https://raw.githubusercontent.com/EPW16-ITS/assets/main/micon1.webp"
                     alt="Injection Image 2"
@@ -579,7 +580,7 @@ const Micon = () => {
                 </div>
               </SwiperSlide>
               <SwiperSlide className="flex items-center justify-center">
-                <div className="relative rounded-2xl overflow-hidden xs:w-[170px] xs:h-[170px] sm:w-[170px] sm:h-[170px] md:w-[200px] md:h-[200px]">
+                <div className="relative rounded-2xl overflow-hidden xs:w-[170px] xs:h-[170px] sm:w-[170px] sm:h-[170px] md:w-[200px] md:h-[200px] lg:w-[260px] lg:h-[260px] xl:w-[290px] xl:h-[290px] 2xl:w-[300px] 2xl:h-[300px]">
                   <Image
                     src="https://raw.githubusercontent.com/EPW16-ITS/assets/main/micon2.webp"
                     alt="Injection Image 3"
