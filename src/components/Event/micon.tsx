@@ -179,8 +179,8 @@ const TrapeziumInfo = ({ label, content, className = "", isInverted = false }:Tr
   return (
     <div className={`relative flex flex-col items-center ${className}`}>
       {/* Label Rectangle */}
-      <div className="xs:w-[100px] xs:h-[17px] sm:w-[140px] sm:h-[17px] md:w-[140px] md:h-[20px] lg:w-[180px] lg:h-[30px] xl:w-[200px] xl:h-[35px] 2xl:w-[250px] 2xl:h-[40px] relative bg-fifth-50 border-[2px] border-black rounded-md z-10 text-center">
-        <Typography.Homica className="text-center text-primary-100 xs:text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl 2xl:text-3xl justify-center items-center whitespace-nowrap"
+      <div className="xs:w-[100px] xs:h-[17px] sm:w-[140px] sm:h-[17px] md:w-[170px] md:h-[27px] lg:w-[180px] lg:h-[30px] xl:w-[200px] xl:h-[35px] 2xl:w-[250px] 2xl:h-[40px] relative bg-fifth-50 border-[2px] border-black rounded-md z-10 text-center">
+        <Typography.Homica className="text-center text-primary-100 xs:text-xs sm:text-sm md:text-xl lg:text-xl xl:text-2xl 2xl:text-3xl justify-center items-center whitespace-nowrap"
           level={8}>
           {label}
         </Typography.Homica>
@@ -190,7 +190,7 @@ const TrapeziumInfo = ({ label, content, className = "", isInverted = false }:Tr
       <div className="relative">
         {/* Main Trapezium */}
         <div
-          className="relative xs:w-[121px] xs:h-[43px] sm:w-[141px] sm:h-[43px] lg:w-[200px] lg:h-[90px] xl:w-[230px] xl:h-[100px] 2xl:w-[270px] 2xl:h-[120px] md:w-[180px] md:h-[70px] flex items-center justify-center"
+          className="relative xs:w-[121px] xs:h-[43px] sm:w-[141px] sm:h-[43px] lg:w-[200px] lg:h-[90px] xl:w-[230px] xl:h-[100px] 2xl:w-[270px] 2xl:h-[120px] md:w-[180px] md:h-[100px] flex items-center justify-center"
           style={{
             background: 'linear-gradient(to right, #3A1E77 0%, #6C37DD 50%, #3A1E77 100%)',
             clipPath: clipPathStyle
@@ -366,7 +366,7 @@ const Micon = () => {
   ];
 
   return (
-    <section className="relative w-full sm:h-[800px] xs:h-[800px] md:h-[900px] lg:h-[1024px] overflow-hidden bg-gradient-to-b from-primary-300 to-[#39488E] py-12">
+    <section className="relative w-full sm:h-[800px] xs:h-[800px] md:h-[900px] lg:h-[1024px] overflow-hidden bg-gradient-to-b from-[#101428] via-[#101428] to-[#39488E] py-12">
       <AnimatePresence>
         {isTimelineModalOpen && (
           <motion.div
@@ -500,7 +500,7 @@ const Micon = () => {
       {/* Judul */}
       <Typography.CrystalUniverseRegular
         level={7}
-        className="xs:text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-wl z-40 text-[#1DB2FD] text-center mb-10 xs:mb-4 sm:mb-4 md:mb-6"
+        className="xs:text-xs sm:text-lg md:text-xl lg:text-2xl xl:text-4xl 2xl:text-4xl z-40 text-[#1DB2FD] text-center mb-10 xs:mb-4 sm:mb-4 md:mb-6 lg:mb-8 xl:mb-10 2xl:mb-12 font-bold"
       >
         M I C R O C O N T R O L L E R
       </Typography.CrystalUniverseRegular>
@@ -512,14 +512,14 @@ const Micon = () => {
       </Typography.Homica>
       <Typography.Poppins
         level={4}
-        className="xs:text-sm sm:text-base md:text-lg lg:text-xl xl:text-wl 2xl:text-2xl z-40 text-fifth-50 text-center mb-10 xs:mb-4 sm:mb-4 md:mb-6 px-5 xs:leading-normal sm:leading-normal md:leading-relaxed">
+        className="xs:text-sm sm:text-base md:text-lg lg:text-2xl xl:text-2xl 2xl:text-2xl z-40 text-fifth-50 text-center mb-10 xs:mb-4 sm:mb-6 md:mb-8 px-5 xl:px-10 xs:leading-normal sm:leading-normal md:leading-relaxed">
         MICON (Microcontroller Contest) merupakan kompetisi tahunan yang ditujukan bagi siswa/i SMA dan SMK sederajat dengan fokus pada bidang instrumentasi.
         <br />
         Kompetisi ini menjadi wadah bagi siswa/i SMA/SMK/sederajat untuk mengembangkan pengetahuan tentang mikrokontroler.
       </Typography.Poppins>
 
       {/* Registration Buttons */}
-      <div className="relative z-40 flex flex-col xs:flex-row sm:flex-row md:flex-row items-center justify-center gap-6 mt-16 xs:mt-0 sm:mt-2 sm:mb-4 md:mt-4">
+      <div className="relative z-40 flex flex-col xs:flex-row sm:flex-row md:flex-row items-center justify-center gap-6 mt-16 xs:mt-0 sm:mt-2 sm:mb-6 md:mt-10 md:mb-12 lg:mt-12 lg:mb-16 xl:mt-16 xl:mb-20 2xl:mt-12 2xl:mb-12">
         <RegistrationButton
           text="REGISTRATION HERE!"
           onClick={handleRegistrationClick}

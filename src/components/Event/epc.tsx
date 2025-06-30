@@ -249,7 +249,7 @@ const EPC = () => {
       </AnimatePresence>
 
       {/* Main Content */}
-      <section className="relative w-full sm:h-[800px] xs:h-[800px] md:h-[900px] overflow-hidden bg-gradient-to-b from-[#702B34] from-0% via-primary-300 to-primary-300 to-68 xs:px-3 sm:px-3 md:px-8 xs:py-6 sm:py-6 md:py-10">
+      <section className="relative w-full sm:h-[800px] xs:h-[800px] md:h-[900px] overflow-hidden bg-gradient-to-b from-[#1F0C49] from-0% via-primary-300 to-[#101428] to-68% xs:px-3 sm:px-3 md:px-8 xs:py-6 sm:py-6 md:py-10">
         {/* Pattern Background */}
         <div className="absolute inset-0 w-full h-full">
           <Image

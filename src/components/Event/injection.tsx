@@ -52,7 +52,7 @@ const Injection = () => {
   return (
     <div>
       {/* Main Content */}
-      <section className="relative w-full xs:h-[800px] sm:h-[850px] md:h-[900px] xl:h-[1024px] overflow-hidden bg-gradient-to-b from-[#D65263] from-0% via-[#702B34] to-[#702B34] to-68%">
+      <section className="relative w-full xs:h-[800px] sm:h-[850px] md:h-[900px] xl:h-[1024px] overflow-hidden bg-gradient-to-b from-[#D65263] from-0% via-[#702B34] to-[#1F0C49] to-68%">
         {/* Pattern Background */}
         <div className="absolute inset-0 w-full h-full z-49">
           <Image
