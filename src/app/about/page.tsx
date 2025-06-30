@@ -3,6 +3,7 @@ import Typography from "@/components/Typography";
 import Tekfis from "@/components/About/tekfis";
 import Akreditasi from "@/components/About/akreditasi";
 import BidangMinat from "@/components/About/bidangminat";
+import Laboratory from "@/components/About/laboratory";
 
 const About = () => {
 
@@ -12,6 +13,7 @@ const About = () => {
             <Tekfis />
             <Akreditasi />
             <BidangMinat />
+            <Laboratory />
         </div>
     );
 }
