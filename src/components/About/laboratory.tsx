@@ -341,7 +341,7 @@ const Laboratory = () => {
 
         {/* Pop-Up */}
     {selectedCard !== null && (
-  <div className="fixed inset-0 z-30 flex items-center justify-center bg-black bg-opacity-50" onClick={closePopup}>
+  <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50" onClick={closePopup}>
     <div className="bg-[#46177d] lg:w-[900px]  lg:h-[600px] md:w-[800px] md:h-[500px] sm:w-[600px] sm:h-[500px] xs:w-[330px] xs:h-[500px] rounded-lg relative flex flex-col" onClick={(e) => e.stopPropagation()}>
       {/* Background texture */}
       <div
