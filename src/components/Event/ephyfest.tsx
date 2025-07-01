@@ -1,4 +1,4 @@
-className="w-[25%] md:w-[26%] xl:w-[28%] 2xl:w-[28%] h-[60%] md:h-[65%] xl:h-[80%] 2xl:h-[80%] flex items-center justify-center gap-2 z-40"import Typography from "@/components/Typography";
+import Typography from "@/components/Typography";
 import Button from "@/components/Button";
 import Image from "next/image";
 import { FaArrowDown, FaArrowRight, FaBook, FaCalendar, FaChevronLeft, FaChevronRight } from "react-icons/fa";
@@ -298,27 +298,27 @@ const Ephyfest = () => {
               {/* Registration Button - Smaller */}
               <Button.Primary
                 type="default"
-                className="w-[25%] md:w-[26%] xl:w-[28%] h-[60%] md:h-[65%] xl:h-[80%] flex items-center justify-center gap-2 z-40"
+                className="w-[25%] md:w-[26%] xl:w-[28%] 2xl:w-[28%] h-[60%] md:h-[65%] xl:h-[80%] 2xl:h-[80%] flex items-center justify-center gap-2 z-40"
               >
                 <div className="flex items-center gap-2">
-                  <Typography.Poppins level={12} className="text-2xs sm:text-xs md:text-xs xl:text-sm">
+                  <Typography.Poppins level={12} className="text-2xs sm:text-xs md:text-xs xl:text-sm 2xl:text-base">
                     REGISTRATION
                   </Typography.Poppins>
-                  <FaArrowRight className="text-3xs sm:text-xs md:text-xs xl:text-sm" />
+                  <FaArrowRight className="text-3xs sm:text-xs md:text-xs xl:text-sm 2xl:text-base" />
                 </div>
               </Button.Primary>
 
                 {/* Date Component */}
               <div
-                className="w-[60%] md:w-[55%] xl:w-[50%] h-[100%] xl:h-[100%] bg-gradient-to-r from-[#C64C5C] to-[#BA93E5] border-[2px] border-fifth-25 flex items-center justify-center my-auto cursor-text"
+                className="w-[60%] md:w-[55%] xl:w-[50%] 2xl:w-[50%] h-[100%] xl:h-[100%] 2xl:h-[100%] bg-gradient-to-r from-[#C64C5C] to-[#BA93E5] border-[2px] border-fifth-25 flex items-center justify-center my-auto cursor-text"
                 style={{
                   borderRadius: '0 15px 0 15px'
                 }}
               >
-                <FaCalendar className="text-white text-sm md:text-sm xl:text-lg mr-2" />
+                <FaCalendar className="text-white text-sm md:text-sm xl:text-lg 2xl:text-xl mr-2" />
                 <Typography.Poppins
                   level={10}
-                  className="text-white text-2xs md:text-xs xl:text-sm text-center"
+                  className="text-white text-2xs md:text-xs xl:text-sm 2xl:text-base text-center"
                 >
                   25 Oktober 2025
                 </Typography.Poppins>
@@ -327,13 +327,13 @@ const Ephyfest = () => {
               {/* Guidebook Button - Smaller */}
               <Button.Primary
                 type="default"
-                className="w-[25%] md:w-[26%] xl:w-[28%] h-[60%] md:h-[65%] xl:h-[80%] flex items-center justify-center gap-2 z-30"
+                className="w-[25%] md:w-[26%] xl:w-[28%] 2xl:w-[28%] h-[60%] md:h-[65%] xl:h-[80%] 2xl:h-[80%] flex items-center justify-center gap-2 z-30"
               >
                 <div className="flex items-center gap-2">
-                  <Typography.Poppins level={12} className="text-2xs sm:text-xs md:text-xs xl:text-sm">
+                  <Typography.Poppins level={12} className="text-2xs sm:text-xs md:text-xs xl:text-sm 2xl:text-base">
                     GUIDEBOOK
                   </Typography.Poppins>
-                  <FaBook className="text-3xs sm:text-xs md:text-xs xl:text-sm" />
+                  <FaBook className="text-3xs sm:text-xs md:text-xs xl:text-sm 2xl:text-base" />
                 </div>
               </Button.Primary>
             </div>
@@ -346,11 +346,11 @@ const Ephyfest = () => {
       {/* Background Decorations */}
       <img
         src="https://raw.githubusercontent.com/EPW16-ITS/assets/main/homepage-awan.svg"
-        className="absolute w-[40%] h-[40%] md:w-[30%] md:h-[30%] xl:w-[25%] xl:h-[25%] bottom-0 right-0 translate-x-[60%] translate-y-[-20%] z-0"
+        className="absolute w-[40%] h-[40%] md:w-[30%] md:h-[30%] xl:w-[25%] xl:h-[25%] 2xl:w-[20%] 2xl:h-[20%] bottom-0 right-0 translate-x-[60%] translate-y-[-20%] z-0"
       />
       <img
         src="https://raw.githubusercontent.com/EPW16-ITS/assets/main/homepage-awan.svg"
-        className="absolute w-[40%] h-[40%] md:w-[30%] md:h-[30%] xl:w-[25%] xl:h-[25%] bottom-0 left-0 -translate-x-[60%] translate-y-[10%] z-0"
+        className="absolute w-[40%] h-[40%] md:w-[30%] md:h-[30%] xl:w-[25%] xl:h-[25%] 2xl:w-[20%] 2xl:h-[20%] bottom-0 left-0 -translate-x-[60%] translate-y-[10%] z-0"
       />
     </section>
   </div>
