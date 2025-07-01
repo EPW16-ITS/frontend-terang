@@ -323,7 +323,6 @@ const Ephyfest = () => {
                   25 Oktober 2025
                 </Typography.Poppins>
               </div>
-
               {/* Guidebook Button - Smaller */}
               <Button.Primary
                 type="default"
@@ -338,9 +337,7 @@ const Ephyfest = () => {
               </Button.Primary>
             </div>
           </div>
-
         </div>
-
       </div>
 
       {/* Background Decorations */}

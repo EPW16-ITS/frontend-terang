@@ -165,7 +165,8 @@ const Laboratory = () => {
 
       
 
-      <div className="absolute z-2 rotate-[15]  z-50 opacity-70 lg:w-[1800px] lg:h-[492px] lg:mt-[700px] lg:ml-[-120px] md:w-[1600px] md:h-[420px] md:mt-[700px] md:ml-[-280px] sm:w-[1000px] sm:h-[300px] sm:mt-[700px] sm:ml-[-120px] xs:w-[467px] xs:h-[125px] xs:mt-[570px] xs:ml-[-53px] overflow-hidden">
+      <div className="absolute  rotate-[15]  z-20 opacity-70 lg:w-[1800px] lg:h-[492px] lg:mt-[700px] lg:ml-[-120px] md:w-[1600px] md:h-[420px] md:mt-[700px] md:ml-[-280px] sm:w-[1000px] sm:h-[300px] sm:mt-[700px] sm:ml-[-120px] xs:w-[467px] xs:h-[125px] xs:mt-[570px] xs:ml-[-53px] overflow-hidden">
+        
 
       
         <Image
@@ -177,6 +178,8 @@ const Laboratory = () => {
           priority
         />
       </div>
+      <div className="absolute z-10 bottom-0 left-0 w-full lg:h-[300px] md:h-[150px] sm:h-[100px] xs:h-[150px] pointer-events-none bg-gradient-to-b  from-transparent to-[#1DB2FD]/[200%] "></div>
+      <div className="absolute z-30 bottom-0 left-0 w-full lg:h-[80px] md:h-[60px] sm:h-[40px] xs:h-[30px] pointer-events-none bg-gradient-to-b  from-transparent  to-[#FBD921]/[70%]  "></div>
       
 
       {/* Main Container */}
@@ -223,7 +226,7 @@ const Laboratory = () => {
         </div>
 
         {/* Cards */}
-   <div className="relative w-full  overflow-hidden mb-6">
+   <div className="relative w-full z-50 overflow-hidden mb-6">
   <div
     className="flex transition-transform duration-500 ease-in-out"
     style={{
@@ -239,7 +242,7 @@ const Laboratory = () => {
           width: `${100 / cards.length}%`,
         }}
       >
-        <div className="rounded-lg p-[6px] lg:h-[400px] md:h-[435px] sm:h-[435px] xs:h-[280px] xs:w-[220px] w-full lg:max-w-[420px] md:max-w-[420px] sm:max-w-[420px] xs:max-w-[300px] mx-auto bg-gradient-to-r from-[#A784CE] via-[#A784CE] to-[#A784CE]">
+        <div className="rounded-lg p-[6px] z-50 lg:h-[400px] md:h-[435px] sm:h-[435px] xs:h-[280px] xs:w-[220px] w-full lg:max-w-[420px] md:max-w-[420px] sm:max-w-[420px] xs:max-w-[300px] mx-auto bg-gradient-to-r from-[#A784CE] via-[#A784CE] to-[#A784CE]">
           {/* CARD UNGU DENGAN NOISE */}
           <div
             className="relative rounded-lg h-full p-0 flex flex-col gap-2 overflow-hidden" // Mengurangi gap
@@ -277,7 +280,7 @@ const Laboratory = () => {
               {card.description}
             </p>
             <button
-              className="mt-1 mb-6 mx-auto bg-gradient-to-b from-[#2F126D] xs:w-[100px] w-[136px] h-[30px] to-[#1DB2FD] xs:text-[10px] xs-mt-[0px] text-white py-[2px] px-4 rounded-full"
+              className="mt-1 mb-6 mx-auto bg-gradient-to-b from-[#2F126D] xs:w-[120px] w-[160px] h-[40px] xs:h-[30px] to-[#1DB2FD] xs:text-[10px] xs-mt-[0px] text-white font-[poppins] py-[2px] px-4 rounded-full"
               onClick={() => handleCardClick(index)}
             >
               Selengkapnya→ 
@@ -296,7 +299,7 @@ const Laboratory = () => {
 
 
 {/* Navigasi */}
-<div className="flex items-center z-100 mb-[100px] justify-center space-x-4 sm:space-x-6 md:space-x-8 mt-4">
+<div className="flex items-center z-50 mb-[100px]  mt-[2px] justify-center space-x-4 sm:space-x-6 md:space-x-8 mt-4">
   {/* Tombol kiri */}
   <button
     className="rounded-full bg-[#DDF3FF] flex items-center justify-center cursor-pointer hover:bg-[#cce9f5] transition-colors
@@ -394,6 +397,10 @@ const Laboratory = () => {
     </div>
   </div>
 )}
+
+<div className="absolute -z-20 top-0 left-0 w-full h-[100px] pointer-events-none bg-gradient-to-b to-transparent from-[#2F126D]/100 "></div>
+
+
       </div>
     </div>
   );

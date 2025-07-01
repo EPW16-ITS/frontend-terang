@@ -109,7 +109,7 @@ const BidangMinat: React.FC = () => {
       </div>
 
       {/* Decorative Elements */}
-      <div className="absolute z-10 opacity-70  lg:mt-[-4px] lg:ml-[1120px] lg:w-[500px] lg:h-[500px] md:mt-[-4px] md:ml-[700px] md:w-[400px] md:h-[400px] sm:mt-[20px] sm:ml-[540px] sm:w-[300px] sm:h-[300px] xs:mt-[26px] xs:ml-[249px] xs:w-[188px] xs:h-[188px] overflow-hidden" >
+      <div className="absolute z-20 opacity-70  lg:mt-[-4px] lg:ml-[1120px] lg:w-[500px] lg:h-[500px] md:mt-[-4px] md:ml-[700px] md:w-[400px] md:h-[400px] sm:mt-[20px] sm:ml-[540px] sm:w-[300px] sm:h-[300px] xs:mt-[26px] xs:ml-[249px] xs:w-[188px] xs:h-[188px] overflow-hidden" >
         <Image
           src="https://raw.githubusercontent.com/EPW16-ITS/assets/refs/heads/main/GerigiUngu%20(1).svg"
           alt="Gerigi Ungu"
@@ -322,7 +322,8 @@ const BidangMinat: React.FC = () => {
             <span className="text-[#78D1FE] font-bold">&#62;</span>
           </button>
         </div>
-
+        <div className="absolute -z-50 top-0 left-0 w-full h-[500px] pointer-events-none bg-gradient-to-b to-transparent from-[#F85F73]/[10000%] "></div>
+      <div className="absolute -z-50 bottom-0 left-0 w-full lg:h-[200px] md:h-[150px] sm:h-[100px] xs:h-[50px] pointer-events-none bg-gradient-to-b from-transparent to-[#2F126D]/[150%] "></div>
       </div>
     </div>
   );
