@@ -165,19 +165,24 @@ const Laboratory = () => {
 
       
 
-      <div className="absolute  rotate-[15]  z-20 opacity-70 lg:w-[1800px] lg:h-[492px] lg:mt-[700px] lg:ml-[-120px] md:w-[1600px] md:h-[420px] md:mt-[700px] md:ml-[-280px] sm:w-[1000px] sm:h-[300px] sm:mt-[700px] sm:ml-[-120px] xs:w-[467px] xs:h-[125px] xs:mt-[570px] xs:ml-[-53px] overflow-hidden">
-        
-
       
-        <Image
-          src="https://raw.githubusercontent.com/EPW16-ITS/assets/refs/heads/main/komponen%20bawah%20(1).svg"
-          alt="Komponen Bawah"
-          width={286}
-          height={191}
-          className="object-cover w-full h-full"
-          priority
-        />
-      </div>
+        <div className="absolute  z-20 opacity-70 
+  lg:w-[1700px] md:w-[1600px] sm:w-[1600px] xs:w-[467px]
+  lg:bottom-[-30%] md:bottom-[-30%] sm:bottom-[-30%] xs:bottom-[-6%] left-1/2 -translate-x-1/2
+  lg:h-auto md:h-auto sm:h-auto xs:h-auto
+  overflow-hidden pointer-events-none">
+  <Image
+    src="https://raw.githubusercontent.com/EPW16-ITS/assets/refs/heads/main/komponen%20bawah%20(1).svg"
+    alt="Komponen Bawah"
+    width={1800}
+    height={492}
+    className="w-full h-auto object-cover"
+    priority
+  />
+</div>
+
+
+
       <div className="absolute z-10 bottom-0 left-0 w-full lg:h-[300px] md:h-[150px] sm:h-[100px] xs:h-[150px] pointer-events-none bg-gradient-to-b  from-transparent to-[#1DB2FD]/[200%] "></div>
       <div className="absolute z-30 bottom-0 left-0 w-full lg:h-[80px] md:h-[60px] sm:h-[40px] xs:h-[30px] pointer-events-none bg-gradient-to-b  from-transparent  to-[#FBD921]/[70%]  "></div>
       

@@ -64,28 +64,28 @@ const Injection = () => {
           />
         </div>
 
-        {/*Elemen*/}
-        <Image
-          src="https://raw.githubusercontent.com/EPW16-ITS/assets/refs/heads/main/GirUngu.svg"
-          alt="gir_ungu"
-          width={0}
-          height={0}
-          className="hidden md:block absolute xs:h-[100px] xs:w-[100px] sm:w-[100px] sm:h-[100px] sm:top-0 md:w-[250px] md:h-[250px] md:top-[150px] md:right-5 xl:w-[400px] xl:h-[400px] xl:top-[155px] 2xl:w-[500px] 2xl:h-[500px] xl:right-8 2xl:top-[132px] 2xl:right-20"
-        />
-        <Image
-          src="https://raw.githubusercontent.com/EPW16-ITS/assets/refs/heads/main/GirMerah.svg"
-          alt="gir_ungu"
-          width={0}
-          height={0}
-          className="hidden md:block absolute xs:h-[100px] xs:w-[100px] sm:w-[100px] sm:h-[100px] sm:top-0 md:w-[250px] md:h-[250px] md:top-[40%] md:right-[20%] xl:w-[400px] xl:h-[400px] xl:top-[45%] xl:right-[20%] 2xl:w-[500px] 2xl:h-[500px] 2xl:top-[42%] 2xl:right-[21%]"
-        />
-        <Image
-          src="https://raw.githubusercontent.com/EPW16-ITS/assets/refs/heads/main/GigiKuningEmas.svg"
-          alt="gir_ungu"
-          width={0}
-          height={0}
-          className="hidden md:block xs:h-[100px] xs:w-[100px] sm:w-[100px] sm:h-[100px] sm:top-0 md:w-[250px] md:h-[250px] md:top-[40%] md:right-[20%] xl:w-[400px] xl:h-[400px] xl:top-[45%] xl:right-[20%] 2xl:w-[450px] 2xl:h-[450px] 2xl:top-0 2xl:right-0"
-        />
+{/*Elemen*/}
+<Image
+  src="https://raw.githubusercontent.com/EPW16-ITS/assets/refs/heads/main/GirUngu.svg"
+  alt="gir_ungu"
+  width={0}
+  height={0}
+  className="absolute xs:h-[80px] xs:w-[80px] xs:top-[120px] xs:right-2 sm:w-[90px] sm:h-[90px] sm:top-[130px] sm:right-3 md:w-[250px] md:h-[250px] md:top-[150px] md:right-5 xl:w-[400px] xl:h-[400px] xl:top-[155px] xl:right-8 2xl:w-[500px] 2xl:h-[500px] 2xl:top-[132px] 2xl:right-20"
+/>
+<Image
+  src="https://raw.githubusercontent.com/EPW16-ITS/assets/refs/heads/main/GirMerah.svg"
+  alt="gir_merah"
+  width={0}
+  height={0}
+  className="absolute xs:h-[80px] xs:w-[80px] xs:top-[35%] xs:right-[15%] sm:w-[90px] sm:h-[90px] sm:top-[38%] sm:right-[18%] md:w-[250px] md:h-[250px] md:top-[40%] md:right-[20%] xl:w-[400px] xl:h-[400px] xl:top-[45%] xl:right-[20%] 2xl:w-[500px] 2xl:h-[500px] 2xl:top-[42%] 2xl:right-[21%]"
+/>
+<Image
+  src="https://raw.githubusercontent.com/EPW16-ITS/assets/refs/heads/main/GigiKuningEmas.svg"
+  alt="gigi_kuning_emas"
+  width={0}
+  height={0}
+  className="absolute xs:h-[250px] xs:w-[250px] xs:top-0 xs:left-0 sm:w-[250px] sm:h-[250px] sm:top-0 sm:left-0 md:w-[250px] md:h-[250px] md:top-0 md:right-0 xl:w-[400px] xl:h-[400px] xl:top-0 xl:right-0 2xl:w-[450px] 2xl:h-[450px] 2xl:top-0 2xl:right-0"
+/>
 
         <Typography.CrystalUniverseRegular
           level={7}
