@@ -500,7 +500,7 @@ const Micon = () => {
       {/* Judul */}
       <Typography.CrystalUniverseRegular
         level={7}
-        className="xs:text-xs sm:text-lg md:text-xl lg:text-2xl xl:text-4xl 2xl:text-4xl z-40 text-[#1DB2FD] text-center mb-10 xs:mb-4 sm:mb-4 md:mb-6 lg:mb-8 xl:mb-10 2xl:mb-12 font-bold"
+        className="xs:text-2xs sm:text-lg md:text-xl lg:text-2xl xl:text-4xl 2xl:text-4xl z-40 text-[#1DB2FD] text-center mb-10 xs:mb-4 sm:mb-4 md:mb-6 lg:mb-8 xl:mb-10 2xl:mb-12 font-bold"
       >
         M I C R O C O N T R O L L E R
       </Typography.CrystalUniverseRegular>
