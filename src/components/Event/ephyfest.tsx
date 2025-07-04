@@ -266,7 +266,7 @@ const Ephyfest = () => {
               <SwiperSlide className="flex items-center justify-center">
                 <div className="relative rounded-2xl overflow-hidden w-[315px] h-[200px] md:w-[350px] md:h-[220px]">
                   <img
-                    src="https://raw.githubusercontent.com/EPW16-ITS/assets/main/ephyfest-swiper1.webp"
+                    src="https://raw.githubusercontent.com/EPW16-ITS/assets/main/ephyfest-awarding.webp"
                     alt="Ephyfest Image 1"
                     className="rounded-2xl object-cover"
                   />
@@ -275,7 +275,7 @@ const Ephyfest = () => {
               <SwiperSlide className="flex items-center justify-center">
                 <div className="relative rounded-2xl overflow-hidden w-[315px] h-[200px] md:w-[350px] md:h-[220px]">
                   <img
-                    src="https://raw.githubusercontent.com/EPW16-ITS/assets/main/ephyfest-swiper2.webp"
+                    src="https://raw.githubusercontent.com/EPW16-ITS/assets/main/ephyfest-closing-ceremony.webp"
                     alt="Ephyfest Image 2"
                     className="rounded-2xl object-cover"
                   />
@@ -284,7 +284,7 @@ const Ephyfest = () => {
               <SwiperSlide className="flex items-center justify-center">
                 <div className="relative rounded-2xl overflow-hidden w-[315px] h-[200px] md:w-[350px] md:h-[220px]">
                   <img
-                    src="https://raw.githubusercontent.com/EPW16-ITS/assets/main/ephyfest-swiper3.webp"
+                    src="https://raw.githubusercontent.com/EPW16-ITS/assets/main/ephyfest-talkshow.webp"
                     alt="Ephyfest Image 3"
                     className="rounded-2xl object-cover"
                   />
@@ -293,17 +293,8 @@ const Ephyfest = () => {
               <SwiperSlide className="flex items-center justify-center">
                 <div className="relative rounded-2xl overflow-hidden w-[315px] h-[200px] md:w-[350px] md:h-[220px]">
                   <img
-                    src="https://raw.githubusercontent.com/EPW16-ITS/assets/main/ephyfest-swiper4.webp"
+                    src="https://raw.githubusercontent.com/EPW16-ITS/assets/main/ephyfest-exhibition.webp"
                     alt="Ephyfest Image 4"
-                    className="rounded-2xl object-cover"
-                  />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className="flex items-center justify-center">
-                <div className="relative rounded-2xl overflow-hidden w-[315px] h-[200px] md:w-[350px] md:h-[220px]">
-                  <img
-                    src="https://raw.githubusercontent.com/EPW16-ITS/assets/main/ephyfest-swiper5.webp"
-                    alt="Ephyfest Image 5"
                     className="rounded-2xl object-cover"
                   />
                 </div>
@@ -426,7 +417,7 @@ const Ephyfest = () => {
                 <SwiperSlide className="flex items-center justify-center">
                                       <div className="relative rounded-2xl overflow-hidden w-[315px] h-[200px] lg:w-[500px] lg:h-[270px] xl:w-[500px] xl:h-[270px] 2xl:w-[450px] 2xl:h-[280px]">
                     <img
-                      src="https://raw.githubusercontent.com/EPW16-ITS/assets/main/ephyfest-swiper1.webp"
+                      src="https://raw.githubusercontent.com/EPW16-ITS/assets/main/ephyfest-awarding.webp"
                       alt="Ephyfest Image 1"
                       className="rounded-2xl object-cover"
                     />
@@ -435,7 +426,7 @@ const Ephyfest = () => {
                 <SwiperSlide className="flex items-center justify-center">
                   <div className="relative rounded-2xl overflow-hidden w-[315px] h-[200px] lg:w-[350px] lg:h-[220px] xl:w-[500px] xl:h-[270px] 2xl:w-[450px] 2xl:h-[280px]">
                     <img
-                      src="https://raw.githubusercontent.com/EPW16-ITS/assets/main/ephyfest-swiper2.webp"
+                      src="https://raw.githubusercontent.com/EPW16-ITS/assets/main/ephyfest-closing-ceremony.webp"
                       alt="Ephyfest Image 2"
                       className="rounded-2xl object-cover"
                     />
@@ -444,7 +435,7 @@ const Ephyfest = () => {
                 <SwiperSlide className="flex items-center justify-center">
                   <div className="relative rounded-2xl overflow-hidden w-[315px] h-[200px] lg:w-[350px] lg:h-[220px] xl:w-[500px] xl:h-[270px] 2xl:w-[450px] 2xl:h-[280px]">
                     <img
-                      src="https://raw.githubusercontent.com/EPW16-ITS/assets/main/ephyfest-swiper3.webp"
+                      src="https://raw.githubusercontent.com/EPW16-ITS/assets/main/ephyfest-talkshow.webp"
                       alt="Ephyfest Image 3"
                       className="rounded-2xl object-cover"
                     />
@@ -453,17 +444,8 @@ const Ephyfest = () => {
                 <SwiperSlide className="flex items-center justify-center">
                   <div className="relative rounded-2xl overflow-hidden w-[315px] h-[200px] lg:w-[350px] lg:h-[220px] xl:w-[500px] xl:h-[270px] 2xl:w-[450px] 2xl:h-[280px]">
                     <img
-                      src="https://raw.githubusercontent.com/EPW16-ITS/assets/main/ephyfest-swiper4.webp"
+                      src="https://raw.githubusercontent.com/EPW16-ITS/assets/main/ephyfest-exhibition.webp"
                       alt="Ephyfest Image 4"
-                      className="rounded-2xl object-cover"
-                    />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide className="flex items-center justify-center">
-                  <div className="relative rounded-2xl overflow-hidden w-[315px] h-[200px] lg:w-[350px] lg:h-[220px] xl:w-[500px] xl:h-[270px] 2xl:w-[450px] 2xl:h-[280px]">
-                    <img
-                      src="https://raw.githubusercontent.com/EPW16-ITS/assets/main/ephyfest-swiper5.webp"
-                      alt="Ephyfest Image 5"
                       className="rounded-2xl object-cover"
                     />
                   </div>
