@@ -20,14 +20,14 @@ export default function Footerhidden() {
                 </Link>
             </div>
             <div className="footer-social">
-                <Link href="">
-                    <FaLinkedin size={34} className="https://www.linkedin.com/company/engineering-physics-week" />
+                <Link href="https://www.linkedin.com/company/engineering-physics-week">
+                    <FaLinkedin size={34} className="" />
                 </Link>
-                <Link href="">
-                    <FaInstagram size={34} className="https://www.instagram.com/epwits" />
+                <Link href="https://www.instagram.com/epwits">
+                    <FaInstagram size={34} className="" />
                 </Link>
-                <Link href="">
-                    <FaTiktok size={34} className="https://www.tiktok.com/@epw.its?_t=ZS-8xUhKXWlKzK&_r=1" />
+                <Link href="https://www.tiktok.com/@epw.its?_t=ZS-8xUhKXWlKzK&_r=1">
+                    <FaTiktok size={34} className="" />
                 </Link>
             </div>
             <Typography.Poppins level={9} size="base" className="copyright">©2025 Engineering Physics Week. All Right Reserved</Typography.Poppins>
