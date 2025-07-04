@@ -525,7 +525,7 @@ const Micon = () => {
           onClick={handleRegistrationClick}
         />
         <RegistrationButton
-          text="GUIDEBOOK"
+          text="LINK KEBUTUHAN"
           onClick={handleGuidebookClick}
         />
       </div>
