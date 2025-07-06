@@ -523,7 +523,7 @@ const Micon = () => {
         <RegistrationButton
           text="REGISTRATION HERE!"
           onClick={handleRegistrationClick}
-          hreg="https://bit.ly/OPREGMICONEPW16"
+          href="https://bit.ly/OPREGMICONEPW16"
         />
         <RegistrationButton
           text="LINK KEBUTUHAN"
