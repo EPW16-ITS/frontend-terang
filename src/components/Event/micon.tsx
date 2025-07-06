@@ -521,14 +521,12 @@ const Micon = () => {
       {/* Registration Buttons */}
       <div className="relative z-40 flex flex-col xs:flex-row sm:flex-row md:flex-row items-center justify-center gap-6 mt-16 xs:mt-0 sm:mt-2 sm:mb-6 md:mt-10 md:mb-12 lg:mt-12 lg:mb-16 xl:mt-16 xl:mb-20 2xl:mt-12 2xl:mb-12">
         <RegistrationButton
-          text="REGISTRATION HERE!"
-          onClick={handleRegistrationClick}
-          href="https://bit.ly/OPREGMICONEPW16"
+          text="REGIST HERE"
+          onClick={handleGuidebookClick}
         />
         <RegistrationButton
           text="LINK KEBUTUHAN"
           onClick={handleGuidebookClick}
-          href="https://linktr.ee/micon_epwits16"
         />
       </div>
 
