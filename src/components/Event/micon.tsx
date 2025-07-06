@@ -523,10 +523,12 @@ const Micon = () => {
         <RegistrationButton
           text="REGISTRATION HERE!"
           onClick={handleRegistrationClick}
+          hreg="https://bit.ly/OPREGMICONEPW16"
         />
         <RegistrationButton
           text="LINK KEBUTUHAN"
           onClick={handleGuidebookClick}
+          href="https://linktr.ee/micon_epwits16"
         />
       </div>
 
