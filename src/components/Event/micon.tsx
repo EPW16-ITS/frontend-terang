@@ -35,7 +35,7 @@ interface TrapeziumInfoProps {
 const RectangleButton = ({ text, className = "", onClick }: RectangleButtonProps) => {
   return (
     <div
-      className={`xs:w-[100px] xs:h-[22px] sm:w-[120px] sm:h-[22px] md:w-[140px] md:h-[32px] lg:w-[180px] lg:h-[43px] xl:w-[200px] xl:h-[53px] 2xl:w-[220px] 2xl:h-[63px] bg-primary-400 border border-third-50 rounded-lg flex items-center justify-center gap-1 cursor-pointer hover:opacity-90 transition-opacity ${className}`}
+      className={`z-40 xs:w-[100px] xs:h-[22px] sm:w-[120px] sm:h-[22px] md:w-[140px] md:h-[32px] lg:w-[180px] lg:h-[43px] xl:w-[200px] xl:h-[53px] 2xl:w-[220px] 2xl:h-[63px] bg-primary-400 border border-third-50 rounded-lg flex items-center justify-center gap-1 cursor-pointer hover:opacity-90 transition-opacity ${className}`}
       style={{
         borderRadius: '0 80px 0 80px',
         pointerEvents: 'auto' // Tambahan penting biar klik selalu ditangkap
@@ -56,7 +56,7 @@ const RectangleButton = ({ text, className = "", onClick }: RectangleButtonProps
 const RegistrationButton = ({ text, className = "", onClick }:RegistrationButtonProps) => {
   return (
     <div
-      className={`relative inline-block cursor-pointer hover:opacity-90 transition-opacity ${className}`}
+      className={`z-45 relative inline-block cursor-pointer hover:opacity-90 transition-opacity ${className}`}
       onClick={onClick}
     >
       {/* Main Rectangle with Gradient Background */}
