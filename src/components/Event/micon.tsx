@@ -56,12 +56,12 @@ const RectangleButton = ({ text, className = "", onClick }: RectangleButtonProps
 const RegistrationButton = ({ text, className = "", onClick }:RegistrationButtonProps) => {
   return (
     <div
-      className={`z-45 relative inline-block cursor-pointer hover:opacity-90 transition-opacity ${className}`}
+      className={`relative inline-block cursor-pointer hover:opacity-90 transition-opacity ${className}`}
       onClick={onClick}
     >
       {/* Main Rectangle with Gradient Background */}
       <div
-        className="lg:border-4 md:border-3 border-black relative 2xl:w-[300px] 2xl:h-[150px] xl:w-[280px] xl:h-[120px] lg:w-[280px] lg:h-[120px] md:w-[220px] md:h-[80px] xs:w-[97px] xs:h-[48px] sm:w-[130px] sm:h-[48px] lg:rounded-2xl md:rounded-xl xs:rounded-xl sm:rounded-xl flex items-center justify-center"
+        className="z-50 lg:border-4 md:border-3 border-black relative 2xl:w-[300px] 2xl:h-[150px] xl:w-[280px] xl:h-[120px] lg:w-[280px] lg:h-[120px] md:w-[220px] md:h-[80px] xs:w-[97px] xs:h-[48px] sm:w-[130px] sm:h-[48px] lg:rounded-2xl md:rounded-xl xs:rounded-xl sm:rounded-xl flex items-center justify-center"
         style={{
           background: 'linear-gradient(to right, #037CB8 0%, #78D1FE 50%, #037CB8 100%)'
         }}
