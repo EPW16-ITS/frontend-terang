@@ -615,7 +615,7 @@ const Micon = () => {
             />
 
             <a
-              href="its.id/m/GUIDEBOOKPENYISIHAN"
+              href="https://its.id/m/GUIDEBOOKPENYISIHAN"
               target="_blank"
               rel="noopener noreferrer"
               className="z-45"
