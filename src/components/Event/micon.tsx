@@ -53,7 +53,7 @@ const RectangleButton = ({ text, className = "", onClick }: RectangleButtonProps
 };
 
 // Registration Button Component
-const RegistrationButton = ({ text, className = "", onClick }:RegistrationButtonProps) => {
+const RegistrationButton = ({ text, className = "", onClick }: RegistrationButtonProps) => {
   return (
     <div
       className={`relative inline-block cursor-pointer hover:opacity-90 transition-opacity ${className}`}
@@ -171,7 +171,7 @@ const RegistrationButton = ({ text, className = "", onClick }:RegistrationButton
 };
 
 // Trapezium Info Component with Decorative Studs
-const TrapeziumInfo = ({ label, content, className = "", isInverted = false }:TrapeziumInfoProps) => {
+const TrapeziumInfo = ({ label, content, className = "", isInverted = false }: TrapeziumInfoProps) => {
   const clipPathStyle = isInverted
     ? 'polygon(0% 0%, 100% 0%, 75% 100%, 25% 100%)' // Trapezium terbalik
     : 'polygon(25% 0%, 75% 0%, 100% 100%, 0% 100%)'; // Trapezium normal
@@ -521,25 +521,25 @@ const Micon = () => {
       {/* Registration Buttons */}
       <div className="relative z-49 flex flex-col xs:flex-row sm:flex-row md:flex-row items-center justify-center gap-6 mt-16 xs:mt-0 sm:mt-2 sm:mb-6 md:mt-10 md:mb-12 lg:mt-12 lg:mb-16 xl:mt-16 xl:mb-20 2xl:mt-12 2xl:mb-12">
         <a
-    href="https://bit.ly/OPREGMICONEPW16"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="z-45"
-  >
-    <RegistrationButton
-      text="REGIST HERE!"
-    />
-  </a>
-  <a
-    href="https://linktr.ee/micon_epwits16"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="z-45"
-  >
-    <RegistrationButton
-      text="LINK KEBUTUHAN"
-    />
-  </a>
+          href="https://bit.ly/OPREGMICONEPW16"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="z-45"
+        >
+          <RegistrationButton
+            text="REGIST HERE!"
+          />
+        </a>
+        <a
+          href="https://linktr.ee/micon_epwits16"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="z-45"
+        >
+          <RegistrationButton
+            text="LINK KEBUTUHAN"
+          />
+        </a>
       </div>
 
       {/* Main Content Layout */}
@@ -614,10 +614,18 @@ const Micon = () => {
               }}
             />
 
-            <RectangleButton
-              text="GUIDEBOOK"
-              onClick={handleGuidebookRectangleClick}
-            />
+            <a
+              href="its.id/m/GUIDEBOOKPENYISIHAN"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="z-45"
+            >
+              <RectangleButton
+                text="GUIDEBOOK"
+                onClick={handleGuidebookRectangleClick}
+              />
+            </a>
+
           </div>
         </div>
 
